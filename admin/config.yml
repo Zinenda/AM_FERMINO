@@ -18,7 +18,7 @@ collections:
 
   - label: "Portfolio"
     name: "portfolio"
-    folder: "collections/_galeria"
+    folder: "collections/_portfolio"
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}

@@ -1,0 +1,27 @@
+<div id="sobre-modal" class="modal primary-color-text">
+    <div class="center">
+        <img src="{{ site.logo }}" alt="{{ site.title}} Logo" style="width: 200px; height: 200px;">
+    </div>
+
+    <section class="row">
+        <div class="col s12">
+            <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                {% for item in site.sobre %}
+                    <li class="tab col s3">
+                        <a href="#{{ item.title | downcase }}">{{ item.title }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        {% for item in site.sobre %}
+            <div id="{{ item.title | downcase }}" class="col s12">
+                <div class="container">
+                    <i class="fa-3x fas fa-{{ item.icon }}"></i>
+                    <h4>{{ item.title }}</h4>
+                    <p class="justified">{{ item.description }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </section>
+</div>

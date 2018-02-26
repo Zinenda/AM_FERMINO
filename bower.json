@@ -1,0 +1,21 @@
+{
+  "name": "ICLM",
+  "description": "Imperial Crown Logistics Mozambique",
+  "main": "index.js",
+  "authors": [
+    "Ivo Zinenda <izinenda@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}

@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  accept_roles:
+    - admin
+    - client
+  branch: master
+
+media_folder: "assets/img/uploads"
+  
+collections:
+  - label: "Sobre"
+    name: "sobre"
+    folder: "collections/_sobre"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Descrição", name: "description", widget: "string"}
+
+  - label: "Slider"
+    name: "slider"
+    folder: "collections/_galeria"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
+
+  - label: "Serviços"
+    name: "servicos"
+    folder: "collections/_servicos"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - label: "Icone"
+        name: "icon"
+        widget: "select"
+        options: ["recycle", "tree", "truck", "pagelines", "undo"]
+      - {label: "Description", name: "description", widget: "string"}
+
+  - label: "Posts"
+    name: "posts"
+    folder: collections/_posts
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Data", name: "date", widget: "datetime"}
+      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
+      - {label: "Corpo", name: "body", widget: "markdown"}

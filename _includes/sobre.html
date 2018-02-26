@@ -1,0 +1,36 @@
+<section id="sobre" class="section scrollspy">
+    <section class="row">
+        <article class="col s12 m6">
+            <article class="container">
+                <h3>Sobre</h3>
+
+                <p class="justified">
+                    {{ site.title }} é uma empresa privada de origem moçambicana,
+                    baseada na província de Tete, 
+                    fundada em 2007 por Augusto Melo Fermino,
+                    o actual Director Geral.
+                </p>
+                <p class="justified">
+                    A empresa está registada legalmente em Moçambique,
+                    de acordo com os termos legais a mais de 6 anos.
+                    Contando com vasta expeciência nas suas áreas de actuação.
+                </p>
+
+                <p class="justified">
+                    A {{ site.title }}, tem fortes ligações com empresas mineradoras, 
+                    internacionais que exploram o carvão na província de Tete,
+                    providenciando consultoria nas áreas de Gestão Ambiental.
+                </p>
+
+                <button class="btn-large waves-effect waves-light modal-trigger" data-target="sobre-modal">Saiba Mais</button>
+                <a href="mailto:{{ site.email }}" class="btn-large btn-flat waves-effect waves-primary">Contacte-nos</a>
+            </article>
+        </article>
+
+        <div class="col s12 m6">
+            <img src="{{ site.image }}" alt="{{ site.title }}">
+        </div>
+    </section>
+</section>
+
+{% include sobre-modal.html %}

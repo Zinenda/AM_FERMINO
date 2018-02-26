@@ -1,0 +1,15 @@
+<section id="portfolio" class="section scrollspy primary-color-light white-text">
+    <h3 class="center-align">Portfólio</h3>
+
+    <section id="masonry-grid" class="row">
+        {% for item in site.galeria limit: 8 %}
+            <div class="col s6 l3">
+                <img src="{{ item.image }}" alt="{{ item.title }}">
+            </div>
+        {% endfor %}
+    </section>
+
+    <div class="center">
+        <a href="/portfolio/" class="btn-large waves-effect waves-light">Veja Mais</a>
+    </div>
+</section>

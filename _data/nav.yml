@@ -1,0 +1,19 @@
+- link: /
+  title: Home
+  icon: home
+
+- link: "#sobre"
+  title: Sobre
+  icon: info
+
+- link: "#serviços"
+  title: Serviços
+  icon: briefcase
+
+- link: "#portfolio"
+  title: Portfólio
+  icon: image
+
+- link: "#noticias"
+  title: Noticias
+  icon: newspaper

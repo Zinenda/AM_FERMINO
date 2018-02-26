@@ -1,0 +1,32 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font: {
+        size: 100%;
+        family: 'Arial', sans-serif;
+    }
+    color: #444;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    .circle {
+        border-radius: 100%;
+    }
+    .center {
+        margin: auto;
+    }
+    .rounded {
+        border-radius: 10px;
+    }
+}
+
+.inline-list {
+    display: inline-flex;
+}

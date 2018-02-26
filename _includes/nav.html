@@ -1,0 +1,7 @@
+{% for item in site.data.nav %}
+    <li>
+        <a href="{% if page.layout == "page" %}/{% endif %}{{ item.link }}" title="{{ item.title }}" class="waves-effect waves-light">
+            <i class="fas fa-{{ item.icon }} white-text"></i> {{ item.title }}
+        </a>
+    </li>
+{% endfor %}

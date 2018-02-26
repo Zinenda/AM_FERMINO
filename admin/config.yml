@@ -14,11 +14,10 @@ collections:
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
       - {label: "Descrição", name: "description", widget: "string"}
 
-  - label: "Slider"
-    name: "slider"
+  - label: "Portfolio"
+    name: "portfolio"
     folder: "collections/_galeria"
     create: true
     fields:

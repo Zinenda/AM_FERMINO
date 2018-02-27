@@ -1,8 +1,8 @@
-<section id="sobre" class="section scrollspy">
+<section id="sobre" class="section scrollspy primary-color-text">
     <section class="row">
         <article class="col s12 m6">
             <article class="container">
-                <h3>Sobre</h3>
+                <h3 class="center-align"><i class="fas fa-info-circle"></i> Sobre</h3><br><br>
 
                 <p class="justified">
                     {{ site.title }} é uma empresa privada de origem moçambicana,
@@ -22,8 +22,10 @@
                     providenciando consultoria nas áreas de Gestão Ambiental.
                 </p>
 
-                <button class="btn-large waves-effect waves-light modal-trigger" data-target="sobre-modal">Saiba Mais</button>
-                <a href="mailto:{{ site.email }}" class="btn-large btn-flat waves-effect waves-primary">Contacte-nos</a>
+                <div class="center">
+                    <button class="btn-large waves-effect waves-light modal-trigger" data-target="sobre-modal">Saiba Mais</button>
+                    <a href="mailto:{{ site.email }}" class="btn-large btn-flat waves-effect waves-primary">Contacte-nos</a>
+                </div>
             </article>
         </article>
 

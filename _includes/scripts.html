@@ -2,7 +2,13 @@
 
 <script src="/assets/js/jquery.min.js" defer></script>
 <script src="/assets/js/materialize.min.js" defer></script>
+<script src="/assets/js/masonry.pkgd.min.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
+
+{% if page.title == "Portfolio" %}
+    <link rel="stylesheet" href="/assets/css/lightbox.min.css">
+    <script src="/assets/js/lightbox.min.js" defer></script>
+{% endif %}
 
 <!-- netlify widget -->
 <script defer type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

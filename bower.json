@@ -1,12 +1,12 @@
 {
-  "name": "ICLM",
-  "description": "Imperial Crown Logistics Mozambique",
+  "name": "AM Fermino",
+  "description": "Solucoes Ambientais",
   "main": "index.js",
   "authors": [
     "Ivo Zinenda <izinenda@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/Zinenda/AM_FERMINO",
   "private": true,
   "ignore": [
     "**/.*",
@@ -16,6 +16,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "lightbox2": "^2.10.0"
   }
 }

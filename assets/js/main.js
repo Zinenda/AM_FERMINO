@@ -2,9 +2,6 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.scrollspy').scrollSpy();
     $('.modal').modal();
-    $('.tabs').tabs({
-        swipeable: true
-    });
     $('.materialboxed').materialbox();
     $('.fixed-action-btn').floatingActionButton();
     $('.slider').slider();

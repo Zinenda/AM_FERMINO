@@ -14,7 +14,7 @@ collections:
     create: true
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Descrição", name: "description", widget: "string"}
+      - {label: "Descrição", name: "description", widget: "text"}
 
   - label: "Portfolio"
     name: "portfolio"
@@ -33,8 +33,8 @@ collections:
       - label: "Icone"
         name: "icon"
         widget: "select"
-        options: ["recycle", "tree", "truck", "pagelines", "undo"]
-      - {label: "Description", name: "description", widget: "string"}
+        options: ["recycle", "tree", "truck", "exclamation-circle", "undo"]
+      - {label: "Description", name: "description", widget: "text"}
 
   - label: "Posts"
     name: "posts"

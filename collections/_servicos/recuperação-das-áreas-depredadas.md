@@ -1,6 +1,6 @@
 ---
 title: Recuperação das áreas Degradadas
-icon: undo
+icon: recycle
 description: >-
   AM Fermino te sido um parceiro forte das grandes empresas mineiras da
   Província de Tete na recuperação de áreas degradadas. A nossa empresa

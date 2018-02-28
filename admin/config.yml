@@ -33,7 +33,7 @@ collections:
       - label: "Icone"
         name: "icon"
         widget: "select"
-        options: ["recycle", "tree", "truck", "exclamation-circle", "undo"]
+        options: ["recycle", "tree", "deskpro", "exclamation-circle", "leaf"]
       - {label: "Description", name: "description", widget: "text"}
 
   - label: "Posts"

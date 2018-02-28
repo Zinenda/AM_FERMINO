@@ -1,10 +1,15 @@
 ---
-title: Recuperação das áreas depredadas
+title: Recuperação das áreas Degradadas
 icon: undo
 description: >-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia delectus ab
-  rerum provident maiores magni officia ad veritatis architecto eius
-  consectetur, nostrum fugiat reprehenderit vitae! Laudantium molestias
-  similique hic quos!
+  AM Fermino te sido um parceiro forte das grandes empresas mineiras da
+  Província de Tete na recuperação de áreas degradadas. A nossa empresa
+  encontra-se envolvida há mais de 8 anos em trabalhos de recuperação de áreas
+  de empréstimo e de mineração de carvão, plantando árvores, e gramíneas de
+  diferentes espécies. A experiência da AM Fermino nesta área inclui a recolha
+  de sementes de arvores e gramíneas, seu processamento e aplicação em áreas
+  degradas planas e taludes. A AM Fermino é uma das únicas (se não a única)
+  empresa com técnicos com conhecimento de uso de biomantas na recuperação de
+  taludes de rejeitos mineiros.
 ---
 

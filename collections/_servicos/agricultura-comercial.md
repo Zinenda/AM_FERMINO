@@ -1,10 +1,19 @@
 ---
-title: Agricultura Comercial
-icon: truck
-description: >-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia delectus ab
-  rerum provident maiores magni officia ad veritatis architecto eius
-  consectetur, nostrum fugiat reprehenderit vitae! Laudantium molestias
-  similique hic quos!
+title: Fauna Bravia
+icon: deskpro
+description: >
+  Trabalhos de afugentamento de afugentamento de fauna bravia nas residências e
+  principalmente em áreas de supressão vegetal de forma a reduzir o impacto da
+  supressão vegetal sobre a fauna bravia. A empresa possui uma vasta equipa de
+  profissionais com vasta experiência em captura e realocação de animais
+  peçonhentos e outros. Por diversos anos a AM Fermino tem trabalhado com as
+  empresas de mineração que têm realizado desmatamentos massivos com uso de
+  maquinaria pesada no afugentamento ou captura e realocação dos animais e
+  marcação de arvores de valor histórico cultural para a sua preservação,
+  contribuindo, assim para a redução dos impactos sobre a flora e a fauna
+  bravia.
+
+  Nesta área, a empresa tem realizado também a captura de cães vadios em
+  condomínios e residências, em prol da defesa da saúde humana.
 ---
 

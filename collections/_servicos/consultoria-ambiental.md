@@ -2,9 +2,9 @@
 title: Consultoria Ambiental
 icon: exclamation-circle
 description: >-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia delectus ab
-  rerum provident maiores magni officia ad veritatis architecto eius
-  consectetur, nostrum fugiat reprehenderit vitae! Laudantium molestias
-  similique hic quos!
+  Realização de trabalhos de consultoria Ambiental em diversas áreas. A AM
+  Fermino já realizou avaliações de impactos ambientais de diversos projectos em
+  várias áreas, com mais ênfase em actividades de exploração mineira e outros
+  recursos naturais.
 ---
 

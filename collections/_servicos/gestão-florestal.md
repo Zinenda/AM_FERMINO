@@ -1,10 +1,14 @@
 ---
 title: Gestão Florestal
 icon: tree
-description: >-
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia delectus ab
-  rerum provident maiores magni officia ad veritatis architecto eius
-  consectetur, nostrum fugiat reprehenderit vitae! Laudantium molestias
-  similique hic quos!
+description: >
+  Com uma equipa de técnicos superiores capazes, coordenadas por um Engenheiro
+  florestal autorizado para realização de inventários florestais, a AM Fermino
+  tem realizado inventários florestais e planos de maneio de áreas de licenças
+  simples e concessões florestais 
+
+  A experiência da AM Fermino inclui a elaboração de planos de maneio
+  faunístico, especialmente para fazendas de bravio de animais em terras e em
+  águas (projectos de criação e engorda de crocodilos)
 ---
 

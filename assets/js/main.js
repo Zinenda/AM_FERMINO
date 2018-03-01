@@ -5,6 +5,7 @@ $(document).ready(function(){
     $('.materialboxed').materialbox();
     $('.fixed-action-btn').floatingActionButton();
     $('.slider').slider();
+    $('.parallax').parallax();
     $('.tooltipped').tooltip();
 
     var $container = $('#masonry-grid');

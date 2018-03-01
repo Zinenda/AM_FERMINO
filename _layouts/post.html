@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section class="grey lighten-4">
+    <header class="parallax-container">
+        <div class="parallax">
+            <img src="{{ page.image | prepend: baseurl }}" alt="{{ page.title }}">
+        </div>
+        <br><br><br><br>
+        <h1 class="center-align primary-color-text">{{ page.title }}</h1>
+    </header>
+    
+    <section class="section container">
+        <section class="row">
+            <article class="col s12 white hoverable">
+                <div class="container">
+                    {{ content }}
+                </div>
+            </article>
+        </section>
+    </section>
+</section>

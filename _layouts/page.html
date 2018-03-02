@@ -5,16 +5,26 @@ layout: default
 <section class="container">
     <header class="slider hide-on-small-only">
         <ul class="slides">
-            {% for post in paginator.posts limit: 4 %}
-                <li>
-                    <img src="{{ post.image }}" alt="{{ post.title }}">
-                    {% if page.title == "Noticias" %}
+            {% if page.title == "Portfolio" %}
+                {% for item in site.portfolio limit: 4 %}
+                    <li>
+                        <img src="{{ item.image }}" alt="{{ post.title }}">
                         <div class="caption center-align primary-color-text">
-                            <h4>{{ post.title }}</h4>
+                            <h4>{{ item.title }}</h4>
                         </div>
-                    {% endif %}
-                </li>
-            {% endfor %}
+                    </li>
+                {% endfor %}
+
+                {% elsif page.title == "Noticias" %}
+                    {% for item in site.posts limit: 4 %}
+                        <li>
+                            <img src="{{ item.image }}" alt="{{ post.title }}">
+                            <div class="caption center-align primary-color-text">
+                                <h4>{{ item.title }}</h4>
+                            </div>
+                        </li>
+                    {% endfor %}
+            {% endif %}
         </ul>
     </header>
     
@@ -30,21 +40,28 @@ layout: default
                 {% endif %}
     
                 {% if page.title == "Noticias" %}
-                    <div class="card medium hoverable">
-                        <div class="card-image">
-                            <a href="{{ post.url }}">
-                                <img src="{{ post.image }}" alt="{{ post.title }}" class="waves-effect waves-block waves-light">
-                            </a>
-                        </div>
-    
-                        <div class="card-content center">
-                            <span class="card-title">
-                                <a href="{{ post.url }}" class="grey-text text-darken-4">
-                                    {{ post.title }}
+                    <article class="col s12 m4">
+                        <div class="card medium hoverable">
+                            <div class="card-image">
+                                <a href="{{ post.url }}">
+                                    <img src="{{ post.image }}" alt="{{ post.title }}" class="waves-effect waves-block waves-light">
                                 </a>
-                            </span>
+                            </div>
+
+                            <div class="card-content">
+                                <span class="card-title">
+                                    <a href="{{ post.url }}" class="grey-text text-darken-4">{{ post.title }}</a>
+                                </span>
+                            </div>
+
+                            <div class="card-action primary-color-text">
+                                <a href="{{ post.url }}" class="btn waves-effect waves-light">Leia Mais</a>
+                                <a href="{{ post.document }}" class="btn-flat waves-effect" style="border: solid 1px lightgreen;">
+                                    <i class="fas fa-download"></i> PDF
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 {% endif %}
             {% endfor %}
         </div>

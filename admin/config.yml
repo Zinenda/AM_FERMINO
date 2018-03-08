@@ -45,6 +45,6 @@ collections:
       - {label: "Titulo", name: "title", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Imagem", name: "image", widget: "image"}
-      - {label: "Documento", name: "document", widget: "file" required: "false"}
+      - {label: "Documento", name: "document", widget: "file", required: "false"}
       - {label: "Layout", name: "layout", default: "post", widget: "hidden"}
       - {label: "Corpo", name: "body", widget: "markdown"}

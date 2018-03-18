@@ -1,7 +1,8 @@
 ---
 title: Valores
 description: >-
-  Ter a preferência do cliente. Ter pessoas comprometidas e felizes. 
+  Ter a preferência dos clientes satisfeita. Ter trabalhadores comprometidas e
+  felizes por aquilo que fazem. 
 
   Trabalhar com inovação e excelência.  
 
@@ -9,14 +10,15 @@ description: >-
 
 
   Acreditamos que nossos funcionários são o bem mais valioso, e é com esta
-  mentalidade, a empresa desenvolve, conduz cada projeto e operações diárias.
+  mentalidade que a empresa desenvolve, conduz cada projeto e operações diárias.
 
 
-  Nós nos esforçamos para atingir zero danos aos funcionários, clientes e
-  comunidade. 
+  Nos esforçamos para atingir zero danos aos nossos funcionários, clientes e
+  comunidade envolvida. 
 
 
-  Os sistemas de saúde e segurança da empresa são gerir os riscos, reduzindo e
-  eliminando potenciais preocupações de saúde e segurança.
+  O respeito pelo sistema de saúde e segurança nacional permite a empresa gerir
+  os riscos, reduzindo e eliminando potenciais preocupações de saúde e segurança
+  dos trabalhadores.
 ---
 

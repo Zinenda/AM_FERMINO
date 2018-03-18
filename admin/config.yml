@@ -6,7 +6,15 @@ backend:
   branch: master
 
 media_folder: "assets/img/uploads"
-  
+
+- label: "Sobre Nós"
+  name: "sobre"
+  file: "_data/sobre.yml"
+  fields:
+    - {label: "Titulo", name: "title", widget: "string"}
+    - {label: "Icone", name: "icon", default: "icon-circle", widget: "hidden"}
+    - {label: "Descrição", name: "description", widget: "text"}
+
 collections:
   - label: "Sobre"
     name: "sobre"

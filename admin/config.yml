@@ -8,17 +8,6 @@ backend:
 media_folder: "assets/img/uploads"
 
 collections:
-  - label: "Data"
-    name: "data"
-    files:
-      - label: "Sobre Info"
-        name: "sobre"  
-        file: "_data/sobre.yml"
-        fields:
-          - {label: "Titulo", name: "title", widget: "string"}
-          - {label: "Icone", name: "icon", default: "info-circle", widget: "hidden"}
-          - {label: "Descrição", name: "description", widget: "text"} 
-
   - label: "Sobre"
     name: "sobre"
     folder: "collections/_sobre"

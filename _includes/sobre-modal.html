@@ -7,8 +7,10 @@
         {% for item in site.sobre %}
             <div id="{{ item.title | downcase }}" class="col s12">
                 <div class="container">
-                    <h4 class="center-align">{{ item.title }}</h4>
-                    <p class="justified">{{ item.description }}</p>
+                    {% unless forloop.first %}
+                        <h4 class="center-align">{{ item.title }}</h4>
+                        <p class="justified">{{ item.description }}</p>
+                    {% endunless %}
                 </div>
             </div>
         {% endfor %}

@@ -2,13 +2,11 @@
     <section class="row">
         <article class="col s12 m6">
             <article class="container">
-                {% for item in site.data.sobre limit: 1 %}
+                {% for item in site.sobre limit: 1 %}
                     <h3 class="center-align">
-                        <i class="fas fa-{{ item.icon }}"></i>
-                        {{ item.title }}
+                        <i class="fas fa-info-circle"></i>
+                        Sobre
                     </h3>
-                    <br><br>
-
                     <p class="justified">{{ item.description }}</p>
                 {% endfor %}
 

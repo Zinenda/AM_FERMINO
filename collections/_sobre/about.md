@@ -1,6 +1,6 @@
-- title: Sobre
-  icon: info-circle
-  description: >-
+---
+title: Sobre
+description: >-
     AM Fermino é uma empresa privada de origem moçambicana, baseada na província
     de Tete, fundada em 2007 por Augusto Melo Fermino, o actual Director Geral.
 
@@ -13,3 +13,4 @@
     A AM Fermino, tem fortes ligações com empresas mineradoras, internacionais que
     exploram o carvão na província de Tete, providenciando consultoria nas áreas
     de Gestão Ambiental.
+---

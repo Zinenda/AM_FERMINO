@@ -11,7 +11,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-email-protect
   - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-analytics
 
 # Exclude from processing.

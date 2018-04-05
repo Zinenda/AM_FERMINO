@@ -1,20 +1,45 @@
-<section id="servicos" class="section primary-color-light white-text scrollspy">
-    <section>
-        <h3 class="center-align"><i class="fas fa-briefcase"></i> Serviços</h3><br><br>
+<section id="servicos" class="section scrollspy white-text">
+    <div class="container">
+        <h3 class="center-align">
+            <i class="fas fa-briefcase"></i> Serviços
+        </h3><hr>
 
-        <section class="row">
-            {% for item in site.servicos %}
-                <div class="col s12 l6">
-                    <div class="center">
-                        <i class="fa-3x fas fa-{{ item.icon }}"></i>
-                        <h4>{{ item.title }}</h4>
-                    </div>
-                    <hr>
-                    <p>{{ item.description }}</p>
+        {% for item in site.servicos limit: 1 %}
+            <div class="row">
+                <div class="col s12 l4">
+                    <h4 class="center-align" style="text-shadow: -2px 1px #444;">
+                        <i class="fab fa-2x fa-{{ item.icon }}"></i>
+                        <br>
+                        {{ item.title }}
+                    </h4>
                 </div>
-            {% endfor %}
-        </section>
-    </section>
+
+                <div class="col s12 l8">
+                    <p class="justify" style="text-shadow: -2px 1px #444;">{{ item.description }}</p>
+                </div>
+            </div>
+            <hr>
+        {% endfor %}
+
+        {% for item in site.servicos %}
+            {% unless forloop.first %}
+                <div class="row">
+                    <div class="col s12 l4">
+                        <h4 class="center-align" style="text-shadow: -2px 1px #444;">
+                            <i class="fas fa-2x fa-{{ item.icon }}"></i>
+                            <br>
+                            {{ item.title }}
+                        </h4>
+                    </div>
+
+                    <div class="col s12 l8">
+                        <p class="justify" style="text-shadow: -2px 1px #444;">{{ item.description }}</p>
+                    </div>
+                </div>
+                {% unless forloop.last %}<hr>{% endunless %}
+            {% endunless %}
+        {% endfor %}
+    </div>
 </section>
 
 <style>

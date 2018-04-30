@@ -41,6 +41,7 @@ collections:
   servicos:
   portfolio:
 
+# Pagination Settings
 pagination:
   enabled: true
   per_page: 15

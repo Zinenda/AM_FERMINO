@@ -1,0 +1,45 @@
+---
+title: Noticias
+pagination: 
+  enabled: true
+  collection: posts
+  permalink: '/noticias/:num/'
+layout: default
+---
+
+<header class="slider hide-on-small-only">
+	<ul class="slides">
+		{% for post in site.posts limit: 4 %}
+			<li>
+				<img src="{{ post.image }}" alt="{{ post.title }}">
+				<div class="caption center-align">
+					<h4>{{ post.title }}</h4>
+				</div>
+			</li>
+		{% endfor %}
+	</ul>
+</header>
+
+<section class="section white">
+	<div class="container">
+		<div class="row">
+			{% for post in paginator.posts %}
+				<article class="grey lighten-4">
+					<div class="col s12 l4">
+						<img src="{{ post.image }}" alt="{{ post.title }}">
+					</div>
+					<div class="col s12 l8">
+						<h5 class="bold">{{ post.title }}</h5>
+						<p>{{ post.content | truncatewords: 50 }}</p>
+						<div class="center">
+							<a href="{{ post.url }}" class="btn-large waves-effect waves-light">Leia Mais</a>
+							<a href="{{ post.document }}" class="btn-large btn-flat waves-effect waves-light">Documento PDF</a>
+						</div>
+					</div>
+				</article>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+
+{% include pagination.html %}

@@ -1,29 +1,25 @@
-<section id="noticias" class="section scrollspy primary-color-text center">
+<section id="noticias" class="section scrollspy primary-color-text grey lighten-4 center">
     <section class="container">
         <h3><i class="fas fa-newspaper"></i> Publicações</h3><br><br>
 
         <section class="row">
-            {% for post in site.posts limit: 3 %}
-                <article class="col s12 m4">
-                    <div class="card medium hoverable">
-                        <div class="card-image">
-                            <a href="{{ post.url }}">
-                                <img src="{{ post.image }}" alt="{{ post.title }}" class="waves-effect waves-block waves-light">
-                            </a>
-                        </div>
-
-                        <div class="card-content">
-                            <span class="card-title">
-                                <a href="{{ post.url }}" class="grey-text text-darken-4">{{ post.title }}</a>
-                            </span>
-                        </div>
-
-                        <div class="card-action primary-color-text">
-                            <a href="{{ post.url }}" class="btn waves-effect waves-light">Leia Mais</a>
-                            <a href="{{ post.document }}" class="btn-flat waves-effect" style="border: solid 1px lightgreen;">
-                                <i class="fas fa-download"></i> PDF
-                            </a>
-                        </div>
+            {% for post in site.posts limit: 2 %}
+                <article class="col s12 l6 white">
+                    <div class="row">
+                        <a href="{{ post.url }}" class="primary-color-text">
+                            <div class="col s12 l4">
+                                <img src="{{ post.image }}" alt="{{ post.title }}">    
+                            </div>
+                            <div class="col s12 l8">
+                                <p class="flow-text justify">{{ post.title }}</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="center">
+                        <a href="{{ post.url }}" class="btn waves-effect waves-light">Leia Mais</a>
+                        <a href="{{ post.document }}" class="btn-flat waves-effect" style="border: solid 1px lightgreen;">
+                            PDF <i class="fas fa-download"></i>
+                        </a>
                     </div>
                 </article>
             {% endfor %}

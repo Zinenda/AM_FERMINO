@@ -2,13 +2,33 @@
 layout: default
 ---
 
+<style>
+    .post-header {
+        position: relative;
+        height: 50vh;
+        background-image: url({{ page.image }});
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .post-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-shadow: -2px 2px #444;
+        text-align: center;
+    }
+</style>
+
 <section class="grey lighten-4">
-    <header class="parallax-container">
-        <div class="parallax">
-            <img src="{{ page.image | prepend: baseurl }}" alt="{{ page.title }}">
+    <header class="post-header">
+        <div class="post-title">
+            <h3>{{ page.title }}</h3>
         </div>
-        <br><br><br><br>
-        <h1 class="center-align primary-color-text">{{ page.title }}</h1>
     </header>
     
     <section class="section container">

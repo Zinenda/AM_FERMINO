@@ -6,6 +6,11 @@
     
     {% seo %}
 
+    {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+    {% for page in pages %}
+        <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}">
+    {% endfor %}
+
     <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
 

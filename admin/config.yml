@@ -8,33 +8,68 @@ backend:
 media_folder: "assets/img/uploads"
 
 collections:
+
+# Portugues
+
   - label: "Sobre"
     name: "sobre"
     folder: "collections/_sobre"
     create: true
+    filter: {field: "lang", value: "pt"}
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Descrição", name: "description", widget: "text"}
-
-  - label: "Portfolio"
-    name: "portfolio"
-    folder: "collections/_portfolio"
-    create: true
-    fields:
-      - {label: "Titulo", name: "title", widget: "string"}
-      - {label: "Imagem", name: "image", widget: "image"}
+      - {label: "Idioma", name: "lang", widget: "select", options: ["pt", "en"]}
+      - {label: "Área de Texto", name: "body", widget: "markdown"}
 
   - label: "Serviços"
     name: "servicos"
     folder: "collections/_servicos"
     create: true
+    filter: {field: "lang", value: "pt"}
     fields:
       - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Idioma", name: "lang", widget: "select", options: ["pt", "en"]}
       - label: "Icone"
         name: "icon"
         widget: "select"
         options: ["recycle", "tree", "deskpro", "exclamation-circle", "leaf"]
-      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Área de Texto", name: "body", widget: "markdown"}
+
+# Ingles
+
+  - label: "About"
+    name: "about"
+    folder: "collections/_sobre"
+    create: true
+    filter: {field: "lang", value: "en"}
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Language", name: "lang", widget: "select", options: ["pt", "en"]}
+      - {label: "Text Area", name: "body", widget: "markdown"}
+
+  - label: "Servies"
+    name: "services"
+    folder: "collections/_servicos"
+    create: true
+    filter: {field: "lang", value: "en"}
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Language", name: "lang", widget: "select", options: ["pt", "en"]}
+      - label: "Icons"
+        name: "icon"
+        widget: "select"
+        options: ["recycle", "tree", "deskpro", "exclamation-circle", "leaf"]
+      - {label: "Text Area", name: "body", widget: "markdown"}
+
+# Geral
+
+  - label: "Portfolio"
+      name: "portfolio"
+      folder: "collections/_portfolio"
+      create: true
+      fields:
+        - {label: "Titulo", name: "title", widget: "string"}
+        - {label: "Imagem", name: "image", widget: "image"}
 
   - label: "Posts"
     name: "posts"

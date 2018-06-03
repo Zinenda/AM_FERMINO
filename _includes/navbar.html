@@ -1,16 +1,34 @@
 <div class="navbar-fixed">
-    <nav>
-        <div class="nav-wrapper">
-            <div class="container">
-                <a href="/" class="brand-logo left" title="{{ site.title }}">{{ site.title }}</a>
-                <a data-target="sideNav" class="sidenav-trigger right">
-                    <i class="fas fa-2x fa-bars"></i>
-                </a>
+    <nav class="nav-extended">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" title="Logo" class="brand-logo left">{{ site.title }}</a>
+                <a class="sidenav-trigger right waves-effect waves-circle waves-light" data-target="sideNav"><i class="fas fa-bars"></i></a>
 
                 <ul class="right hide-on-med-and-down">
                     {% include nav.html %}
                 </ul>
             </div>
+        </div>
+
+        <div class="nav-content">
+            <a
+                href="tel:{{ site.phone }}"
+                class="btn-floating btn-large halfway-fab waves-effect waves-light hide-on-med-and-up"
+                data-position="top"
+                data-delay="50"
+                data-tooltip="Celular">
+                <i class="fas fa-phone"></i>
+            </a>
+
+            <a
+                href="mailto:{{ site.email }}"
+                class="btn-floating btn-large halfway-fab waves-effect waves-light hide-on-small-only"
+                data-position="top"
+                data-delay="50"
+                data-tooltip="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
         </div>
     </nav>
 </div>

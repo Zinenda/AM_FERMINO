@@ -1,14 +1,15 @@
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/solid.css" integrity="sha384-Rw5qeepMFvJVEZdSo1nDQD5B6wX0m7c5Z/pLNvjkB14W6Yki1hKbSEQaX9ffUbWe" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/fontawesome.css" integrity="sha384-GVa9GOgVQgOk+TNYXu7S/InPTfSDTtBalSgkgqQ7sCik56N9ztlkoTr2f/T44oKV" crossorigin="anonymous">
 
 <script src="/assets/js/jquery.min.js" defer></script>
 <script src="/assets/js/materialize.min.js" defer></script>
 <script src="/assets/js/masonry.pkgd.min.js" defer></script>
 <script src="/assets/js/main.js" defer></script>
 
-{% if page.title == "Portfólio" %}
+{% unless page.title == "AM Fermino" %}
     <link rel="stylesheet" href="/assets/css/lightbox.min.css">
     <script src="/assets/js/lightbox.min.js" defer></script>
-{% endif %}
+{% endunless %}
 
 <!-- netlify widget -->
 <script defer type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>

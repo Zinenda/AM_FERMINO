@@ -1,46 +1,31 @@
 <section id="servicos" class="section scrollspy white-text">
     <div class="container">
-        <h3 class="center-align">
-            <i class="fas fa-briefcase"></i> Serviços
-        </h3><hr>
+        <h4 class="center">
+            <i class="fas fa-briefcase"></i>
+            {% if page.lang == "pt" %}
+                Serviços
+                {% else %}
+                    Services
+            {% endif %}
+        </h4>
 
-        {% for item in site.servicos limit: 1 %}
-            <div class="row">
-                <div class="col s12 l4">
-                    <h4 class="center-align" style="text-shadow: -2px 1px #444;">
-                        <i class="fab fa-2x fa-{{ item.icon }}"></i>
-                        <br>
-                        {{ item.title }}
-                    </h4>
+        <div class="row">
+            {% assign servicos=site.servicos | where:"lang", page.lang %}
+            {% for item in servicos %}
+                <div class="col s12 l4 center">
+                    <i class="fas fa-3x fa-{{ item.icon }}"></i>
+                    <h5>{{ item.title }}</h5>
                 </div>
 
-                <div class="col s12 l8">
-                    <p class="justify" style="text-shadow: -2px 1px #444;">{{ item.description }}</p>
-                </div>
-            </div>
-            <hr>
-        {% endfor %}
-
-        {% for item in site.servicos %}
-            {% unless forloop.first %}
-                <div class="row">
-                    <div class="col s12 l4">
-                        <h4 class="center-align" style="text-shadow: -2px 1px #444;">
-                            <i class="fas fa-2x fa-{{ item.icon }}"></i>
-                            <br>
-                            {{ item.title }}
-                        </h4>
-                    </div>
-
-                    <div class="col s12 l8">
-                        <p class="justify" style="text-shadow: -2px 1px #444;">{{ item.description }}</p>
-                    </div>
+                <div class="col s12 l8 justify">
+                    {{ item.content }}
                 </div>
                 {% unless forloop.last %}<hr>{% endunless %}
-            {% endunless %}
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
 </section>
+
 
 <style>
     #servicos {

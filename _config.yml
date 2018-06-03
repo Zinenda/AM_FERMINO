@@ -1,8 +1,13 @@
 title: AM Fermino
 email: info@amfermino.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Soluções Ambientais
-url: "http://amfermino.com" # the base hostname & protocol for your site, e.g. http://example.com
+description:
+  pt: Soluções Ambientais
+  en: Environmental Solutions
+url: "https://amfermino.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+index:
+  pt:
+  en: index-en.html
 
 # Build settings
 markdown: kramdown

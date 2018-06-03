@@ -4,12 +4,13 @@
     </div>
 
     <section class="row">
-        {% for item in site.sobre %}
+        {% assign sobre=site.sobre | where:"lang", page.lang %}
+        {% for item in sobre %}
             <div id="{{ item.title | downcase }}" class="col s12">
                 <div class="container">
                     {% unless forloop.first %}
                         <h4 class="center-align">{{ item.title }}</h4>
-                        <p class="justified">{{ item.description }}</p>
+                        <p class="justified">{{ item.content }}</p>
                     {% endunless %}
                 </div>
             </div>

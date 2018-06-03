@@ -1,8 +1,21 @@
 <div class="fixed-action-btn">
-    <a href="tel:+258 85 037 5028" class="btn-floating btn-large waves-effect waves-light hide-on-med-and-up">
-        <i class="fas fa-phone"></i>
-    </a>
-    <a href="mailto:{{ site.email }}" class="btn-floating btn-large waves-effect waves-light hide-on-small-only">
-        <i class="fas fa-envelope"></i>
-    </a>
+    {% if page.title == "AM Fermino" %}
+        <a class="btn-floating btn-large waves-effect waves-light">
+            <i class="fas fa-globe"></i>
+        </a>
+
+        <ul>
+            {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+            {% for page in pages %}
+                <li>
+                    <a href="{{ page.url }}" class="btn-floating waves-effect waves-light">{{ page.lang | upcase }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        {% else %}
+            <a href="/{% if page.lang == "en" %}index-en/{% endif %}" class="btn-floating btn-large waves-effect waves-light">
+                <i class="fas fa-home"></i>
+            </a>
+    {% endif %}
 </div>

@@ -1,19 +1,41 @@
-- link: /
-  title: Home
-  icon: home
+pt:
+  sobre:
+    title: Sobre
+    icon: info-circle
+    url: "#sobre"
 
-- link: "#sobre"
-  title: Sobre
-  icon: info
+  servicos:
+    title: Serviços
+    icon: briefcase
+    url: "#servicos"
 
-- link: "#servicos"
-  title: Serviços
-  icon: briefcase
+  portfolio:
+    title: Portfolio
+    icon: image
+    url: "#portfolio"
 
-- link: "#portfolio"
-  title: Portfólio
-  icon: image
+  noticias:
+    title: Publicações
+    icon: newspaper
+    url: "#noticias"
 
-- link: "#noticias"
-  title: Publicações
-  icon: newspaper
+en:
+  sobre:
+    title: About
+    icon: info-circle
+    url: "#sobre"
+
+  servicos:
+    title: Services
+    icon: briefcase
+    url: "#servicos"
+
+  portfolio:
+    title: Portfolio
+    icon: image
+    url: "#portfolio"
+
+  noticias:
+    title: News
+    icon: newspaper
+    url: "#noticias"

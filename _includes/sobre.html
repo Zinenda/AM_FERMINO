@@ -1,26 +1,32 @@
 <section id="sobre" class="section scrollspy primary-color-text">
-    <section class="row">
-        <article class="col s12 m6">
-            <article class="container">
-                {% for item in site.sobre limit: 1 %}
-                    <h3 class="center-align">
-                        <i class="fas fa-info-circle"></i>
-                        Sobre
-                    </h3>
-                    <p class="justified">{{ item.description }}</p>
-                {% endfor %}
+    <article class="container">
+        {% assign sobre=site.sobre | where:"lang", page.lang %}
+        {% for item in sobre limit: 1 %}
+            <h4 class="center-align"><i class="fas fa-{{ item.icon }}"></i> {{ item.title }}</h4>
+            <div class="container grey-text text-darken-4 justify">
+                {{ item.content }}
+            </div>
+        {% endfor %}
 
-                <div class="center">
-                    <button class="btn-large waves-effect waves-light modal-trigger" data-target="sobre-modal">Saiba Mais</button>
-                    <a href="mailto:{{ site.email }}" class="btn-large btn-flat waves-effect waves-primary">Contacte-nos</a>
-                </div>
-            </article>
-        </article>
-
-        <div class="col s12 m6 hide-on-small-only">
-            <img src="{{ site.image }}" alt="{{ site.title }}">
+        <div class="center">
+            <button class="btn waves-effect waves-light modal-trigger" data-target="sobre-modal">
+                {% if page.lang == "pt" %}
+                    Saiba Mais
+                    {% else %}
+                        More
+                {% endif %}
+            </button>
+                    
+            <a href="#contact-form" class="btn-flat waves-effect waves-primary modal-trigger">
+                {% if page.lang == "pt" %}
+                    Contacte-nos
+                    {% else %}
+                        Contact Us
+                {% endif %}
+            </a>
         </div>
-    </section>
+    </article>
 </section>
 
 {% include sobre-modal.html %}
+{% include contact-form.html %}

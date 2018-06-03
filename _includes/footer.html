@@ -16,14 +16,13 @@
             </div>
 
             <div class="col s12 l4">
-                <h5>Contacte-nos</h5>   
-                {% include contact-form.html %}
+                <h5>Contacte-nos</h5>
             </div>
         </div>
     </div>
     <div class="footer-copyright">
         <div class="container center">
-            &copy; {{ site.time | date: "%Y" }} {{ site.title }} - {{ site.description }}. Todos Direitos Reservados | Powered by <a href="https://izitag.github.io" title="IZItag">IZItag</a>
+                &copy; {{ site.time | date: "%Y" }} {% if page.lang == "pt" %}Todos Direitos Reservados {% else %} All Rights Reserved{% endif %} | {{ site.title }} - {{ site.description[page.lang] }} | Powered by <a href="https://izitag.github.io" title="IZItag">IZItag</a>
         </div>
     </div>
 </footer>

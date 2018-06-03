@@ -1,5 +1,12 @@
 <section id="portfolio" class="section scrollspy primary-color-light white-text">
-    <h3 class="center-align"><i class="fas fa-image"></i> Portfólio</h3><br><br>
+    <h3 class="center-align">
+        <i class="fas fa-image"></i>
+        {% if page.lang == "pt" %}
+            Portfólio
+            {% else %}
+                Portfolio
+        {% endif %}
+    </h3>
 
     <section class="container">
         <section id="masonry-grid" class="row">
@@ -11,7 +18,11 @@
         </section>
 
         <div class="center">
-            <a href="/portfolio/" class="btn-large waves-effect waves-light">Veja Mais</a>
+            {% if page.lang == "pt" %}
+                <a href="/portfolio-pt/" class="btn-large waves-effect waves-light">Veja Mais</a>
+                {% else %}
+                    <a href="/portfolio-en/" class="btn-large waves-effect waves-light">See More</a>
+            {% endif %}
         </div>
     </section>
 </section>

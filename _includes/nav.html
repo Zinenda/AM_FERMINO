@@ -1,7 +1,7 @@
-{% for item in site.data.nav %}
+{% for item in site.data.nav[page.lang] %}
     <li>
-        <a href="{% if page.layout == "page" %}/{% endif %}{{ item.link }}" title="{{ item.title }}" class="waves-effect waves-light">
-            <i class="fas fa-{{ item.icon }} fa-fw"></i> {{ item.title }}
+        <a href="{{ item[1].url }}" title="{{ item[1].title }}" class="waves-effect waves-primary {% if item.hightlight %}modal-trigger{% endif %}">
+            <i class="fas fa-fw fa-{{ item[1].icon }}"></i> {{ item[1].title }}
         </a>
     </li>
 {% endfor %}

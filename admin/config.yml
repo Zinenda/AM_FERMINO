@@ -64,12 +64,12 @@ collections:
 # Geral
 
   - label: "Portfolio"
-      name: "portfolio"
-      folder: "collections/_portfolio"
-      create: true
-      fields:
-        - {label: "Titulo", name: "title", widget: "string"}
-        - {label: "Imagem", name: "image", widget: "image"}
+    name: "portfolio"
+    folder: "collections/_portfolio"
+    create: true
+    fields:
+      - {label: "Titulo", name: "title", widget: "string"}
+      - {label: "Imagem", name: "image", widget: "image"}
 
   - label: "Posts"
     name: "posts"

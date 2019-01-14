@@ -5,4 +5,6 @@ image: /assets/img/uploads/carvaomtz.jpg
 document: /assets/img/uploads/carvaomtz.jpg
 layout: post
 ---
+No dia 16 de Janeiro de 2019, no Hotel Moatize haverá uma reuniao de consulta pública para discutir o rascunho apresentado em anexo. Sao todos convidados a participar
+
 Documento acessivel por meio do link: [Programa de Gestão Ambiental da Mina de Carvão ](https://drive.google.com/file/d/0B46PkUUTkCbtMW54Tzd5cDV3Y29nb1JYYlpUQi1ScTQzX3Jv/view?usp=sharing)

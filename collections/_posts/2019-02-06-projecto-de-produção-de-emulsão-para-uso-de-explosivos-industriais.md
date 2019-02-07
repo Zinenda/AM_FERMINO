@@ -5,4 +5,4 @@ image: /assets/img/uploads/hero-explosive-emulsifiers.jpg
 document: /assets/img/uploads/epda_mozaex-sa.pdf
 layout: post
 ---
-O presente Projecto trata- se de Produção de Emulsão para uso em Explosivos Industriais, um projecto da MozaEx.
+No dia 20 de Fevereiro com inicio a partir das 9h no local de reunião da comunidade de cauje vai se realizar uma consulta comunitaria do projecto de producão de emulsões para uso de explosivos industriais, são todos convidados a participar

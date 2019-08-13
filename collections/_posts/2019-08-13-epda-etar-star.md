@@ -1,5 +1,5 @@
 ---
-title: 'EPDA ETAR STAR '
+title: 'EPDA ETA STAR '
 date: '2019-08-13T12:16:04+02:00'
 image: /assets/img/uploads/novo logotipo a4.jpg
 document: /assets/img/uploads/epda-etar-star-v1_3-.docx

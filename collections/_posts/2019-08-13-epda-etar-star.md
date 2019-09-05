@@ -5,6 +5,6 @@ image: /assets/img/uploads/novo logotipo a4.jpg
 document: /assets/img/uploads/epda-etar-star-v2_3-copy.pdf
 layout: post
 ---
-No dia 27 de Agosto de 2019, será realizada uma reunião  pública aberta, na comunidade de Nhamphiripiri, com início  marcado para as 09:00 horas.
+No dia 27 de Agosto de 2019, Realizou-se uma reunião  pública aberta, na comunidade de Nhamphiripiri, teve início  marcado para as 09:00 horas.
 
-Discutiremos as constatações nele constante e recolheremos contribuições das partes afectadas e interessadas.
+Discutiu-se as constatações nele constante e recolhemos contribuições das partes afectadas e interessadas.

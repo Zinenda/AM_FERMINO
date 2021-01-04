@@ -1,13 +1,12 @@
 title: AM Fermino
 email: info@amfermino.com
 phone: +258846077941
-description:
-  pt: Soluções Ambientais
-  en: Environmental Solutions
+description: >-
+  Soluções Ambientais
 url: "https://amfermino.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 index:
-  pt:
+  pt: index.html
   en: index-en.html
 
 # Build settings
@@ -17,7 +16,6 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-email-protect
   - jekyll-seo-tag
-  - jekyll-analytics
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

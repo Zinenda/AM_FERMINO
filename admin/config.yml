@@ -47,7 +47,7 @@ collections:
       - {label: "Language", name: "lang", widget: "select", options: ["pt", "en"]}
       - {label: "Text Area", name: "body", widget: "markdown"}
 
-  - label: "Servies"
+  - label: "Services"
     name: "services"
     folder: "collections/_servicos"
     create: true

@@ -1,10 +1,10 @@
 ---
 title: >-
-  Reunião de Auscultação Publica  do projecto de extracção de carvão mineral da
+  Reunião de Auscultação Publica do projecto de extracção de carvão mineral da
   Minas Moatize Lda
 date: '2021-08-24T21:00:00+02:00'
 image: /assets/img/uploads/1547624036075-1543222567.jpg
-document: /assets/img/uploads/volume-ii-adenda-do-eia-minas-moatize-v3-.pdf
+document: /assets/img/uploads/volume-iii-adenda-do-eia-minas-moatize-v3-.pdf
 layout: post
 ---
 A Minas Moatize Limitada pretende instalar uma nova planta de processamento dentro da sua área de concessão mineira localizada no Bairro Chithatha, Município de Moatize, Província de Tete. Para além disso, a mesma empresa pretende alterar os lugares de deposição de rejeitos e material inerte para outros lugares. 

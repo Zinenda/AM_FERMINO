@@ -15,4 +15,4 @@ Em cumprimento desta recomendação, foi marcada a segunda reunião de consulta 
 
 •	Dia 24 de Agosto de 2021 pelas 9 horas – Encontro com representantes das Unidades 1 e 2 do Bairro Chithatha (30 participantes no máximo);
 
-•	Dia 25 de Agosto de 2021 pelas 9 horas – Encontro com representantes das Unidades 3 e 4 do Bairro Chithatha (30 participantes no máximo)
+•	Dia 25 de Agosto de 2021 pelas 9 horas – Encontro com representantes das Unidades 3 e 4 do Bairro Chithatha (30 participantes no máximo).

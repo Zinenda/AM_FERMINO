@@ -1,0 +1,55 @@
+<style>
+    #servicos {
+        background-image: linear-gradient(rgba(73,115,61,0.7), rgba(73,115,61,0.7)), url(/assets/img/naturePattern.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+</style>
+
+<section id="servicos" class="section scrollspy white-text">
+    <div class="container">
+        <h4 class="text-title">
+            {% if page.lang == "pt" %}
+                Nossos Serviços
+                {% else %}
+                    Our Services
+            {% endif %}
+        </h4>
+
+        {% assign servicos=site.servicos | where:"lang", page.lang %}
+        <div class="slick-servicos">
+            {% for item in servicos %}
+                <div style="border: 1px #f5f5f5 solid;" class="card medium transparent">
+                    <div class="card-content">
+                        <div class="center">
+                            <i class="fas fa-3x fa-{{ item.icon }}"></i>
+                            
+                            <h6>{{ item.title }}</h6>
+                        </div>
+
+                        <article class="light text-title text-justified">
+                            {{ item.content | truncatewords: 20 }}
+                        </article>
+                    </div>
+
+                    <div class="card-action">
+                        <a href="#servicos{{ forloop.index }}" class="btn-flat modal-trigger white-text waves-effect waves-primary">{% if page.lang == "pt" %}Leia Mais{% else %}Read More{% endif %}</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% for item in servicos %}
+    <div id="servicos{{ forloop.index }}" class="modal">
+        <div class="container modal-content">
+            <h6 class="text-title primary-color-text">{{ item.title }}</h6>
+
+            <article class="light text-justified">
+                {{ item.content }}
+            </article>
+        </div>
+    </div>
+{% endfor %}

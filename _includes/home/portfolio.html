@@ -1,0 +1,31 @@
+<section class="section scrollspy section-grid" id="portfolio">
+    <div class="container">
+        <h4 class="text-title primary-color-text">
+            {% if page.lang == "pt" %}
+                Nosso Portfólio
+                {% else %}
+                    Our Portfolio
+            {% endif %}
+        </h4>
+
+        <p class="text-title light">Aprecie o nosso Portfólio de serviços prestados ao longo dos anos da nossa existência.</p>
+
+        {% if page.lang == "pt" %}
+            <a href="/portfolio-pt/" class="btn-large waves-effect waves-light">Veja Mais</a>
+            {% else %}
+                <a href="/portfolio-en/" class="btn-large waves-effect waves-light">See More</a>
+        {% endif %}
+    </div>
+
+    <div class="container">
+        <ul>
+            {% for item in site.portfolio limit: 1 %}
+                <li>
+                    <a href="{{ item.image }}" data-lightbox="portfolio" data-title="{{ item.title }}">
+                        <img src="{{ item.image }}" alt="{{ item.title }}">
+                    </a>
+                </li>      
+            {% endfor %}
+        </ul>
+    </div>
+</section>

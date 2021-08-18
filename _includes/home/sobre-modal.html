@@ -1,0 +1,14 @@
+<div id="sobre-modal" class="modal">
+    <div class="container modal-content">
+        {% assign sobre=site.sobre | where:"lang", page.lang %}
+        {% for item in sobre %}
+            {% unless forloop.first %}
+                <h5 class="text-title primary-color-text">{{ item.title }}</h5>
+                
+                <article class="light text-justified">
+                    {{ item.content }}
+                </article>
+            {% endunless %}
+        {% endfor %}
+    </div>
+</div>

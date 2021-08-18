@@ -1,0 +1,19 @@
+{% include fonts.html %}
+
+<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+<!-- Materialize -->
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<!-- Lazy Loading-->
+<script defer src="/assets/js/lazyloading.js"></script>
+
+{% include scripts/aos.html %}
+
+{% include scripts/lightbox.html %}
+
+{% if page.layout == "default" %}
+	{% include scripts/slick-carousel.html %}
+{% endif %}
+
+<script defer src="/assets/js/init.js"></script>

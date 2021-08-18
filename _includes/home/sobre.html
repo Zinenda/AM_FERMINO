@@ -1,0 +1,24 @@
+<section class="section-grid-no-gap section scrollspy no-pad" id="sobre">
+    <img src="/assets/img/pexels-singkham-1108572.jpg" alt="">
+
+    <section class="container" style="padding-top: 10%;">
+        {% assign sobre=site.sobre | where:"lang", page.lang %}
+        {% for item in sobre limit: 1 %}
+            <h4 class="text-title primary-color-text">{{ item.title }}</h4>
+            
+            <article class="text-justified">
+                {{ item.content }}
+            </article>
+        {% endfor %}
+
+        <button class="btn-large waves-effect waves-light modal-trigger" data-target="sobre-modal">
+            {% if page.lang == "pt" %}
+                Saiba Mais
+                {% else %}
+                    More
+            {% endif %}
+        </button>
+    </section>
+</section>
+
+{% include home/sobre-modal.html %}

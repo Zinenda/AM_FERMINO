@@ -1,0 +1,19 @@
+<section id="clientes" class="section scrollspy grey lighten-4">
+    <div class="container">
+        <h5 class="text-title primary-color-light-text">
+            {% if page.lang == "pt" %}
+                Clientes & Parceiros
+                
+                {% else %}
+                    Clients & Partners
+            {% endif %}
+        </h5>
+        <div class="text-title slick-clientes">
+            {% for item in site.clientes %}
+                <div>
+                    <img data-lazy="{{ item.image }}?nf_resize=fit&w=100" alt="{{ item.company }}" style="width: 100px; padding-left: 10px;">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

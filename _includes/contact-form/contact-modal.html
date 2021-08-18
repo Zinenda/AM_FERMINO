@@ -1,0 +1,14 @@
+<div id="contactos" class="modal">
+    <div class="modal-content container">
+        <h5 class="primary-color-text center text-title">
+            {% if page.lang == "pt" %}
+                Fale Connosco
+
+                {% else %}
+                    Talk to Us
+            {% endif %}
+        </h5>
+
+        {% include contact-form/form.html %}
+    </div>
+</div>

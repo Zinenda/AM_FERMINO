@@ -1,0 +1,26 @@
+<div class="navbar-fixed">
+    <nav class="nav-extended white">
+        <div class="nav-wrapper">
+            <a href="/" title="Logotipo" class="brand-logo left">{% include nav/logotipo.svg %}</a>
+            <a class="sidenav-trigger waves-effect waves-circle waves-light" data-target="sideNav"><i class="fas fa-bars"></i></a>
+
+            <ul class="right hide-on-med-and-down">
+                {% include nav/nav.html %}
+
+                <li>
+                    <a href="#contactos" class="btn-large waves-effect waves-primary modal-trigger">
+                        {% if page.lang == "pt" %}
+                            Contacte-nos
+                            {% else %}
+                                Contact Us
+                        {% endif %}
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nav-content">
+            <a href="#contactos" class="btn-large btn-floating halfway-fab waves-effect waves-primary modal-trigger hide-on-large-only"><i class="fas fa-lg fa-paper-plane"></i></a>
+        </div>
+    </nav>
+</div>

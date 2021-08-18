@@ -1,0 +1,33 @@
+<section class="section scrollspy section-grid" id="noticias">
+    <div class="container" style="padding: 20% 0;">
+        <h4 class="text-title primary-color-text">
+            {% if page.lang == "pt" %}
+                Publicações
+                {% else %}
+                    News
+            {% endif %}
+        </h4>
+
+        <p class="text-title light">Publicações publicas sobre propostas de projectos que implementamos ou pretendemos implementar.</p>
+    </div>
+
+    <div class="container">
+        <ul>
+            {% for post in site.posts limit: 3 %}
+                <li class="card large hoverable">
+                    <div class="card-image">
+                        <img src="{{ post.image }}" alt="{{ post.title }}">
+                    </div>
+    
+                    <div class="card-content">
+                        <span class="card-title bolder primary-color-text">{{ post.title }}</span>
+                    </div>
+    
+                    <div class="card-action">
+                        <a href="{{ post.url }}" title="{{ post.title }}" class="btn waves-effect waves-light">{% if page.lang == "pt" %} Leia Mais {% else %} Read More {% endif %}</a> | <a href="{{ post.document }}" class="btn-flat waves-effect waves-primary primary-color-text" target="_blank" style="border: solid 1px {{ site.color }};">Leia o Documento <i class="fas fa-download"></i></a>
+                    </div>
+                </li>        
+            {% endfor %}
+        </ul>
+    </div>
+</section>

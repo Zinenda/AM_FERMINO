@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="input-field">
+        <i class="fas fa-comment-alt prefix"></i>
+        <textarea name="Mensagem" id="message" class="materialize-textarea validate" validate></textarea>
+        <label for="message">
+            {% if page.lang == "pt" %}
+                Mensagem
+
+                {% else %}
+                    Message
+            {% endif %}
+        </label>
+    </div>
+</div>

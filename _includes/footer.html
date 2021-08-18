@@ -1,27 +1,61 @@
-<footer class="page-footer primary-color-dark">
+<footer id="footer" class="page-footer grey darken-4 white-text">
     <div class="container">
-        <div class="row">
-            <div class="col s12 l4">
-                <h5>Localização</h5>
-                Bairro Chingodzi <br>
-                Unidade 25 de Setembro <br>
-                Tete, Moçambique
+        <div class="section-grid">
+            <div class="text-title">
+                <img src="{{ site.image }}" style="width: 50%;" alt="Logotipo {{ site.title }}">
             </div>
 
-            <div class="col s12 l4">
-                <h5>Contactos</h5>
-                Cel: <a href="tel:{{ site.phone }}" class="white-text" title="Celular"> {{ site.phone }} </a> <br>
-                Email: <a href="mailto:{{ site.email }}" class="white-text" title="Email">{{ site.email }}</a>
-            </div>
+            <article>
+                {% assign servicos=site.servicos | where:"lang", page.lang %}
+                <h6>
+                    {% if page.lang == "pt" %}
+                        Nossos Serviços
 
-            <div class="col s12 l4">
-                <h5>Contacte-nos</h5>
-            </div>
+                        {% else %}
+                            Our Services
+                    {% endif %}
+                </h6>
+
+                <ul>
+                    {% for item in servicos %}
+                        <li>
+                            <a href="#servicos{{ forloop.index }}" class="modal-trigger white-text"><i class="fas fa-caret-right"></i> {{ item.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </article>
+
+            <article>
+                <h6>
+                    {% if page.lang == "pt" %}
+                        Localize-nos
+
+                        {% else %}
+                            Find us
+                    {% endif %}
+                </h6>
+                
+                <ul>
+                    <li>Bairro Chingodzi</li>
+                    <li>Unidade 25 de Setembro</li>
+                    <li>Tete, Moçambique</li>
+                    <hr>
+                    <li><i class="fas fa-mobile"></i> <a href="tel:+{{ site.phone }}" class="white-text" title="Celular"> +{{ site.phone }} </a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}" class="white-text">{{ site.email }}</a></li>
+                </ul>
+            </article>
         </div>
     </div>
+    <div class="divider"></div>
     <div class="footer-copyright">
         <div class="container center">
-                &copy; {{ site.time | date: "%Y" }} {% if page.lang == "pt" %}Todos Direitos Reservados {% else %} All Rights Reserved{% endif %} | {{ site.title }} - {{ site.description[page.lang] }} | Powered by <a href="https://izitag.github.io" title="IZItag">IZItag</a>
+            <ul class="section-grid-no-gap" style="font-size: small;">
+                <li>&copy; {{ site.time | date: "%Y" }} {% if page.lang == "pt" %}Todos Direitos Reservados {% else %} All Rights Reserved {% endif %}</li>
+
+                <li>{{ site.title }} - {% if page.lang == "pt" %}{{ site.description }} {% else %} Quality, Excellence and Innovation{% endif %}</li>
+
+                <li>Designed by <a href="https://izitech.co" title="IZITech" rel="author" target="_blank" class="white-text">IZITech</a></li>
+            </ul>
         </div>
     </div>
 </footer>

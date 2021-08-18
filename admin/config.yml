@@ -3,7 +3,7 @@ backend:
   accept_roles:
     - admin
     - client
-  branch: master
+  branch: main
 
 media_folder: "assets/img/uploads"
 

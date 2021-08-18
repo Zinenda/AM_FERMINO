@@ -6,6 +6,6 @@
   "author": "Ivo Zinenda <izinenda@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "materialize-css": "next"
+    "materialize-css": "^1.0.0-rc.2"
   }
 }

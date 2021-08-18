@@ -13,20 +13,6 @@ select {
   height: $input-height;
 }
 
-
-.input-field {
-  select {
-    display: block;
-    position: absolute;
-    width: 0;
-    pointer-events: none;
-    height: 0;
-    top: 0;
-    left: 0;
-    opacity: 0;
-  }
-}
-
 .select-label {
   position: absolute;
 }
@@ -48,7 +34,8 @@ select {
   }
 
   &.invalid {
-    & > input.select-dropdown {
+    & > input.select-dropdown,
+    & > input.select-dropdown:focus {
       @extend %invalid-input-style;
     }
 
@@ -138,6 +125,12 @@ select:disabled {
   background-color: transparent;
 }
 
+body.keyboard-focused {
+  .select-dropdown.dropdown-content li:focus {
+    background-color: $select-option-focus;
+  }
+}
+
 .select-dropdown.dropdown-content {
   li {
     &:hover {
@@ -146,10 +139,6 @@ select:disabled {
 
     &.selected {
       background-color: $select-option-selected;
-    }
-
-    &:focus {
-      background-color: $select-option-focus;
     }
   }
 }

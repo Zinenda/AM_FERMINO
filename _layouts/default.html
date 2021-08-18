@@ -6,14 +6,23 @@ layout: compress
 <html lang="{{ page.lang }}">
     {% include head.html %}
     <body id="top">
-        {% include navbar.html %}
-        {% include sidenav.html %}
+        {% include nav/navbar.html %}
+        {% include nav/sidenav.html %}
         
         <main class="animate-bottom">
-            {{ content }}
+            {% unless page.layout == "post" %}
+                {% include header/page-header.html %}
+            {% endunless %}
+            
+            <section id="main" class="section no-pad scrollspy">
+                {{ content }}
+            </section>
+
+            {% include contact-form/contact-modal.html %}
+
             {% include fab.html %}
         </main>
 
         {% include footer.html %}
 
-        {% include scripts.html %}
+        {% include scripts/scripts.html %}

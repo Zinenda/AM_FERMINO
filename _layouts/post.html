@@ -6,7 +6,7 @@ layout: default
     .post-header {
         position: relative;
         height: 50vh;
-        background-image: url({{ page.image }});
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url({{ page.image }});
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -19,7 +19,7 @@ layout: default
         left: 50%;
         transform: translate(-50%, -50%);
         color: #fff;
-        text-shadow: -2px 2px #444;
+        text-shadow: -3px 3px #000;
         text-align: center;
     }
 </style>
@@ -33,7 +33,7 @@ layout: default
     
     <section class="section container">
         <section class="row">
-            <article class="col s12 white hoverable">
+            <article class="col s12 white">
                 <div class="container">
                     {{ content }}
 

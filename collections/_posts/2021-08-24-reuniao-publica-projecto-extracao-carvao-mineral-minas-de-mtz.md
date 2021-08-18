@@ -1,6 +1,7 @@
 ---
 title: >-
-  Reunião de Auscultação Publica do projecto de extracção de carvão mineral da Minas Moatize, Lda
+  Reunião de Auscultação Publica do projecto de extracção de carvão mineral da
+  Minas Moatize, Lda
 date: '2021-08-18T09:00:00+02:00'
 image: /assets/img/uploads/reuniaominasmtz.jpg
 document: /assets/img/uploads/volum…ia-minas-moatize-v3-.pdf

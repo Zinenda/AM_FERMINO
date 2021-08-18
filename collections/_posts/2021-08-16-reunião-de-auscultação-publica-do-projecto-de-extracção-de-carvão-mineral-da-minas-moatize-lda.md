@@ -2,7 +2,7 @@
 title: >-
   Reunião de Auscultação Publica do projecto de extracção de carvão mineral da
   Minas Moatize Lda
-date: '2021-08-24T21:00:00+02:00'
+date: '2021-08-18T21:00:00+02:00'
 image: /assets/img/uploads/1547624036075-1543222567.jpg
 document: /assets/img/uploads/volume-ii-adenda-do-eia-minas-moatize-v3-.pdf
 layout: post

@@ -27,7 +27,8 @@ layout: default
 <section class="grey lighten-4">
     <header class="post-header">
         <div class="post-title">
-            <h3>{{ page.title }}</h3>
+            <h3 class="hide-on-small-only">{{ page.title }}</h3>
+            <h5 class="hide-on-med-and-up">{{ page.title }}</h5>
         </div>
     </header>
     
@@ -36,12 +37,6 @@ layout: default
             <article class="col s12 white">
                 <div class="container">
                     {{ content }}
-
-                    <div class="center">
-                        <a href="{{ page.document }}" title="Documento Completo" class="btn-large waves-effect waves-light">
-                            <i class="fas fa-download"></i> Projecto Completo
-                        </a>
-                    </div>
                 </div>
             </article>
         </section>

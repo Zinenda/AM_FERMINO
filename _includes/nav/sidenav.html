@@ -6,12 +6,6 @@
     </div>
     <div class="divider"></div>
     <ul>
-        {% for item in site.data.nav %}
-            <li>
-                <a href="{% if page.layout == "page" %}/{% endif %}{{ item.link }}" title="{{ item.title }}" class="waves-effect waves-primary">
-                    <i class="fas fa-{{ item.icon }} fa-fw"></i> {{ item.title }}
-                </a>
-            </li>
-        {% endfor %}
+        {% include nav/nav.html %}
     </ul>
 </aside>

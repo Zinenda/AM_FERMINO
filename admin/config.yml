@@ -1,11 +1,11 @@
 backend:
   name: git-gateway
-  accept_roles:
-    - admin
-    - client
+  use_large_media_transforms_in_media_library: false
   branch: main
 
 media_folder: "assets/img/uploads"
+
+logo_url: 'https://izitech.co/assets/img/IZILogotipo.svg'
 
 collections:
 

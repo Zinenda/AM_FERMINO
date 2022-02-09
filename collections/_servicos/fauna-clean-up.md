@@ -3,7 +3,7 @@ title: Fauna Animal Clean Up
 lang: en
 icon: paw
 ---
-We do wildlife control work in residences and especially in areas of vegetation suppression to rid the environment and reduce the impact of vegetation suppression on wildlife.
+We do wildlife capture work in residences and especially in areas of vegetation suppression to rid the environment and reduce the impact of vegetation suppression on wildlife.
 
 The company has a large team of professionals with extensive experience capturing and relocating venomous animals and others.
 

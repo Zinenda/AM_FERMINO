@@ -1,10 +1,6 @@
 ---
 title: Environmental Consulting
-icon: exclamation-circle
 lang: en
+icon: exclamation-circle
 ---
-
-Accomplishment of environmental consulting work in several areas.
-
-AM Fermino has already carried out environmental impact assessments of several projects in
-areas, with more emphasis on mining activities and other natural resources.
+We carry out a variety of environmental consultancy work. AM Fermino has carried out environmental impact assessments of various projects with more emphasis on mining activities and other natural resources.

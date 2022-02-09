@@ -1,14 +1,8 @@
 ---
 title: Forest and Wildlife Management
-icon: tree
 lang: en
+icon: tree
 ---
+With a team of capable senior technicians, coordinated by a Forest Engineer authorised to carry out forest inventories, AM Fermino has carried out forest inventories and management plans for areas under simple licences and forestry concessions.
 
-With a team of capable technicians, coordinated by an Engineer
-authorized to carry out forestry inventories, AM Fermino
-has carried out forest inventories and management plans of license areas
-simple and forest concessions.
-
-AM Fermino's experience includes the elaboration of management plans
-fauna, especially for wild animals on land and in
-waters (crocodile rearing and fattening projects)
+AM Fermino's experience includes preparing faunal management plans, especially for wildlife farms on land and water (crocodile breeding and fattening projects).

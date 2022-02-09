@@ -1,23 +1,12 @@
 ---
 title: Fauna Animal Clean Up
-icon: paw
 lang: en
+icon: paw
 ---
+We do wildlife control work in residences and especially in areas of vegetation suppression to rid the environment and reduce the impact of vegetation suppression on wildlife.
 
-Scourging of wildlife in homes and especially in
-plant suppression areas in order to rid the environment and reduce the impact of
-plant suppression on wildlife.
+The company has a large team of professionals with extensive experience capturing and relocating venomous animals and others.
 
-The company has a large team of
-professionals with extensive experience in animal capture and relocation
-venomous and others.
+For several years AM Fermino has worked with mining companies that have carried out massive deforestation with the use of heavy machinery in the scaring or capture and relocation of animals and marking of trees of historical and cultural value for their preservation, thus contributing to the reduction of impacts on flora and wildlife.
 
-For several years, AM Fermino has been working with
-mining companies that have carried out massive deforestation with the use of
-heavy machinery for scaring or catching and relocating animals and
-marking trees of cultural historical value for their preservation,
-thus contributing to the reduction of impacts on flora and fauna
-brave
-
-In this area, the company has also carried out the capture of stray dogs in
-condominiums and residences, in defense of human health.
+In this area, the company has also captured stray dogs in condominiums and residences to protect human health.

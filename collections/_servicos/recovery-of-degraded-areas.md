@@ -1,13 +1,8 @@
 ---
-title: Recovery Of Degraded Areas
+title: Production of Forest, Ornamental and Fruit Tree Seedlings
 lang: en
-icon: recycle
+icon: leaf
 ---
-AM Fermino has been a strong partner of the large mining companies in Tete Province to recover degraded areas.
+AM Fermino has a team of technicians experienced in producing and managing forest nurseries for native, ornamental, exotic and fruit trees of various species.
 
-
-The company has been involved for over 14 years in reclamation work in borrow pits and coal mining areas, planting trees and grasses of different species.
-
-AM Fermino's experience in this area includes the collection of tree and grass seeds their processing and application in flat and sloping degraded areas.
-
-AM Fermino is one of the few companies with technicians knowledgeable using biodegradable blankets to reclamation mine tailings slopes.
+The experience of AM Fermino's technicians includes grafting various fruit trees. The company has been working for over 14 years on projects to produce seedlings for use in reforestation work and fruit production. It has its main nursery in Caunje, in the District of Moatize, about 10 km from Tete City.

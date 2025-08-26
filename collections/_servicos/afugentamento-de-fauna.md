@@ -3,10 +3,8 @@ title: Afugentamento de Fauna
 lang: pt
 icon: paw
 ---
-Fazemos o trabalho de afugentamento de fauna bravia nas residências e principalmente em áreas de supressão vegetal de forma a livrar o ambiente e reduzir o impacto da supressão vegetal sobre a fauna bravia.
+Fazemos o trabalho de afugentamento de fauna bravia nas residências incluindo animais peçonhentos e em áreas de supressão vegetal de forma a reduzir o impacto da supressão vegetal sobre a fauna bravia.
 
-A empresa possui uma vasta equipa de profissionais com vasta experiência em captura e realocação de animais peçonhentos e outros.
+A empresa possui equipamentos diversos de captura e getao de fauna bravia com uma vasta equipa de profissionais com vasta experiência em captura e realocação de animais peçonhentos e outros.
 
-Por diversos anos a AM Fermino tem trabalhado com as empresas de mineração que têm realizado desmatamentos massivos com uso de maquinaria pesada no afugentamento ou captura e realocação dos animais e marcação de árvores de valor histórico cultural para a sua preservação, contribuindo, assim para a redução dos impactos sobre a flora e fauna bravia.
-
-Nesta área, a empresa tem realizado também a captura de cães vadios em condomínios e residências, em prol da defesa da saúde humana.
+Por diversos anos a AM Fermino tem trabalhado com as empresas de mineração que têm realizado desmatamentos massivos com uso de maquinaria pesada no afugentamento ou captura de fauna bravia e realocação em reas seguras. A empresa tem realizado também a captura de cães vadios para reduzir o seu impacto sobre a saúde humana.

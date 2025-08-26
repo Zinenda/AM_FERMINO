@@ -2,19 +2,12 @@
 title: Valores
 lang: pt
 ---
-Pensar e agir sustentavelmente;
+Pensar e agir com consciência ambiental e social;
 
+Difundir conhecimentos sobre meio ambiente e gestão dos Recuros Naturais;
 
-Difundir o conhecimento em meio ambiente;
+Obter respeito  e confiança dos seus clientes e colaboradores;
 
+Trabalhar com transparência, Integridade e Ética;
 
-Agir com transparência;
-
-
-Ter respeito  e a confiança do cliente;
-
-
-Trabalhar com Respeito, Integridade, satisfação e Ética;
-
-
-Ter paixão pelo que faz.
+Valorizar cada colaborador da empresa.

@@ -1,8 +1,10 @@
 # example netlify.toml
 [build]
   command = "bundle exec jekyll build"
-  functions = "netlify/functions"
   publish = "_site"
+
+[build.environment]
+  NODE_VERSION = "18"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.

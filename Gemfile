@@ -9,6 +9,7 @@ gem "jekyll", "~> 4.2.2"
 gem "base64"
 gem "csv"
 gem "logger"
+gem "bigdecimal"
 
 # Plugins comuns (podes remover ou adicionar conforme usares no teu site)
 gem "jekyll-feed", "~> 0.12"

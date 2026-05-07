@@ -6,15 +6,15 @@ image: /assets/img/uploads/chatgpt-image-may-7-2026-10_42_59-am.png
 document: /assets/img/uploads/epda-cachoeira-mining_v3-1-.pdf
 layout: post
 ---
-# CACHOEIRA MINING LIMITADA
+#### CACHOEIRA MINING LIMITADA
 
-## Consulta Pública do Estudo de Pré‑Viabilidade Ambiental e Definição de Âmbito (EPDA)
+##### Consulta Pública do Estudo de Pré‑Viabilidade Ambiental e Definição de Âmbito (EPDA)
 
-### Exploração Sustentável de Ouro e Minerais Associados em Cachoeira, Distrito de Moatize, Província de Tete
+###### Exploração Sustentável de Ouro e Minerais Associados em Cachoeira, Distrito de Moatize, Província de Tete
 
 - - -
 
-## Introdução
+#### Introdução
 
 No âmbito do processo de licenciamento ambiental do projecto de exploração de ouro da empresa Cachoeira Mining Limitada, localizado na área de Cachoeira, Distrito de Moatize, Província de Tete, são por este meio convidadas todas as partes interessadas e afectadas pela implementação do referido projecto a participarem numa reunião de apresentação dos resultados preliminares do Estudo de Pré‑viabilidade Ambiental e Definição de Âmbito (EPDA), seguida de uma sessão de debate e recolha de contribuições.
 
@@ -24,7 +24,7 @@ O presente weblog foi elaborado para facilitar o acesso à informação técnica
 
 - - -
 
-## Sobre o Projecto
+#### Sobre o Projecto
 
 A Cachoeira Mining Limitada é uma empresa legalmente registada em Moçambique, com actividade voltada para prospecção, pesquisa, exploração e comercialização de minerais, incluindo ouro e minerais associados. O projecto encontra‑se inserido na concessão mineira n.º 11482C, localizada na zona de Cachoeira, Distrito de Moatize, Província de Tete.
 
@@ -41,7 +41,7 @@ A vida útil estimada do projecto é de cerca de 25 anos, com produção anual p
 
 - - -
 
-## Importância do EPDA
+#### Importância do EPDA
 
 O Estudo de Pré‑viabilidade Ambiental e Definição de Âmbito (EPDA) constitui uma etapa fundamental do processo de Avaliação de Impacto Ambiental para projectos classificados como Categoria A, conforme o Decreto n.º 54/2015, de 31 de Dezembro.
 
@@ -57,11 +57,11 @@ De acordo com o relatório técnico, não foram identificadas questões fatais q
 
 - - -
 
-## Principais Impactos Identificados
+#### Principais Impactos Identificados
 
 O relatório preliminar identificou impactos ambientais, sociais e económicos que poderão ocorrer durante as fases de construção, operação e encerramento da mina.
 
-### Impactos no Meio Físico
+#### Impactos no Meio Físico
 
 Entre os principais impactos identificados destacam‑se:
 
@@ -72,7 +72,7 @@ Entre os principais impactos identificados destacam‑se:
 * Geração de resíduos sólidos e perigosos;
 * Alterações no escoamento natural das águas.
 
-### Impactos no Meio Biótico
+#### Impactos no Meio Biótico
 
 Foram igualmente identificados riscos relacionados com:
 
@@ -82,7 +82,7 @@ Foram igualmente identificados riscos relacionados com:
 * Perturbação da fauna local;
 * Possível afectação de espécies protegidas.
 
-### Impactos Socioeconómicos
+#### Impactos Socioeconómicos
 
 No domínio social e económico, o estudo aponta:
 

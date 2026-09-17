@@ -6,15 +6,15 @@ image: /assets/img/uploads/imagem-codex-1_09_2026-20_03_30.png
 document: /assets/img/uploads/reia-sim-mining-volumes-ii-e-iii-relatorio-tecnico-e-plano-de-gestao-ambiental.pdf
 layout: post
 ---
-## SIM MINING LIMITADA
+#### SIM MINING LIMITADA
 
-## Consulta Pública do Relatório do Estudo de Impacto Ambiental (REIA) e do Plano de Gestão Ambiental (PGA)
+#### Consulta Pública do Relatório do Estudo de Impacto Ambiental (REIA) e do Plano de Gestão Ambiental (PGA)
 
-### Projecto de exploração de ouro e minerais associados em Mualadzi, Distrito de Chifunde, Província de Tete
+##### Projecto de exploração de ouro e minerais associados em Mualadzi, Distrito de Chifunde, Província de Tete
 
 - - -
 
-## Introdução
+##### Introdução
 
 No âmbito do processo de licenciamento ambiental do projecto de exploração de ouro e minerais associados da **Sim Mining Limitada**, são disponibilizados para consulta pública o **Volume II - Relatório Técnico do Estudo de Impacto Ambiental** e o **Volume III - Plano de Gestão Ambiental**.
 
@@ -24,7 +24,7 @@ A divulgação destes documentos procura facilitar o acesso à informação, pro
 
 - - -
 
-## Sobre o projecto
+##### Sobre o projecto
 
 A Sim Mining Limitada é titular da Concessão Mineira n.º **12815C**, situada na zona de Mualadzi. A área de concessão tem aproximadamente **14.000 hectares** e é acessível a partir da Cidade de Tete através da Estrada Nacional n.º 9 e da N302.
 
@@ -45,13 +45,13 @@ O investimento apresentado é de cerca de **USD 231.600**, com previsão de **30
 
 - - -
 
-## O que apresenta o Relatório Técnico do REIA
+##### O que apresenta o Relatório Técnico do REIA
 
 O Volume II descreve o enquadramento legal, as características técnicas do projecto e a situação ambiental e social de referência. O documento analisa o meio físico, o meio biótico e o contexto socioeconómico, incluindo qualidade do ar, ruído e vibrações, geologia, solos, recursos hídricos, vegetação, fauna, população, actividades económicas e infra-estruturas sociais.
 
 O relatório avalia os impactos previstos nas fases de construção, operação e encerramento da mina e propõe medidas destinadas a evitar, reduzir, corrigir ou compensar os efeitos negativos, bem como a reforçar os benefícios do projecto.
 
-### Principais riscos ambientais identificados
+##### Principais riscos ambientais identificados
 
 * Emissão de poeiras, gases, ruído e vibrações;
 * Erosão, compactação e perda de fertilidade dos solos;
@@ -64,7 +64,7 @@ O relatório avalia os impactos previstos nas fases de construção, operação 
 
 O relatório menciona ainda o uso de um aglutinante, como o mercúrio, numa etapa de recuperação do ouro. Por se tratar de uma substância perigosa, o seu eventual uso exige medidas rigorosas de prevenção, armazenamento, manuseamento, monitorização e resposta a emergências, em conformidade com a legislação aplicável e os compromissos ambientais relevantes.
 
-### Principais aspectos socioeconómicos
+##### Principais aspectos socioeconómicos
 
 Entre os benefícios esperados encontram-se a criação de emprego, a contratação local, a transferência de competências, a dinamização de pequenos negócios e o aumento da actividade económica. Entre os riscos sociais analisados estão a alteração do uso da terra, a perda de recursos naturais ou meios de subsistência, conflitos sociais, pressão sobre serviços e infra-estruturas, acidentes rodoviários, doenças transmissíveis e aumento da criminalidade.
 
@@ -72,7 +72,7 @@ O estudo recomenda mecanismos claros de comunicação, compensação e reassenta
 
 - - -
 
-## Plano de Gestão Ambiental
+##### Plano de Gestão Ambiental
 
 O Volume III transforma as medidas do estudo ambiental em programas de implementação, controlo e monitorização. A responsabilidade principal pela execução do plano cabe à Sim Mining Limitada, com acompanhamento das entidades ambientais, autoridades provinciais e distritais e estruturas comunitárias.
 
@@ -99,7 +99,7 @@ No encerramento, estão previstas a estabilização das áreas de lavra, depósi
 
 - - -
 
-## Participação pública e mecanismo de reclamações
+##### Participação pública e mecanismo de reclamações
 
 A participação pública permite que as partes interessadas e afectadas apresentem dúvidas, comentários, preocupações e recomendações sobre o projecto e sobre as medidas propostas.
 
@@ -111,7 +111,7 @@ Todas as partes interessadas são encorajadas a consultar os documentos e a part
 
 - - -
 
-## Considerações finais
+##### Considerações finais
 
 O projecto de exploração de ouro da Sim Mining Limitada poderá gerar oportunidades económicas e de emprego no Distrito de Chifunde. Ao mesmo tempo, a sua implementação requer prevenção rigorosa da poluição, uso responsável da água, protecção da biodiversidade, segurança dos trabalhadores e das comunidades, recuperação progressiva das áreas afectadas e diálogo permanente com as partes interessadas.
 
@@ -119,6 +119,6 @@ A consulta pública é essencial para melhorar a qualidade das decisões, esclar
 
 - - -
 
-### Fonte
+###### Fonte
 
 Conteúdo elaborado com base no **Volume II - Relatório Técnico do Estudo de Impacto Ambiental** e no **Volume III - Plano de Gestão Ambiental** do Projecto de Exploração de Ouro e Minerais Associados da Sim Mining Limitada, versões para consulta pública, Setembro de 2026.

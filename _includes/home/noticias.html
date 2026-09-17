@@ -1,5 +1,5 @@
 <section class="section scrollspy" id="noticias">
-    <div class="container" style="padding: 20% 0;">
+    <div class="container">
         <h4 class="text-title primary-color-text">
             {% if page.lang == "pt" %}
                 Publicações
@@ -8,7 +8,7 @@
             {% endif %}
         </h4>
 
-        <p class="text-title light">Publicações publicas sobre propostas de projectos que implementamos ou pretendemos implementar.</p>
+        <p>Publicações publicas sobre propostas de projectos que implementamos ou pretendemos implementar.</p>
     
         <ul class="section-grid">
             {% for post in site.posts limit: 3 %}

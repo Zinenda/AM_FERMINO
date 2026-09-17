@@ -1,4 +1,4 @@
-<section class="section scrollspy section-grid" id="noticias">
+<section class="section scrollspy" id="noticias">
     <div class="container" style="padding: 20% 0;">
         <h4 class="text-title primary-color-text">
             {% if page.lang == "pt" %}
@@ -11,7 +11,7 @@
         <p class="text-title light">Publicações publicas sobre propostas de projectos que implementamos ou pretendemos implementar.</p>
     </div>
 
-    <div class="container">
+    <div class="container section-grid">
         <ul>
             {% for post in site.posts limit: 3 %}
                 <li class="card large hoverable">

@@ -1,31 +1,25 @@
-<section class="section scrollspy section-grid" id="portfolio">
-    <div class="container">
-        <h4 class="text-title primary-color-text">
+<section class="section portfolio-section scrollspy" id="portfolio">
+    <div class="site-container">
+        <div class="section-heading-row"><div><p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Experiência no terreno{% else %}Field experience{% endif %}</p><h2>
             {% if page.lang == "pt" %}
                 Nosso Portfólio
                 {% else %}
                     Our Portfolio
             {% endif %}
-        </h4>
-
-        <p class="text-title light">Aprecie o nosso Portfólio de serviços prestados ao longo dos anos da nossa existência.</p>
+        </h2></div>
+        <p class="portfolio-intro">{% if page.lang == "pt" %}Projectos que demonstram a nossa experiência em consultoria, floresta, fauna e recuperação ambiental.{% else %}Projects demonstrating our experience in consultancy, forestry, wildlife and environmental rehabilitation.{% endif %}</p>
 
         {% if page.lang == "pt" %}
-            <a href="/portfolio-pt/" class="btn-large waves-effect waves-light">Veja Mais</a>
+            <a href="/portfolio-pt/" class="button button-dark">Ver todos os projectos</a>
             {% else %}
-                <a href="/portfolio-en/" class="btn-large waves-effect waves-light">See More</a>
+                <a href="/portfolio-en/" class="button button-dark">View all projects</a>
         {% endif %}
     </div>
 
-    <div class="container">
-        <ul>
-            {% for item in site.portfolio limit: 1 %}
-                <li>
-                    <a href="{{ item.image }}" data-lightbox="portfolio" data-title="{{ item.title }}">
-                        <img src="{{ item.image }}" alt="{{ item.title }}">
-                    </a>
-                </li>      
+        <div class="portfolio-grid">
+            {% for item in site.portfolio limit: 4 %}
+                <a href="{{ item.image }}" data-lightbox="portfolio" data-title="{{ item.title }}" class="portfolio-card{% if forloop.first %} portfolio-featured{% endif %}"><img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy"><span>{{ item.title }} <b aria-hidden="true">↗</b></span></a>
             {% endfor %}
-        </ul>
+        </div>
     </div>
 </section>

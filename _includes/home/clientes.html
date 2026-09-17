@@ -1,18 +1,10 @@
-<section id="clientes" class="section scrollspy grey lighten-4">
-    <div class="container">
-        <h5 class="text-title primary-color-light-text">
-            {% if page.lang == "pt" %}
-                Clientes & Parceiros
-                
-                {% else %}
-                    Clients & Partners
-            {% endif %}
-        </h5>
+<section id="clientes" class="section clients-section scrollspy">
+    <div class="site-container">
+        <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Relações de confiança{% else %}Trusted relationships{% endif %}</p>
+        <h2>{% if page.lang == "pt" %}Clientes & Parceiros{% else %}Clients & Partners{% endif %}</h2>
         <div class="text-title slick-clientes">
             {% for item in site.clientes %}
-                <div>
-                    <img data-lazy="{{ item.image }}?nf_resize=fit&w=100" alt="{{ item.company }}" style="width: 100px; padding-left: 10px;">
-                </div>
+                <div><img data-lazy="{{ item.image }}?nf_resize=fit&w=100" alt="{{ item.company }}" style="width: 100px; padding-left: 10px;"></div>
             {% endfor %}
         </div>
     </div>

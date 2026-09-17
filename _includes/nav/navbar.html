@@ -1,21 +1,22 @@
 <div class="navbar-fixed">
-    <nav class="nav-extended white">
-        <div class="nav-wrapper">
-            <a href="/" title="Logotipo" class="brand-logo">{% include nav/logotipo.svg %}</a>
+    <nav class="site-nav nav-extended">
+        <div class="site-container nav-wrapper">
+            <a href="{% if page.lang == 'en' %}/index-en.html{% else %}/{% endif %}" title="{{ site.title }}" class="brand-logo">{% include nav/logotipo.svg %}</a>
             
-            <ul class="right hide-on-med-and-down">
+            <ul class="nav-links right hide-on-med-and-down">
                 {% include nav/nav.html %}
 
                 <li>
-                    <a href="#contactos" class="btn-large waves-effect waves-primary modal-trigger">
+                    <a href="#contactos" class="nav-cta modal-trigger">
                         {% if page.lang == "pt" %}
-                            Contacte-nos
+                            Solicitar Proposta
                             {% else %}
-                                Contact Us
+                                Request a Proposal
                         {% endif %}
                     </a>
                 </li>
             </ul>
+            <a href="#sideNav" data-target="sideNav" class="sidenav-trigger" aria-label="Menu"><i class="fas fa-bars"></i></a>
         </div>
 
         <div class="nav-content">

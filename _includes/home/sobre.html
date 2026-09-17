@@ -1,24 +1,23 @@
-<section class="section-grid-no-gap section scrollspy no-pad" id="sobre">
-    <img src="/assets/img/uploads/about.jpg" alt="" class="hide-on-small-only">
-
-    <section class="container" style="padding-top: 10%;">
+<section class="section about-section scrollspy" id="sobre">
+    <div class="site-container about-grid">
+        <div class="about-image"><img src="/assets/img/uploads/about.jpg" alt="{% if page.lang == 'pt' %}Equipa AM Fermino em trabalho de campo{% else %}AM Fermino team in the field{% endif %}" loading="lazy"></div>
+        <section class="about-copy">
         {% assign sobre=site.sobre | where:"lang", page.lang %}
         {% for item in sobre limit: 1 %}
-            <h4 class="text-title primary-color-text">{{ item.title }}</h4>
-            
-            <article class="text-justified">
-                {{ item.content }}
-            </article>
+            <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Sobre a AM Fermino{% else %}About AM Fermino{% endif %}</p>
+            <h2>{{ item.title }}</h2>
+            <article>{{ item.content | strip_html | truncatewords: 65 }}</article>
         {% endfor %}
 
-        <button class="btn-large waves-effect waves-light modal-trigger" data-target="sobre-modal">
+        <button class="button button-dark modal-trigger" data-target="sobre-modal">
             {% if page.lang == "pt" %}
                 Saiba Mais
                 {% else %}
                     More
             {% endif %}
         </button>
-    </section>
+        </section>
+    </div>
 </section>
 
 {% include home/sobre-modal.html %}

@@ -1,20 +1,20 @@
-<footer id="footer" class="page-footer grey darken-4 white-text">
-    <div class="container">
-        <div class="section-grid">
-            <div class="text-title">
-                <img src="{{ site.image }}" style="width: 50%;" alt="Logotipo {{ site.title }}">
+<footer id="footer" class="site-footer white-text">
+    <div class="site-container footer-grid">
+            <div class="footer-brand">
+                <img src="{{ site.image }}" alt="Logotipo {{ site.title }}">
+                <p>{% if page.lang == "pt" %}Soluções ambientais para um desenvolvimento responsável.{% else %}Environmental solutions for responsible development.{% endif %}</p>
             </div>
 
             <article>
                 {% assign servicos=site.servicos | where:"lang", page.lang %}
-                <h6>
+                <h3>
                     {% if page.lang == "pt" %}
                         Nossos Serviços
 
                         {% else %}
                             Our Services
                     {% endif %}
-                </h6>
+                </h3>
 
                 <ul>
                     {% for item in servicos %}
@@ -26,14 +26,14 @@
             </article>
 
             <article>
-                <h6>
+                <h3>
                     {% if page.lang == "pt" %}
                         Localize-nos
 
                         {% else %}
                             Find us
                     {% endif %}
-                </h6>
+                </h3>
                 
                 <ul>
                     <li>Bairro Chingodzi</li>
@@ -46,17 +46,13 @@
                 </ul>
             </article>
         </div>
-    </div>
-    <div class="divider"></div>
-    <div class="footer-copyright">
-        <div class="container center">
-            <ul class="section-grid-no-gap" style="font-size: small;">
+    <div class="site-container footer-bottom">
+            <ul>
                 <li>&copy; {{ site.time | date: "%Y" }} {% if page.lang == "pt" %}Todos Direitos Reservados {% else %} All Rights Reserved {% endif %}</li>
 
                 <li>{{ site.title }} - {% if page.lang == "pt" %}{{ site.description }} {% else %} Quality, Excellence and Innovation{% endif %}</li>
 
                 <li>Designed by <a href="https://izitech.co" title="IZITech" rel="author" target="_blank" class="white-text">IZITech</a></li>
             </ul>
-        </div>
     </div>
 </footer>

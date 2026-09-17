@@ -1,5 +1,6 @@
 {% for item in site.data.nav[page.lang] %}
     <li>
-        <a href="{{ item[1].url }}" title="{{ item[1].title }}" class="waves-effect waves-primary {% if item.hightlight %}modal-trigger{% endif %}">{{ item[1].title }}</a>
+        <a href="{{ item[1].url }}" title="{{ item[1].title }}">{{ item[1].title }}</a>
     </li>
 {% endfor %}
+<li class="language-switch"><a href="{% if page.lang == 'pt' %}/index-en.html{% else %}/{% endif %}">{% if page.lang == 'pt' %}EN{% else %}PT{% endif %}</a></li>

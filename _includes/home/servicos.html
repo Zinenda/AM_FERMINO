@@ -1,41 +1,22 @@
-<style>
-    #servicos {
-        background-image: linear-gradient(rgba(73,115,61,0.7), rgba(73,115,61,0.7)), url(/assets/img/naturePattern.svg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-</style>
-
-<section id="servicos" class="section scrollspy white-text">
-    <div class="container">
-        <h4 class="text-title">
+<section id="servicos" class="section services-section scrollspy">
+    <div class="site-container">
+        <div class="section-intro section-intro-light"><p class="eyebrow">{% if page.lang == "pt" %}O que fazemos{% else %}What we do{% endif %}</p><h2>
             {% if page.lang == "pt" %}
                 Nossos Serviços
                 {% else %}
                     Our Services
             {% endif %}
-        </h4>
+        </h2></div>
 
         {% assign servicos=site.servicos | where:"lang", page.lang %}
-        <div class="slick-servicos">
+        <div class="services-grid">
             {% for item in servicos %}
-                <div style="border: 1px #f5f5f5 solid;" class="card medium transparent">
-                    <div class="card-content">
-                        <div class="center">
-                            <i class="fas fa-3x fa-{{ item.icon }}"></i>
-                            
-                            <h6>{{ item.title }}</h6>
-                        </div>
-
-                        <article class="light text-title text-justified">
-                            {{ item.content | truncatewords: 20 }}
-                        </article>
-                    </div>
-
-                    <div class="card-action">
-                        <a href="#servicos{{ forloop.index }}" class="btn-flat modal-trigger white-text waves-effect waves-primary">{% if page.lang == "pt" %}Leia Mais{% else %}Read More{% endif %}</a>
-                    </div>
+                <div class="service-card">
+                    <span class="service-number">0{{ forloop.index }}</span>
+                    <i class="fas fa-{{ item.icon }} service-icon" aria-hidden="true"></i>
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.content | strip_html | truncatewords: 20 }}</p>
+                    <a href="#servicos{{ forloop.index }}" class="service-link modal-trigger">{% if page.lang == "pt" %}Saber mais{% else %}Learn more{% endif %} <span aria-hidden="true">↗</span></a>
                 </div>
             {% endfor %}
         </div>

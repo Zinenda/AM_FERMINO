@@ -9,7 +9,7 @@ layout: compress
         {% include nav/navbar.html %}
         
         <main class="animate-bottom">
-            {% unless page.layout == "post" %}
+            {% unless page.layout == "post" or page.ref == "index" %}
                 {% include header/page-header.html %}
             {% endunless %}
             

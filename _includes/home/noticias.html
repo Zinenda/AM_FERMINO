@@ -1,28 +1,25 @@
-<section class="section scrollspy" id="noticias">
-    <div class="container">
-        <h4 class="text-title primary-color-text">
+<section class="section publications-section scrollspy" id="noticias">
+    <div class="site-container">
+        <div class="section-heading-row"><div><p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Conhecimento público{% else %}Public knowledge{% endif %}</p><h2>
             {% if page.lang == "pt" %}
                 Publicações
                 {% else %}
                     News
             {% endif %}
-        </h4>
+        </h2></div></div>
 
         <p>Publicações publicas sobre propostas de projectos que implementamos ou pretendemos implementar.</p>
     
-        <ul class="section-grid">
+        <ul class="publication-grid">
             {% for post in site.posts limit: 3 %}
-                <li class="card large hoverable">
-                    <div class="card-image">
-                        <img src="{{ post.image }}" alt="{{ post.title }}">
+                <li class="publication-card">
+                    <div class="publication-image"><img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
                     </div>
     
-                    <div class="card-content">
-                        <span class="card-title bolder primary-color-text">{{ post.title }}</span>
-                    </div>
-    
-                    <div class="card-action">
-                        <a href="{{ post.url }}" title="{{ post.title }}" class="btn waves-effect waves-light">{% if page.lang == "pt" %} Leia Mais {% else %} Read More {% endif %}</a> | <a href="{{ post.document }}" class="btn-flat waves-effect waves-primary primary-color-text" target="_blank" style="border: solid 1px {{ site.color }};">Leia o Documento <i class="fas fa-download"></i></a>
+                    <div class="publication-content">
+                        <p class="publication-date">{{ post.date | date: "%d.%m.%Y" }}</p><h3>{{ post.title }}</h3>
+                        <a href="{{ post.url }}" title="{{ post.title }}" class="service-link">{% if page.lang == "pt" %}Ler publicação{% else %}Read publication{% endif %} <span aria-hidden="true">↗</span></a>
+                        {% if post.document %}<a href="{{ post.document }}" class="service-link" target="_blank" rel="noopener">{% if page.lang == "pt" %}Abrir documento{% else %}Open document{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}
                     </div>
                 </li>        
             {% endfor %}

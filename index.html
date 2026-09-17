@@ -5,6 +5,17 @@ lang: pt
 ref: index
 ---
 
+{% include home/hero.html %}
+
+<section class="credibility-strip" aria-label="{% if page.lang == 'pt' %}Áreas de actuação{% else %}Areas of expertise{% endif %}">
+	<div class="site-container credibility-grid">
+		<div><strong>2007</strong><span>{% if page.lang == "pt" %}Ano de fundação{% else %}Established{% endif %}</span></div>
+		<div><strong>AMF</strong><span>{% if page.lang == "pt" %}Experiência local{% else %}Local experience{% endif %}</span></div>
+		<div><strong>Tete</strong><span>{% if page.lang == "pt" %}Moçambique{% else %}Mozambique{% endif %}</span></div>
+		<div><strong>AMF</strong><span>{% if page.lang == "pt" %}Visão integrada{% else %}Integrated view{% endif %}</span></div>
+	</div>
+</section>
+
 {% include home/sobre.html %}
 
 {% include home/servicos.html %}
@@ -12,5 +23,12 @@ ref: index
 {% include home/portfolio.html %}
 
 {% include home/clientes.html %}
+
+<section class="section conversion-band">
+	<div class="site-container section-heading-row">
+		<div><p class="eyebrow">{% if page.lang == "pt" %}Vamos trabalhar juntos{% else %}Let's work together{% endif %}</p><h2>{% if page.lang == "pt" %}Tem um projecto que exige experiência ambiental?{% else %}Does your project require environmental expertise?{% endif %}</h2></div>
+		<a href="#contactos" class="button button-primary modal-trigger">{% if page.lang == "pt" %}Fale com a nossa equipa{% else %}Talk to our team{% endif %}</a>
+	</div>
+</section>
 
 {% include home/noticias.html %}

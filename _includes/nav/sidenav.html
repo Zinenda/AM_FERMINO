@@ -1,6 +1,6 @@
 <aside id="sideNav" class="sidenav">
     <div class="container">
-        <a href="/">
+        <a href="{% if page.lang == 'en' %}{{ '/index-en.html' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
             <img src="{{ site.logo }}" alt="{{ site.title }}">
         </a>
     </div>

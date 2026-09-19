@@ -3,13 +3,13 @@ layout: compress
 ---
 
 <!DOCTYPE html>
-<html lang="{{ page.lang }}">
+<html lang="{{ page.lang | default: 'pt' }}">
     {% include head.html %}
     <body id="top">
         {% include nav/navbar.html %}
         
         <main class="animate-bottom">
-            {% unless page.layout == "post" or page.ref == "index" %}
+            {% unless page.layout == "post" or page.ref == "index" or page.hide_page_header %}
                 {% include header/page-header.html %}
             {% endunless %}
             
@@ -25,3 +25,5 @@ layout: compress
         {% include footer.html %}
 
         {% include scripts/scripts.html %}
+    </body>
+</html>

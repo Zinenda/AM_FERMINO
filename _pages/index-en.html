@@ -5,6 +5,17 @@ lang: en
 ref: index
 ---
 
+{% include home/hero.html %}
+
+<section class="credibility-strip" aria-label="Areas of expertise">
+	<div class="site-container credibility-grid">
+		<div><strong>2007</strong><span>Established</span></div>
+		<div><strong>AMF</strong><span>Local experience</span></div>
+		<div><strong>Tete</strong><span>Mozambique</span></div>
+		<div><strong>AMF</strong><span>Integrated view</span></div>
+	</div>
+</section>
+
 {% include home/sobre.html %}
 
 {% include home/servicos.html %}
@@ -12,5 +23,12 @@ ref: index
 {% include home/portfolio.html %}
 
 {% include home/clientes.html %}
+
+<section class="section conversion-band">
+	<div class="site-container section-heading-row">
+		<div><p class="eyebrow">Let's work together</p><h2>Does your project require environmental expertise?</h2></div>
+		<a href="#contactos" class="button button-primary modal-trigger">Talk to our team</a>
+	</div>
+</section>
 
 {% include home/noticias.html %}

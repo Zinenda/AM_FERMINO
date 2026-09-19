@@ -19,7 +19,11 @@
                 <ul>
                     {% for item in servicos %}
                         <li>
-                            <a href="#servicos{{ forloop.index }}" class="modal-trigger white-text"><i class="fas fa-caret-right"></i> {{ item.title }}</a>
+                            {% if page.ref == "index" %}
+                                <a href="#servicos{{ forloop.index }}" class="modal-trigger white-text"><i class="fas fa-caret-right" aria-hidden="true"></i> {{ item.title }}</a>
+                            {% else %}
+                                <a href="{% if page.lang == 'en' %}{{ '/index-en.html#servicos' | relative_url }}{% else %}{{ '/#servicos' | relative_url }}{% endif %}" class="white-text"><i class="fas fa-caret-right" aria-hidden="true"></i> {{ item.title }}</a>
+                            {% endif %}
                         </li>
                     {% endfor %}
                 </ul>
@@ -39,10 +43,10 @@
                     <li>Bairro Chingodzi</li>
                     <li>Unidade 25 de Setembro</li>
                     <li>Tete, Moçambique</li>
-                    <hr>
-                    <li><i class="fas fa-mobile"></i> <a href="tel:+{{ site.phone }}" class="white-text" title="Celular"> +{{ site.phone }} </a></li>
-                    <li><i class="fas fa-mobile"></i> <a href="tel:+258846700353" class="white-text" title="Celular"> +258 84 670 0353 </a></li>
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:{{ site.email }}" class="white-text">{{ site.email }}</a></li>
+                    <li aria-hidden="true"><hr></li>
+                    <li><i class="fas fa-mobile" aria-hidden="true"></i> <a href="tel:+{{ site.phone }}" class="white-text" title="{% if page.lang == 'pt' %}Telefone{% else %}Phone{% endif %}"> +{{ site.phone }} </a></li>
+                    <li><i class="fas fa-mobile" aria-hidden="true"></i> <a href="tel:+258846700353" class="white-text" title="{% if page.lang == 'pt' %}Telefone{% else %}Phone{% endif %}"> +258 84 670 0353 </a></li>
+                    <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:{{ site.email }}" class="white-text">{{ site.email }}</a></li>
                 </ul>
             </article>
         </div>

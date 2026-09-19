@@ -8,18 +8,18 @@
             {% endif %}
         </h2></div></div>
 
-        <p>Publicações publicas sobre propostas de projectos que implementamos ou pretendemos implementar.</p>
+        <p>{% if page.lang == "pt" %}Publicações sobre propostas de projectos que implementamos ou pretendemos implementar.{% else %}Publications about projects we are implementing or intend to implement.{% endif %}</p>
     
         <ul class="publication-grid">
             {% for post in site.posts limit: 3 %}
                 <li class="publication-card">
-                    <div class="publication-image"><img src="{{ post.image }}" alt="{{ post.title }}" loading="lazy">
+                    <div class="publication-image"><img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
                     </div>
     
                     <div class="publication-content">
                         <p class="publication-date">{{ post.date | date: "%d.%m.%Y" }}</p><h3>{{ post.title }}</h3>
-                        <a href="{{ post.url }}" title="{{ post.title }}" class="service-link">{% if page.lang == "pt" %}Ler publicação{% else %}Read publication{% endif %} <span aria-hidden="true">↗</span></a>
-                        {% if post.document %}<a href="{{ post.document }}" class="service-link" target="_blank" rel="noopener">{% if page.lang == "pt" %}Abrir documento{% else %}Open document{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}
+                        <a href="{{ post.url | relative_url }}" title="{{ post.title | escape }}" class="service-link">{% if page.lang == "pt" %}Ler publicação{% else %}Read publication{% endif %} <span aria-hidden="true">↗</span></a>
+                        {% if post.document %}<a href="{{ post.document | relative_url }}" class="service-link" target="_blank" rel="noopener">{% if page.lang == "pt" %}Abrir documento{% else %}Open document{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}
                     </div>
                 </li>        
             {% endfor %}

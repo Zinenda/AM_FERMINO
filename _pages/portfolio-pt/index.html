@@ -2,10 +2,7 @@
 title: Portfólio
 lang: pt
 ref: port
-pagination: 
-  enabled: true
-  collection: portfolio
-  permalink: '/portfolio/:num/'
+hide_page_header: true
 layout: default
 ---
 
@@ -39,14 +36,12 @@ layout: default
 
 <section class="section">
 	<div id="masonry-grid" class="row">
-		{% for item in paginator.posts %}
+		{% for item in site.portfolio %}
 			<div class="col s6 l4">
-				<a href="{{ item.image }}" data-lightbox="portfolio" data-title="{{ item.title }}">
-					<img src="{{ item.image }}" alt="{{ item.title }}">
+				<a href="{{ item.image | relative_url }}" data-lightbox="portfolio" data-title="{{ item.title | escape }}">
+					<img src="{{ item.image | relative_url }}" alt="{{ item.title | escape }}" loading="lazy">
 				</a>
 			</div>
 		{% endfor %}
 	</div>
 </section>
-
-{% include pagination.html %}

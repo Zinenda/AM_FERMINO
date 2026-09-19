@@ -1,23 +1,47 @@
 <section class="section about-section scrollspy" id="sobre">
-    <div class="site-container about-grid">
-        <div class="about-image"><img src="/assets/img/uploads/about.jpg" alt="{% if page.lang == 'pt' %}Equipa AM Fermino em trabalho de campo{% else %}AM Fermino team in the field{% endif %}" loading="lazy"></div>
+    <div class="site-container about-editorial">
         <section class="about-copy">
         {% assign sobre=site.sobre | where:"lang", page.lang %}
-        {% for item in sobre limit: 1 %}
-            <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Sobre a AM Fermino{% else %}About AM Fermino{% endif %}</p>
-            <h2>{{ item.title }}</h2>
-            <article>{{ item.content | strip_html | truncatewords: 65 }}</article>
-        {% endfor %}
-
-        <button class="button button-dark modal-trigger" data-target="sobre-modal">
-            {% if page.lang == "pt" %}
-                Saiba Mais
-                {% else %}
-                    More
-            {% endif %}
-        </button>
+        {% if page.lang == "pt" %}
+            {% assign about_mission = sobre | where:"title", "Missão" | first %}
+            {% assign about_vision = sobre | where:"title", "Visão" | first %}
+            {% assign about_values = sobre | where:"title", "Valores" | first %}
+        {% else %}
+            {% assign about_mission = sobre | where:"title", "Mission" | first %}
+            {% assign about_vision = sobre | where:"title", "Vision" | first %}
+            {% assign about_values = sobre | where:"title", "Values" | first %}
+        {% endif %}
+        <span class="about-index" aria-hidden="true">01</span>
+        <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Sobre a AM Fermino{% else %}About AM Fermino{% endif %}</p>
+        <div class="about-principles" aria-live="polite">
+            <article class="about-principle-panel is-active" id="about-panel-mission" role="tabpanel" aria-labelledby="about-tab-mission">
+                <h2>{{ about_mission.title }}</h2>
+                <div>{{ about_mission.content }}</div>
+            </article>
+            <article class="about-principle-panel" id="about-panel-vision" role="tabpanel" aria-labelledby="about-tab-vision" hidden>
+                <h2>{{ about_vision.title }}</h2>
+                <div>{{ about_vision.content }}</div>
+            </article>
+            <article class="about-principle-panel" id="about-panel-values" role="tabpanel" aria-labelledby="about-tab-values" hidden>
+                <h2>{{ about_values.title }}</h2>
+                <div>{{ about_values.content }}</div>
+            </article>
+        </div>
         </section>
+
+        <div class="about-visual">
+            <span class="about-accent" aria-hidden="true"></span>
+            <figure class="about-photo about-photo-primary">
+                <img src="{{ '/assets/img/generated/about-fieldwork-primary.png' | relative_url }}" alt="{% if page.lang == 'pt' %}Profissional ambiental a observar uma paisagem natural{% else %}Environmental professional observing a natural landscape{% endif %}" loading="lazy">
+            </figure>
+            <figure class="about-photo about-photo-detail">
+                <img src="{{ '/assets/img/generated/about-fieldwork-detail.png' | relative_url }}" alt="{% if page.lang == 'pt' %}Inspecção de uma planta nativa no terreno{% else %}Inspecting a native plant in the field{% endif %}" loading="lazy">
+            </figure>
+            <div class="about-topics" role="tablist" aria-label="{% if page.lang == 'pt' %}Princípios da AM Fermino{% else %}AM Fermino principles{% endif %}">
+                <button class="is-active" id="about-tab-mission" type="button" role="tab" aria-label="{{ about_mission.title }}" aria-selected="true" aria-controls="about-panel-mission" data-about-panel="about-panel-mission">{{ about_mission.title }}</button>
+                <button id="about-tab-vision" type="button" role="tab" aria-label="{{ about_vision.title }}" aria-selected="false" aria-controls="about-panel-vision" data-about-panel="about-panel-vision" tabindex="-1">{{ about_vision.title }}</button>
+                <button id="about-tab-values" type="button" role="tab" aria-label="{{ about_values.title }}" aria-selected="false" aria-controls="about-panel-values" data-about-panel="about-panel-values" tabindex="-1">{{ about_values.title }}</button>
+            </div>
+        </div>
     </div>
 </section>
-
-{% include home/sobre-modal.html %}

@@ -1,5 +1,5 @@
 <div class="fixed-action-btn">
-    {% if page.title == "AM Fermino" %}
+    {% if page.ref == "index" %}
         <a class="btn-floating btn-large waves-effect waves-light">
             <i class="fas fa-globe"></i>
         </a>
@@ -8,14 +8,14 @@
             {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
             {% for page in pages %}
                 <li>
-                    <a href="{{ page.url }}" class="btn-floating waves-effect waves-light">{{ page.lang | upcase }}</a>
+                    <a href="{{ page.url | relative_url }}" class="btn-floating waves-effect waves-light">{{ page.lang | upcase }}</a>
                 </li>
             {% endfor %}
         </ul>
 
         {% else %}
-            <a href="/{% if page.lang == "en" %}index-en/{% endif %}" class="btn-floating btn-large waves-effect waves-light">
-                <i class="fas fa-home"></i>
+            <a href="{% if page.lang == 'en' %}{{ '/index-en.html' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}" class="btn-floating btn-large waves-effect waves-light" aria-label="{% if page.lang == 'pt' %}Página inicial{% else %}Home page{% endif %}">
+                <i class="fas fa-home" aria-hidden="true"></i>
             </a>
     {% endif %}
 </div>

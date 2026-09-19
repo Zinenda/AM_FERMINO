@@ -8,7 +8,7 @@
 
     {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
     {% for page in pages %}
-        <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}">
+        <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url | absolute_url }}">
     {% endfor %}
 
     <link rel="shortcut icon" href="/assets/img/favicon.png" type="image/x-icon">

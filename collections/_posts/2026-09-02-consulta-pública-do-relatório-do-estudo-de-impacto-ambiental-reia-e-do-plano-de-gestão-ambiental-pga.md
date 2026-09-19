@@ -5,6 +5,7 @@ date: 2026-09-01T15:48:13.720Z
 image: /assets/img/uploads/imagem-codex-1_09_2026-20_03_30.png
 document: /assets/img/uploads/reia-sim-mining-volumes-ii-e-iii-relatorio-tecnico-e-plano-de-gestao-ambiental.pdf
 layout: post
+lang: pt
 ---
 #### SIM MINING LIMITADA
 

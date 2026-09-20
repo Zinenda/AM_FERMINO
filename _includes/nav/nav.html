@@ -1,17 +1,10 @@
 {% if page.lang == "en" %}
     {% assign home_url = "/index-en.html" %}
-    {% assign alternate_lang = "pt" %}
-    {% assign fallback_alternate_url = "/" %}
 {% else %}
     {% assign home_url = "/" %}
-    {% assign alternate_lang = "en" %}
-    {% assign fallback_alternate_url = "/index-en.html" %}
 {% endif %}
 {% for item in site.data.nav[page.lang] %}
     <li>
         <a href="{{ home_url | append: item[1].url | relative_url }}" title="{{ item[1].title }}">{{ item[1].title }}</a>
     </li>
 {% endfor %}
-{% assign alternate_page = site.pages | where: "ref", page.ref | where: "lang", alternate_lang | first %}
-{% assign alternate_url = alternate_page.url | default: fallback_alternate_url %}
-<li class="language-switch"><a href="{{ alternate_url | relative_url }}">{% if page.lang == 'pt' %}EN{% else %}PT{% endif %}</a></li>

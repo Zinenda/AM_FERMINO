@@ -16,21 +16,62 @@
                     <i class="fas fa-{{ item.icon }} service-icon" aria-hidden="true"></i>
                     <h3>{{ item.title }}</h3>
                     <p>{{ item.content | strip_html | truncatewords: 20 }}</p>
-                    <a href="#servicos{{ forloop.index }}" class="service-link modal-trigger">{% if page.lang == "pt" %}Saber mais{% else %}Learn more{% endif %} <span aria-hidden="true">↗</span></a>
+                    <a href="#service-panel-{{ forloop.index }}" class="service-link service-drawer-trigger" data-service-index="{{ forloop.index0 }}">{% if page.lang == "pt" %}Saber mais{% else %}Learn more{% endif %} <span aria-hidden="true">↗</span></a>
                 </div>
             {% endfor %}
         </div>
     </div>
 </section>
 
-{% for item in servicos %}
-    <div id="servicos{{ forloop.index }}" class="modal">
-        <div class="container modal-content">
-            <h6 class="text-title primary-color-text">{{ item.title }}</h6>
-
-            <article class="light text-justified">
-                {{ item.content }}
-            </article>
+<div class="service-drawer-layer" aria-hidden="true">
+    <button class="service-drawer-backdrop" type="button" aria-label="{% if page.lang == 'pt' %}Fechar detalhes do serviço{% else %}Close service details{% endif %}"></button>
+    <aside class="service-drawer" role="dialog" aria-modal="true" aria-label="{% if page.lang == 'pt' %}Detalhes dos serviços{% else %}Service details{% endif %}">
+        <div class="service-drawer-content">
+            <button class="service-drawer-close" type="button" aria-label="{% if page.lang == 'pt' %}Fechar{% else %}Close{% endif %}"><i class="fas fa-times" aria-hidden="true"></i></button>
+            {% for item in servicos %}
+                {% if page.lang == 'pt' %}
+                    {% case forloop.index %}
+                        {% when 1 %}{% assign service_image = '/assets/img/generated/service-fauna-tete.jpg' %}
+                        {% when 2 %}{% assign service_image = '/assets/img/generated/service-consulting-tete.jpg' %}
+                        {% when 3 %}{% assign service_image = '/assets/img/generated/service-forest-tete.jpg' %}
+                        {% when 4 %}{% assign service_image = '/assets/img/generated/service-restoration-tete.jpg' %}
+                        {% when 5 %}{% assign service_image = '/assets/img/generated/service-nursery-tete.jpg' %}
+                    {% endcase %}
+                {% else %}
+                    {% case forloop.index %}
+                        {% when 1 %}{% assign service_image = '/assets/img/generated/service-consulting-tete.jpg' %}
+                        {% when 2 %}{% assign service_image = '/assets/img/generated/service-fauna-tete.jpg' %}
+                        {% when 3 %}{% assign service_image = '/assets/img/generated/service-forest-tete.jpg' %}
+                        {% when 4 %}{% assign service_image = '/assets/img/generated/service-restoration-tete.jpg' %}
+                        {% when 5 %}{% assign service_image = '/assets/img/generated/service-nursery-tete.jpg' %}
+                    {% endcase %}
+                {% endif %}
+                <article class="service-drawer-panel{% if forloop.first %} is-active{% endif %}" id="service-panel-{{ forloop.index }}" data-service-index="{{ forloop.index0 }}"{% unless forloop.first %} hidden{% endunless %}>
+                    <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Serviço{% else %}Service{% endif %} 0{{ forloop.index }}</p>
+                    <h2>{{ item.title }}</h2>
+                    <div class="service-drawer-copy">{{ item.content }}</div>
+                    <figure class="service-drawer-image">
+                        <img src="{{ service_image | relative_url }}" alt="{% if page.lang == 'pt' %}Panorâmica da província de Tete relacionada com {{ item.title | downcase }}{% else %}Panoramic view of Tete Province related to {{ item.title | downcase }}{% endif %}" loading="lazy">
+                    </figure>
+                    <div class="service-drawer-meta">
+                        <span>{% if page.lang == "pt" %}Experiência local{% else %}Local experience{% endif %}</span>
+                        <span>{% if page.lang == "pt" %}Soluções personalizadas{% else %}Tailored solutions{% endif %}</span>
+                        <span>{% if page.lang == "pt" %}Acompanhamento técnico{% else %}Technical support{% endif %}</span>
+                    </div>
+                    <a href="#contactos" class="button service-drawer-cta">{% if page.lang == "pt" %}Solicitar proposta{% else %}Request a proposal{% endif %} <span aria-hidden="true">→</span></a>
+                </article>
+            {% endfor %}
         </div>
-    </div>
-{% endfor %}
+        <footer class="service-drawer-footer">
+            <button type="button" class="service-drawer-direction service-drawer-prev" aria-label="{% if page.lang == 'pt' %}Serviço anterior{% else %}Previous service{% endif %}">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                <span><small>{% if page.lang == "pt" %}Serviço anterior{% else %}Previous service{% endif %}</small><strong></strong></span>
+            </button>
+            <p class="service-drawer-progress"><span>01</span> / 0{{ servicos.size }}</p>
+            <button type="button" class="service-drawer-direction service-drawer-next" aria-label="{% if page.lang == 'pt' %}Próximo serviço{% else %}Next service{% endif %}">
+                <span><small>{% if page.lang == "pt" %}Próximo serviço{% else %}Next service{% endif %}</small><strong></strong></span>
+                <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </footer>
+    </aside>
+</div>

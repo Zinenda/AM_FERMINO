@@ -20,7 +20,7 @@
                     {% for item in servicos %}
                         <li>
                             {% if page.ref == "index" %}
-                                <a href="#servicos{{ forloop.index }}" class="modal-trigger white-text"><i class="fas fa-caret-right" aria-hidden="true"></i> {{ item.title }}</a>
+                                <a href="#service-panel-{{ forloop.index }}" class="service-drawer-trigger white-text" data-service-index="{{ forloop.index0 }}"><i class="fas fa-caret-right" aria-hidden="true"></i> {{ item.title }}</a>
                             {% else %}
                                 <a href="{% if page.lang == 'en' %}{{ '/index-en.html#servicos' | relative_url }}{% else %}{{ '/#servicos' | relative_url }}{% endif %}" class="white-text"><i class="fas fa-caret-right" aria-hidden="true"></i> {{ item.title }}</a>
                             {% endif %}

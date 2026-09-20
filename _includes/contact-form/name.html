@@ -1,14 +1,4 @@
-<div class="row">
-    <div class="input-field">
-        <i class="fas fa-user-circle prefix"></i>
-        <input type="text" name="Nome" id="name" class="validate" autocomplete="name" required>
-        <label for="name">
-            {% if page.lang == "pt" %}
-                Nome Completo
-
-                {% else %}
-                    Full Name
-            {% endif %}
-        </label>
-    </div>
+<div class="contact-form-field">
+    <label for="name"><i class="fas fa-user" aria-hidden="true"></i>{% if page.lang == "pt" %}Nome completo{% else %}Full name{% endif %}</label>
+    <input type="text" name="Nome" id="name" autocomplete="name" placeholder="{% if page.lang == 'pt' %}Como devemos tratá-lo?{% else %}How should we address you?{% endif %}" required>
 </div>

@@ -1,69 +1,72 @@
-# Design QA — Drawer de serviços, opção 1
+# Design QA — Modal de contacto
 
-- Source visual truth: `/Users/izinenda/.codex/generated_images/01a0ba5a-0cd1-7010-bb93-84b345b613bc/exec-40f784fb-15e1-4509-b007-e3a1ba64850e.png`
-- Browser-rendered implementation: `output/design-qa/service-drawer-option-1.jpg`
-- Combined comparison: `output/design-qa/service-drawer-comparison.jpg`
+- Source visual truth: `/Users/izinenda/.codex/generated_images/01a0ba5a-0cd1-7010-bb93-84b345b613bc/exec-40f784fb-15e1-4509-b007-e3a1ba64850e.png` (direção editorial “opção 1” já selecionada pelo utilizador)
+- Baseline diagnostic: screenshot supplied with this request; original 2880 × 1800 px, displayed to the model at 1996 × 1248 px
+- Browser-rendered implementation: `output/design-qa/contact-modal-redesign.jpg`
+- Responsive evidence: `output/design-qa/contact-modal-mobile.jpg`
+- Combined comparison: `output/design-qa/contact-modal-comparison.jpg`
 - Local route: `http://127.0.0.1:4001/#servicos`
-- Viewport: 1440 × 757 CSS px; reported device pixel ratio 2
+- Desktop viewport: 1440 × 757 CSS px; device pixel ratio 2
+- Mobile viewport: 390 × 844 CSS px
 - Source pixels: 1487 × 1058
-- Implementation capture pixels: 1440 × 757; the Chrome capture API returned CSS-pixel dimensions
-- Density normalization: no resampling was applied. The source and implementation have different viewport heights, so the review compares responsive composition and component behavior rather than claiming pixel-for-pixel identity.
-- State: Portuguese service 02, “Consultoria Ambiental”, drawer open over the services grid
+- Implementation capture pixels: 1440 × 757; Chrome capture returned CSS-pixel dimensions
+- Density normalization: no resampling. The comparison evaluates the selected editorial language and responsive modal composition rather than pixel identity across different components.
+- State: Portuguese contact modal open over the services section; empty form, default state
 
 ## Findings
 
-- No actionable P0, P1, or P2 issue remains.
-- The Tete panorama and shorter service summary are intentional product changes requested after the visual option was selected. They replace part of the longer editorial copy in the reference without changing the selected drawer structure.
-- The 757 px-high implementation viewport places the lower metadata and CTA inside the scrollable content region. The sticky previous/next footer remains visible; this is expected responsive behavior, not hidden content.
+- No actionable P0, P1 or P2 issue remains.
+- The new split layout is an intentional redesign of the wide, low-hierarchy baseline modal: project context and direct contacts occupy the dark panel; the task-focused form occupies the light panel.
+- The source is a service drawer rather than a contact form, so the lime accent moves from a vertical separator to the modal's top edge. The palette, typography, backdrop treatment, close control and strong light/dark division remain faithful to the selected direction.
 
 ## Full-view comparison evidence
 
-The combined comparison in `output/design-qa/service-drawer-comparison.jpg` shows the same dominant composition in both artifacts: dimmed services grid on the left, light editorial drawer on the right, narrow lime dividing edge, large two-line title, restrained dark-green palette, close control in the upper-right corner, and persistent previous/next navigation at the bottom. The implementation drawer is 648 px wide in a 1440 px viewport (45%), matching the reference's intended proportion.
+The combined comparison in `output/design-qa/contact-modal-comparison.jpg` shows a consistent design system across the source direction and the modal: darkened page context, off-white work surface, forest-green structural area, lime accent, oversized Montserrat heading, uppercase eyebrow, compact secondary copy and a dark primary CTA. The redesigned modal fits between y=24 and y=733 in the 757 px desktop viewport and does not create horizontal page overflow.
 
 ## Focused region comparison evidence
 
-The source was opened at its original 1487 × 1058 resolution and the implementation was captured separately at 1440 × 757. The drawer itself occupies the dominant half of each frame, so the heading, body measure, panorama crop, metadata rules, close control, and footer labels remain legible in the full-view and combined evidence. A separate crop was not needed.
+The standalone desktop capture keeps labels, placeholders, focus treatment, privacy note, direct contact links and CTA legible at native size. A separate focus-state browser view confirmed a green border plus lime focus halo on the name field. The mobile capture confirms the one-column reading order, persistent close control and vertically scrollable form at 390 × 844.
 
 ## Required fidelity surfaces
 
-- Fonts and typography: Montserrat remains the established site family. The implementation preserves the source's heavy display heading, uppercase eyebrow and compact navigation labels; body copy uses a lighter optical weight and readable line height.
-- Spacing and layout rhythm: the 45% drawer width, generous horizontal padding, vertical title rhythm, full-width panorama, ruled metadata rows, and fixed footer reproduce the option-1 hierarchy without horizontal overflow.
-- Colors and visual tokens: off-white panel, near-black text, forest-green context, lime edge/accent, muted secondary copy and translucent backdrop all remain aligned with the reference and the existing site tokens.
-- Image quality and asset fidelity: the service image is a sharp 1600 px panoramic JPEG generated to evoke the landscape of Tete Province. It is intentionally additional to the source mock and uses `object-fit: cover` without visible stretching or haloing.
-- Copy and content: service titles and descriptions come from the localized site collections. Previous/next labels, CTA and accessible labels are localized in Portuguese and English.
+- Fonts and typography: the existing Montserrat family is retained. Display text uses the established heavy weight and tight line-height; field labels use compact uppercase styling; body and helper text use lighter weights with readable measures.
+- Spacing and layout rhythm: the 1120 px desktop frame uses a balanced two-column split, consistent field gaps, grouped labels and inputs, full-width message field and aligned privacy/CTA row. At 390 px the layout stacks without horizontal overflow.
+- Colors and visual tokens: all surfaces use existing AM Fermino tokens: `--color-brand-dark`, `--color-brand`, `--color-accent`, `--color-surface`, `--color-white`, `--color-graphite`, `--color-muted` and `--color-border`.
+- Image quality and asset fidelity: the modal requires no raster imagery. Existing Font Awesome icons are used consistently; no placeholder, custom SVG, emoji or CSS illustration replaces a source asset.
+- Copy and content: Portuguese and English headings, guidance, field labels, placeholders, privacy note and CTA are localized. Phone and email remain actionable links.
 
 ## Interaction and runtime verification
 
-- Service-card and footer links open the matching drawer panel.
-- Previous and next controls cycle services and update the counter and adjacent service names.
-- Escape closes the drawer, restores body scrolling and returns focus to the originating trigger.
-- Focus trapping and close/backdrop controls are active while the dialog is open.
-- “Solicitar proposta” closes the drawer and opens the existing contact form modal.
-- Portuguese and English service order and image mapping were verified.
-- English service 01 uses `service-consulting-tete.jpg`; service 02 uses `service-fauna-tete.jpg`.
-- Portuguese service 02 uses `service-consulting-tete.jpg`.
-- No horizontal overflow was detected at the tested desktop viewport.
-- Browser console after the final comparison: no warnings or errors.
+- Header and conversion-band triggers open the contact modal.
+- The close button is visible and keyboard `Escape` closes the modal.
+- All five fields retain their original Netlify names and are required.
+- Focus treatment was verified on the name input.
+- Portuguese and English modal content was rendered and checked.
+- Desktop dimensions: 1120 × 709 px at x-centered placement, top 24 px, bottom 733 px.
+- Mobile dimensions: 374 × 828 px at 390 × 844, top 8 px, bottom 836 px.
+- No horizontal overflow at either tested viewport.
+- Browser console after final pass: no warnings or errors.
+- Form submission was not executed, to avoid creating a real contact request; the existing Netlify form contract remains unchanged.
 - Local Jekyll preview remains active on port 4001.
 
 ## Comparison history
 
-1. Localization QA found a P2 content mismatch: the first two English service images followed Portuguese collection order, so Environmental Consulting displayed the fauna panorama and Fauna displayed the consulting panorama.
-2. Fix applied: added language-specific image ordering for the first two collection items.
-3. Post-fix browser evidence: English service 01 displays `/assets/img/generated/service-consulting-tete.jpg`; the next control opens Fauna service 02 with `/assets/img/generated/service-fauna-tete.jpg`, counter `02 / 05`, and correct neighboring labels.
-4. Final Portuguese browser evidence: service 02 displays Consultoria Ambiental with the consulting panorama, counter `02 / 05`, loaded image, body scroll lock, 648 px drawer width and no horizontal overflow.
+1. Initial redesign pass exposed a P2 viewport-fit issue: Materialize's default 10% top position pushed the modal below the 757 px desktop viewport and partially clipped the lower contact area.
+2. Fix applied: set the desktop modal to `top: 24px` while retaining `max-height: calc(100vh - 48px)` and internal scrolling.
+3. Post-fix evidence: the complete desktop frame sits between y=24 and y=733, all controls are visible, the contact links remain readable, and there is no horizontal overflow.
+4. Responsive pass confirmed the stacked 390 px layout, visible close control and scrollable form without page overflow.
 
 ## Implementation checklist
 
-- [x] Preserve option-1 editorial drawer proportions and visual hierarchy.
-- [x] Add one panoramic Tete image per service.
-- [x] Keep previous/next navigation and progress visible.
-- [x] Connect the proposal CTA to the contact flow.
-- [x] Verify Portuguese and English mappings.
-- [x] Verify keyboard close, focus restoration, scroll lock and console output.
+- [x] Align the modal with the selected option-1 editorial language.
+- [x] Improve form hierarchy, contrast and field grouping.
+- [x] Preserve Netlify field names and required validation.
+- [x] Add direct contact details and response expectations.
+- [x] Localize Portuguese and English content.
+- [x] Verify desktop, mobile, keyboard close, focus and console output.
 
 ## Follow-up polish
 
-- P3 optional: replace the generated Tete panoramas with approved documentary photography while retaining the current 1600 × 640 crop ratio and focal positions.
+- P3 optional: add a dedicated post-submission success state once the desired Netlify success/redirect behaviour is defined.
 
 final result: passed

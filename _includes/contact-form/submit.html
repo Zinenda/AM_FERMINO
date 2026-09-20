@@ -1,10 +1,7 @@
-<div class="center">
-    <button type="submit" class="btn waves-effect waves-light transparent primary-color-text">
-        {% if page.lang == "pt" %}
-            Envie
-
-            {% else %}
-                Submit
-        {% endif %}
+<div class="contact-form-actions">
+    <p><i class="fas fa-lock" aria-hidden="true"></i>{% if page.lang == "pt" %}Os seus dados serão usados apenas para responder a este pedido.{% else %}Your details will only be used to respond to this request.{% endif %}</p>
+    <button type="submit" class="button contact-form-submit">
+        <span>{% if page.lang == "pt" %}Enviar pedido{% else %}Send request{% endif %}</span>
+        <i class="fas fa-arrow-right" aria-hidden="true"></i>
     </button>
 </div>

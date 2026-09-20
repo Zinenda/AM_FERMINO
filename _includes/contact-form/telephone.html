@@ -1,14 +1,4 @@
-<div class="row">
-    <div class="input-field">
-        <i class="fas fa-id-badge prefix"></i>
-        <input type="tel" name="Telefone" id="telephone" class="validate" autocomplete="tel" required>
-        <label for="telephone">
-            {% if page.lang == "pt" %}
-                Telefone
-
-                {% else %}
-                    Telephone
-            {% endif %}
-        </label>
-    </div>
+<div class="contact-form-field">
+    <label for="telephone"><i class="fas fa-phone-alt" aria-hidden="true"></i>{% if page.lang == "pt" %}Telefone{% else %}Telephone{% endif %}</label>
+    <input type="tel" name="Telefone" id="telephone" autocomplete="tel" placeholder="+258" required>
 </div>

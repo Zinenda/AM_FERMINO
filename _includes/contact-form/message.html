@@ -1,14 +1,4 @@
-<div class="row">
-    <div class="input-field">
-        <i class="fas fa-comment-alt prefix"></i>
-        <textarea name="Mensagem" id="message" class="materialize-textarea validate" required></textarea>
-        <label for="message">
-            {% if page.lang == "pt" %}
-                Mensagem
-
-                {% else %}
-                    Message
-            {% endif %}
-        </label>
-    </div>
+<div class="contact-form-field contact-form-field-message">
+    <label for="message"><i class="fas fa-comment-alt" aria-hidden="true"></i>{% if page.lang == "pt" %}Mensagem{% else %}Message{% endif %}</label>
+    <textarea name="Mensagem" id="message" placeholder="{% if page.lang == 'pt' %}Conte-nos brevemente sobre o projecto, localização e prazo pretendido.{% else %}Briefly describe the project, location and preferred timeline.{% endif %}" required></textarea>
 </div>

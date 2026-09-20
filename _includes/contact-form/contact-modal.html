@@ -1,14 +1,43 @@
-<div id="contactos" class="modal">
-    <div class="modal-content container">
-        <h5 class="primary-color-text center text-title">
-            {% if page.lang == "pt" %}
-                Fale Connosco
+<div id="contactos" class="modal contact-modal" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <button type="button" class="contact-modal-close modal-close" aria-label="{% if page.lang == 'pt' %}Fechar formulário de contacto{% else %}Close contact form{% endif %}">
+        <i class="fas fa-times" aria-hidden="true"></i>
+    </button>
 
+    <div class="contact-modal-shell">
+        <aside class="contact-modal-aside">
+            <p class="eyebrow">{% if page.lang == "pt" %}Novo projecto{% else %}New project{% endif %}</p>
+            <h2>{% if page.lang == "pt" %}Experiência ambiental desde a primeira conversa.{% else %}Environmental expertise from the first conversation.{% endif %}</h2>
+            <p class="contact-modal-aside-copy">
+                {% if page.lang == "pt" %}
+                    Partilhe o desafio connosco. A nossa equipa analisa o contexto e indica o próximo passo mais adequado.
                 {% else %}
-                    Talk to Us
-            {% endif %}
-        </h5>
+                    Share the challenge with us. Our team will review the context and recommend the most suitable next step.
+                {% endif %}
+            </p>
 
-        {% include contact-form/form.html %}
+            <ul class="contact-modal-benefits">
+                <li><i class="fas fa-clock" aria-hidden="true"></i><span>{% if page.lang == "pt" %}Resposta em até 1 dia útil{% else %}Reply within 1 business day{% endif %}</span></li>
+                <li><i class="fas fa-shield-alt" aria-hidden="true"></i><span>{% if page.lang == "pt" %}Análise técnica e confidencial{% else %}Technical and confidential review{% endif %}</span></li>
+                <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span>{% if page.lang == "pt" %}Equipa local em Tete{% else %}Local team in Tete{% endif %}</span></li>
+            </ul>
+
+            <div class="contact-modal-direct">
+                <a href="tel:+258865029550"><i class="fas fa-phone-alt" aria-hidden="true"></i><span>+258 86 502 9550</span></a>
+                <a href="mailto:info@amfermino.com"><i class="fas fa-envelope" aria-hidden="true"></i><span>info@amfermino.com</span></a>
+            </div>
+        </aside>
+
+        <section class="contact-modal-main">
+            <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Solicitar proposta{% else %}Request a proposal{% endif %}</p>
+            <h2 id="contact-modal-title">{% if page.lang == "pt" %}Fale connosco{% else %}Talk to us{% endif %}</h2>
+            <p class="contact-modal-intro">
+                {% if page.lang == "pt" %}
+                    Preencha os dados essenciais. Entraremos em contacto para compreender o âmbito do projecto.
+                {% else %}
+                    Share the essential details. We will contact you to understand the scope of your project.
+                {% endif %}
+            </p>
+            {% include contact-form/form.html %}
+        </section>
     </div>
 </div>

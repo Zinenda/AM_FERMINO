@@ -1,11 +1,8 @@
-<div class="row">
-    <form name="Formulário de Contacto" method="post" netlify>
-        {% include contact-form/name.html %}
-        {% include contact-form/telephone.html %}
-        {% include contact-form/email.html %}
-        {% include contact-form/subject.html %}
-        {% include contact-form/message.html %}
-
-        {% include contact-form/submit.html %}
-    </form>
-</div>
+<form class="contact-form" name="Formulário de Contacto" method="post" netlify>
+    {% include contact-form/name.html %}
+    {% include contact-form/telephone.html %}
+    {% include contact-form/email.html %}
+    {% include contact-form/subject.html %}
+    {% include contact-form/message.html %}
+    {% include contact-form/submit.html %}
+</form>

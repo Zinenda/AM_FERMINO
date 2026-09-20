@@ -1,25 +1,35 @@
 <section class="section portfolio-section scrollspy" id="portfolio">
     <div class="site-container">
-        <div class="section-heading-row"><div><p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Experiência no terreno{% else %}Field experience{% endif %}</p><h2>
+        <div class="portfolio-heading-layout">
+            <div>
+                <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Experiência no terreno{% else %}Field experience{% endif %}</p>
+                <h2>{% if page.lang == "pt" %}Nosso Portfólio{% else %}Our Portfolio{% endif %}</h2>
+            </div>
+            <p class="portfolio-intro">{% if page.lang == "pt" %}Projectos que demonstram a nossa experiência em consultoria, floresta, fauna e recuperação ambiental.{% else %}Projects demonstrating our experience in consultancy, forestry, wildlife and environmental rehabilitation.{% endif %}</p>
             {% if page.lang == "pt" %}
-                Nosso Portfólio
-                {% else %}
-                    Our Portfolio
-            {% endif %}
-        </h2></div>
-        <p class="portfolio-intro">{% if page.lang == "pt" %}Projectos que demonstram a nossa experiência em consultoria, floresta, fauna e recuperação ambiental.{% else %}Projects demonstrating our experience in consultancy, forestry, wildlife and environmental rehabilitation.{% endif %}</p>
-
-        {% if page.lang == "pt" %}
-            <a href="/portfolio-pt/" class="button button-dark">Ver todos os projectos</a>
+                <a href="/portfolio-pt/" class="button button-dark portfolio-all">Ver todos os projectos <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
             {% else %}
-                <a href="/portfolio-en/" class="button button-dark">View all projects</a>
-        {% endif %}
-    </div>
+                <a href="/portfolio-en/" class="button button-dark portfolio-all">View all projects <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            {% endif %}
+        </div>
 
-        <div class="portfolio-grid">
-            {% for item in site.portfolio limit: 4 %}
-                <a href="{{ item.image }}" data-lightbox="portfolio" data-title="{{ item.title }}" class="portfolio-card{% if forloop.first %} portfolio-featured{% endif %}"><img src="{{ item.image }}" alt="{{ item.title }}" loading="lazy"><span>{{ item.title }} <b aria-hidden="true">↗</b></span></a>
-            {% endfor %}
+        <div class="portfolio-grid" aria-label="{% if page.lang == 'pt' %}Projectos ambientais em destaque{% else %}Featured environmental projects{% endif %}">
+            <a href="/assets/img/generated/portfolio-fauna-relocation.jpg" data-lightbox="portfolio" data-title="{% if page.lang == 'pt' %}Translocação de fauna silvestre{% else %}Wildlife relocation{% endif %}" class="portfolio-card portfolio-card-featured">
+                <img src="/assets/img/generated/portfolio-fauna-relocation.jpg" alt="{% if page.lang == 'pt' %}Técnico ambiental a preparar um camaleão para translocação{% else %}Environmental technician preparing a chameleon for relocation{% endif %}">
+                <span class="portfolio-caption"><small>01</small><strong>{% if page.lang == "pt" %}Translocação de fauna silvestre{% else %}Wildlife relocation{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </a>
+            <a href="/assets/img/generated/portfolio-land-restoration.jpg" data-lightbox="portfolio" data-title="{% if page.lang == 'pt' %}Recuperação de áreas degradadas{% else %}Degraded land restoration{% endif %}" class="portfolio-card portfolio-card-restoration">
+                <img src="/assets/img/generated/portfolio-land-restoration.jpg" alt="{% if page.lang == 'pt' %}Área degradada em processo de reflorestação em Tete{% else %}Degraded area under reforestation in Tete{% endif %}" loading="lazy">
+                <span class="portfolio-caption"><small>02</small><strong>{% if page.lang == "pt" %}Recuperação de áreas degradadas{% else %}Degraded land restoration{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </a>
+            <a href="/assets/img/generated/portfolio-slope-inspection.jpg" data-lightbox="portfolio" data-title="{% if page.lang == 'pt' %}Área degradada recuperada{% else %}Recovered degraded area{% endif %}" class="portfolio-card portfolio-card-inspection">
+                <img src="/assets/img/generated/portfolio-slope-inspection.jpg" alt="{% if page.lang == 'pt' %}Técnico a inspeccionar um talude revegetado{% else %}Technician inspecting a revegetated slope{% endif %}" loading="lazy">
+                <span class="portfolio-caption"><small>03</small><strong>{% if page.lang == "pt" %}Área degradada recuperada{% else %}Recovered degraded area{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </a>
+            <a href="/assets/img/generated/portfolio-biomats.jpg" data-lightbox="portfolio" data-title="{% if page.lang == 'pt' %}Biomantas para recuperação de áreas degradadas{% else %}Biomats for degraded land restoration{% endif %}" class="portfolio-card portfolio-card-biomats">
+                <img src="/assets/img/generated/portfolio-biomats.jpg" alt="{% if page.lang == 'pt' %}Biomantas instaladas num talude em recuperação{% else %}Biomats installed on a slope under restoration{% endif %}" loading="lazy">
+                <span class="portfolio-caption"><small>04</small><strong>{% if page.lang == "pt" %}Biomantas para recuperação de áreas degradadas{% else %}Biomats for degraded land restoration{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            </a>
         </div>
     </div>
 </section>

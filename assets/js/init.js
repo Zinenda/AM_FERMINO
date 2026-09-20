@@ -139,4 +139,24 @@ $(document).ready(function(){
             }
         });
     }
+
+    function alignHashSection() {
+        if (!window.location.hash) return;
+        var target = document.getElementById(decodeURIComponent(window.location.hash.slice(1)));
+        if (!target || !target.classList.contains('scrollspy')) return;
+
+        var navigation = document.querySelector('.site-nav');
+        var navigationHeight = navigation ? navigation.getBoundingClientRect().height : 0;
+        var targetTop = target.getBoundingClientRect().top + window.pageYOffset - navigationHeight;
+        window.scrollTo(0, Math.max(0, targetTop));
+    }
+
+    window.addEventListener('hashchange', function() {
+        window.setTimeout(alignHashSection, 30);
+    });
+
+    if (window.location.hash) {
+        window.setTimeout(alignHashSection, 30);
+        window.setTimeout(alignHashSection, 650);
+    }
 });

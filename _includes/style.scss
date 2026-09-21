@@ -287,7 +287,7 @@ body.service-drawer-open { overflow: hidden; }
 .article-aside > p:not(.article-aside-label) { color: var(--color-muted); font-size: .78rem; }
 .article-aside .button { width: 100%; margin-top: 1rem; padding-right: 1rem; padding-left: 1rem; font-size: .65rem; }
 .article-content { max-width: 690px; color: var(--color-graphite); font-size: 1rem; line-height: 1.88; }
-.article-content p { max-width: 68ch; margin: 0 0 1.65rem; }
+.article-content p { max-width: 68ch; margin: 0 0 1.65rem; text-align: justify; text-align-last: left; hyphens: auto; }
 .article-content h4, .article-content h5, .article-content h6 { max-width: 26ch; margin-top: 3.2rem; margin-bottom: 1.15rem; color: var(--color-near-black); line-height: 1.22; }
 .article-content h4:first-child, .article-content h5:first-child, .article-content h6:first-child { margin-top: 0; }
 .article-content h4 { font-size: 1.75rem; }

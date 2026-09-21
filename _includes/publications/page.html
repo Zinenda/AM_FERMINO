@@ -1,0 +1,57 @@
+<header class="publications-page-intro">
+    <div class="site-container publications-page-heading">
+        <div>
+            <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Conhecimento público{% else %}Public knowledge{% endif %}</p>
+            <h1>{% if page.lang == "pt" %}Informação que orienta decisões.{% else %}Information that guides decisions.{% endif %}</h1>
+        </div>
+        <p>{% if page.lang == "pt" %}Estudos, consultas públicas e actualizações para tornar os processos ambientais mais claros, participativos e responsáveis.{% else %}Studies, public consultations and updates that make environmental processes clearer, more participatory and responsible.{% endif %}</p>
+    </div>
+</header>
+
+<main class="publications-page-main">
+    <div class="site-container">
+        {% assign featured_post = site.posts.first %}
+        {% if featured_post %}
+        <article class="publication-featured">
+            <a class="publication-featured-image" href="{{ featured_post.url | relative_url }}">
+                <img src="{{ featured_post.image | relative_url }}" alt="{% if page.lang == 'en' and featured_post.title_en %}{{ featured_post.title_en | escape }}{% else %}{{ featured_post.title | escape }}{% endif %}">
+            </a>
+            <div class="publication-featured-content">
+                <p class="publication-date">{% if page.lang == "pt" %}Em destaque{% else %}Featured{% endif %} · {{ featured_post.date | date: "%d.%m.%Y" }}</p>
+                <h2>{% if page.lang == "en" and featured_post.title_en %}{{ featured_post.title_en }}{% else %}{{ featured_post.title }}{% endif %}</h2>
+                <p>{% if page.lang == "en" and featured_post.excerpt_en %}{{ featured_post.excerpt_en }}{% else %}{{ featured_post.excerpt | strip_html | truncatewords: 38 }}{% endif %}</p>
+                <div class="publication-actions">
+                    <a href="{{ featured_post.url | relative_url }}" class="button button-primary">{% if page.lang == "pt" %}Ler publicação{% else %}Read in Portuguese{% endif %} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    {% if featured_post.document %}<a href="{{ featured_post.document | relative_url }}" class="publication-document" target="_blank" rel="noopener"><i class="far fa-file-pdf" aria-hidden="true"></i> {% if page.lang == "pt" %}Documento técnico{% else %}Technical document{% endif %}</a>{% endif %}
+                </div>
+            </div>
+        </article>
+        {% endif %}
+
+        <div class="publications-archive-heading">
+            <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Arquivo{% else %}Archive{% endif %}</p>
+            <h2>{% if page.lang == "pt" %}Todas as publicações{% else %}All publications{% endif %}</h2>
+        </div>
+
+        <div class="publications-archive-grid">
+            {% for post in site.posts %}
+            <article class="publication-archive-card">
+                <a class="publication-archive-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{% if page.lang == 'en' and post.title_en %}{{ post.title_en | escape }}{% else %}{{ post.title | escape }}{% endif %}" loading="lazy"></a>
+                <div class="publication-archive-content">
+                    <p class="publication-date">{% if page.lang == "pt" %}Actualidade ambiental{% else %}Environmental update{% endif %} · {{ post.date | date: "%d.%m.%Y" }}</p>
+                    <h3><a href="{{ post.url | relative_url }}">{% if page.lang == "en" and post.title_en %}{{ post.title_en }}{% else %}{{ post.title }}{% endif %}</a></h3>
+                    <p>{% if page.lang == "en" and post.excerpt_en %}{{ post.excerpt_en }}{% else %}{{ post.excerpt | strip_html | truncatewords: 26 }}{% endif %}</p>
+                    <a href="{{ post.url | relative_url }}" class="service-link">{% if page.lang == "pt" %}Ler publicação{% else %}Read in Portuguese{% endif %} <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+
+<section class="portfolio-page-cta publications-page-cta">
+    <div class="site-container">
+        <p>{% if page.lang == "pt" %}Precisa de esclarecimentos sobre um projecto ambiental?{% else %}Need clarification about an environmental project?{% endif %}</p>
+        <a href="#contactos" class="button button-primary modal-trigger">{% if page.lang == "pt" %}Falar com a equipa{% else %}Talk to our team{% endif %} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    </div>
+</section>

@@ -1,42 +1,8 @@
 ---
-title: Notícias
+title: Publicações
 lang: pt
 ref: noticias
 hide_page_header: true
 layout: default
 ---
-
-<header class="slider hide-on-small-only">
-	<ul class="slides">
-		{% for post in site.posts limit: 4 %}
-			<li>
-				<img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}">
-				<div class="caption center-align">
-					<h4>{{ post.title }}</h4>
-				</div>
-			</li>
-		{% endfor %}
-	</ul>
-</header>
-
-<section class="section white">
-	<div class="container">
-		<div class="row">
-			{% for post in site.posts %}
-				<article class="grey lighten-4">
-					<div class="col s12 l4">
-						<img src="{{ post.image | relative_url }}" alt="{{ post.title | escape }}" loading="lazy">
-					</div>
-					<div class="col s12 l8">
-						<h5 class="bold">{{ post.title }}</h5>
-						<p>{{ post.content | truncatewords: 50 }}</p>
-						<div class="center">
-							<a href="{{ post.url | relative_url }}" class="btn-large waves-effect waves-light">Leia Mais</a>
-							{% if post.document %}<a href="{{ post.document | relative_url }}" class="btn-large btn-flat waves-effect waves-light" target="_blank" rel="noopener">Documento PDF</a>{% endif %}
-						</div>
-					</div>
-				</article>
-			{% endfor %}
-		</div>
-	</div>
-</section>
+{% include publications/page.html %}

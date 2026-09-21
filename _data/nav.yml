@@ -36,6 +36,6 @@ en:
     url: "#portfolio"
 
   noticias:
-    title: News
+    title: Publications
     icon: newspaper
     url: "#noticias"

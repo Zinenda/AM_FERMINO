@@ -1,8 +1,10 @@
 ---
 title: Consulta Pública do Relatório do Estudo de Impacto Ambiental (REIA) e do
   Plano de Gestão Ambiental (PGA)
+title_en: Public consultation on the Environmental Impact Assessment Report and Environmental Management Plan
+excerpt_en: Public access to the environmental assessment and management plan for the Mualadzi gold project in Chifunde, Tete.
 date: 2026-09-01T15:48:13.720Z
-image: /assets/img/uploads/imagem-codex-1_09_2026-20_03_30.png
+image: /assets/img/generated/service-consulting-landscape.png
 document: /assets/img/uploads/reia-sim-mining-volumes-ii-e-iii-relatorio-tecnico-e-plano-de-gestao-ambiental.pdf
 layout: post
 lang: pt

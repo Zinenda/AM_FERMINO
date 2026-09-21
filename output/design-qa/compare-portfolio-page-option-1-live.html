@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comparação — página de portfólio, opção 1</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; background: #111714; color: #fff; font: 600 14px/1.4 system-ui, sans-serif; }
+    h1 { margin: 0 0 20px; font-size: 22px; }
+    main { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start; }
+    figure { margin: 0; padding: 12px; background: #1b2420; border: 1px solid #344039; }
+    figcaption { margin-bottom: 10px; color: #a5c957; letter-spacing: .08em; text-transform: uppercase; }
+    img { display: block; width: 100%; height: auto; background: #f4f3ed; }
+    .viewport { height: 475px; overflow: hidden; background: #f4f3ed; }
+    iframe { display: block; width: 1440px; height: 1024px; border: 0; background: #f4f3ed; transform: scale(.455); transform-origin: 0 0; }
+    @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <h1>Página de portfólio — opção 1</h1>
+  <main>
+    <figure>
+      <figcaption>Referência seleccionada</figcaption>
+      <img src="portfolio-page-option-1-source.png" alt="Referência visual seleccionada para o portfólio">
+    </figure>
+    <figure>
+      <figcaption>Implementação local ao vivo</figcaption>
+      <div class="viewport"><iframe src="http://127.0.0.1:4001/portfolio-pt/" title="Implementação local do portfólio"></iframe></div>
+    </figure>
+  </main>
+</body>
+</html>

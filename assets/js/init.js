@@ -43,6 +43,31 @@ $(document).ready(function(){
         });
     });
 
+    var portfolioGrid = document.querySelector('.portfolio-page-grid');
+    var portfolioFilters = Array.prototype.slice.call(document.querySelectorAll('[data-portfolio-filter]'));
+
+    if (portfolioGrid && portfolioFilters.length) {
+        var portfolioProjects = Array.prototype.slice.call(portfolioGrid.querySelectorAll('[data-portfolio-category]'));
+
+        portfolioFilters.forEach(function(filterButton) {
+            filterButton.addEventListener('click', function() {
+                var selectedCategory = filterButton.getAttribute('data-portfolio-filter');
+
+                portfolioFilters.forEach(function(button) {
+                    var isSelected = button === filterButton;
+                    button.classList.toggle('is-active', isSelected);
+                    button.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
+                });
+
+                portfolioProjects.forEach(function(project) {
+                    project.hidden = selectedCategory !== 'all' && project.getAttribute('data-portfolio-category') !== selectedCategory;
+                });
+
+                portfolioGrid.classList.toggle('is-filtered', selectedCategory !== 'all');
+            });
+        });
+    }
+
     var serviceLayer = document.querySelector('.service-drawer-layer');
     if (serviceLayer) {
         var serviceDrawer = serviceLayer.querySelector('.service-drawer');

@@ -68,4 +68,65 @@ No separate focused crop was required because the combined desktop comparison re
 
 - P3 optional: replace generated project depictions with approved, rights-cleared AM Fermino documentary photographs when the final photography library is available.
 
+## QA adicional — separadores da secção Sobre
+
+- Source visual truth: captura anexada pelo utilizador nesta conversa, estado `Valores` activo; o anexo não expõe um caminho persistente no sistema de ficheiros.
+- Implementation route: `http://localhost:4001/#sobre`.
+- Browser-rendered evidence: Chrome local inspeccionado através da captura CUA nos estados `Missão`, `Visão` e `Valores`; a API de captura não expôs um caminho persistente.
+- Source pixels: 2880 × 1800, apresentado na conversa a 1996 × 1248.
+- Implementation capture: viewport Chrome de desktop, captura apresentada a 1440 × 760; a região do componente foi comparada visualmente sem inferir diferenças de escala global.
+- State: secção Sobre em português, com os três estados do tablist testados.
+
+### Findings e comparação
+
+- A numeração decorativa `01` foi removida do HTML e as regras responsivas sem uso foram eliminadas.
+- O ponto separador deixou de ser um pseudo-elemento interno dos botões. Isso removeu o deslocamento que contaminava a caixa de alinhamento do sublinhado.
+- O indicador activo passou a usar `left: 50%`, `transform: translateX(-50%)`, largura máxima de 52 px e largura fluida limitada ao próprio texto.
+- Verificação visual: o indicador ficou centrado sob `Missão`, `Visão` e `Valores`; os pontos permanecem equidistantes e nenhum conteúdo ou imagem mudou.
+
+### Required fidelity surfaces
+
+- Fonts and typography: Montserrat, pesos, tamanhos e hierarquia existentes foram preservados.
+- Spacing and layout rhythm: apenas os separadores e a geometria do indicador activo foram alterados; a composição editorial e o espaçamento do tablist permanecem intactos.
+- Colors and visual tokens: verde escuro, branco e o acento lima continuam a usar os tokens existentes.
+- Image quality and asset fidelity: as duas imagens originais da secção foram preservadas sem recorte ou compressão adicional.
+- Copy and content: títulos, parágrafos e rótulos dos três separadores permanecem inalterados.
+
+### Interaction verification
+
+- `Missão`, `Visão` e `Valores` alternam correctamente os painéis e actualizam `aria-selected`.
+- O sublinhado acompanha cada estado activo sem sobrepor os pontos separadores.
+- Não foram introduzidos novos elementos visuais nem alterações de conteúdo.
+
+final result: passed
+
+## QA adicional — fotografias reais do viveiro de Kaunge
+
+- Source visual truth: `IMG_5285.JPG`, `IMG_5285@3x.jpg` e `IMG_5283.JPG`, fotografias fornecidas pelo utilizador nesta conversa.
+- Implementation routes: `http://127.0.0.1:4001/#portfolio`, `http://127.0.0.1:4001/portfolio-pt/` e painel do serviço de produção de mudas.
+- Browser-rendered evidence: Chrome local inspeccionado através de capturas CUA; a API de captura não expôs um caminho persistente.
+- Source pixels: 6076 × 3900, 5760 × 3241 e 4032 × 3024.
+- Web assets: 2200 × 1412, 2200 × 1238 e 1600 × 1200, em JPEG optimizado.
+
+### Findings e comparação
+
+- O panorama sem pessoas foi aplicado ao destaque largo da página inicial, onde a leitura das fileiras de mudas permanece clara sob a legenda.
+- O panorama com a equipa foi aplicado ao cartão do viveiro e ao detalhe do serviço, reforçando escala e autenticidade sem substituir imagens de fauna ou recuperação ambiental.
+- O close-up de citrinos substituiu uma representação genérica de sementes; o texto foi corrigido para `Produção de plantas fruteiras`, em coerência com a fotografia.
+- O lazy-load foi observado no navegador e as imagens carregaram sem distorção, overflow ou perda do assunto principal.
+
+### Required fidelity surfaces
+
+- Fonts and typography: a hierarquia e os estilos existentes dos cartões foram preservados.
+- Spacing and layout rhythm: a grelha editorial existente foi mantida; apenas os activos, legendas e enquadramentos mudaram.
+- Colors and visual tokens: overlays, verde de marca, acento lima e contraste de texto permanecem inalterados.
+- Image quality and asset fidelity: foram usadas fotografias reais fornecidas pelo utilizador, redimensionadas sem ampliação e com proporção preservada.
+- Copy and content: legendas e textos alternativos PT/EN descrevem o viveiro de Kaunge e as plantas fruteiras de forma específica.
+
+### Interaction verification
+
+- Os três activos respondem no servidor local e abrem a imagem correspondente no Lightbox.
+- A filtragem `Floresta` continua a incluir os dois novos cartões do viveiro.
+- A página inicial e a página de portfólio foram verificadas em Chrome sem imagens quebradas.
+
 final result: passed

@@ -1,11 +1,17 @@
 {
-  "name": "ICLM",
+  "name": "am-fermino-website",
   "version": "1.0.0",
-  "description": "Imperial Crown Logistics Mozambique",
+  "description": "Website institucional da AM Fermino Soluções Ambientais",
   "main": "index.js",
   "author": "Ivo Zinenda <izinenda@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "admin": "decap-server"
+  },
   "dependencies": {
     "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {
+    "decap-server": "3.11.2"
   }
 }

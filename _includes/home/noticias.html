@@ -9,11 +9,11 @@
         <ul class="publication-grid">
             {% for post in site.posts limit: 3 %}
                 <li class="publication-card">
-                    <a class="publication-image" href="{{ post.url | relative_url }}"><img src="{{ post.image | relative_url }}" alt="{% if page.lang == 'en' and post.title_en %}{{ post.title_en | escape }}{% else %}{{ post.title | escape }}{% endif %}" loading="lazy"></a>
+                    <a class="publication-image" href="{% if page.lang == 'en' and post.english_url %}{{ post.english_url | relative_url }}{% else %}{{ post.url | relative_url }}{% endif %}"><img src="{{ post.image | relative_url }}" alt="{% if page.lang == 'en' and post.title_en %}{{ post.title_en | escape }}{% else %}{{ post.title | escape }}{% endif %}" loading="lazy"></a>
                     <div class="publication-content">
                         <p class="publication-date">{% if page.lang == "pt" %}Actualidade ambiental{% else %}Environmental update{% endif %} · {{ post.date | date: "%d.%m.%Y" }}</p><h3>{% if page.lang == "en" and post.title_en %}{{ post.title_en }}{% else %}{{ post.title }}{% endif %}</h3>
                         <p class="publication-excerpt">{% if page.lang == "en" and post.excerpt_en %}{{ post.excerpt_en }}{% else %}{{ post.excerpt | strip_html | truncatewords: 22 }}{% endif %}</p>
-                        <a href="{{ post.url | relative_url }}" title="{% if page.lang == 'en' and post.title_en %}{{ post.title_en | escape }}{% else %}{{ post.title | escape }}{% endif %}" class="service-link">{% if page.lang == "pt" %}Ler publicação{% else %}Read in Portuguese{% endif %} <span aria-hidden="true">↗</span></a>
+                        <a href="{% if page.lang == 'en' and post.english_url %}{{ post.english_url | relative_url }}{% else %}{{ post.url | relative_url }}{% endif %}" title="{% if page.lang == 'en' and post.title_en %}{{ post.title_en | escape }}{% else %}{{ post.title | escape }}{% endif %}" class="service-link">{% if page.lang == "pt" %}Ler publicação{% elsif post.english_url %}Read publication{% else %}Read in Portuguese{% endif %} <span aria-hidden="true">↗</span></a>
                     </div>
                 </li>
             {% endfor %}

@@ -6,9 +6,10 @@ layout: default
     <header class="article-hero">
         <div class="site-container article-hero-grid">
             <div class="article-heading">
-                <p class="eyebrow">Publicação · {{ page.date | date: "%d.%m.%Y" }}</p>
+                <p class="eyebrow">{% if page.lang == "en" %}Publication{% else %}Publicação{% endif %} · {{ page.date | date: "%d.%m.%Y" }}</p>
                 <h1>{{ page.title }}</h1>
-                <a href="/noticias/" class="article-back"><i class="fas fa-arrow-left" aria-hidden="true"></i> Todas as publicações</a>
+                <a href="{% if page.lang == 'en' %}/publications/{% else %}/noticias/{% endif %}" class="article-back"><i class="fas fa-arrow-left" aria-hidden="true"></i> {% if page.lang == "en" %}All publications{% else %}Todas as publicações{% endif %}</a>
+                {% if page.english_url %}<a href="{{ page.english_url | relative_url }}" class="article-back" lang="en" hreflang="en">Read in English</a>{% elsif page.portuguese_url %}<a href="{{ page.portuguese_url | relative_url }}" class="article-back" lang="pt" hreflang="pt">Ler em português</a>{% endif %}
             </div>
             <figure class="article-hero-image"><img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}"></figure>
         </div>
@@ -16,9 +17,10 @@ layout: default
 
     <div class="site-container article-layout">
         <aside class="article-aside">
-            <p class="article-aside-label">Documento</p>
-            <p>Informação ambiental para consulta e participação pública.</p>
-            {% if page.document %}<a href="{{ page.document | relative_url }}" class="button button-secondary" target="_blank" rel="noopener"><i class="far fa-file-pdf" aria-hidden="true"></i> Abrir documento técnico</a>{% endif %}
+            <p class="article-aside-label">{% if page.lang == "en" %}Document{% else %}Documento{% endif %}</p>
+            <p>{% if page.lang == "en" %}Environmental information for public consultation and participation.{% else %}Informação ambiental para consulta e participação pública.{% endif %}</p>
+            {% if page.document %}<a href="{{ page.document | relative_url }}" class="button button-secondary" target="_blank" rel="noopener"><i class="far fa-file-pdf" aria-hidden="true"></i> {% if page.lang == "en" %}Open technical document{% else %}Abrir documento técnico{% endif %}</a>{% endif %}
+            {% if page.lang == "en" and page.document %}<p>The technical document is in Portuguese.</p>{% endif %}
         </aside>
         <div class="article-content">
             {{ content }}
@@ -28,7 +30,7 @@ layout: default
 
 <section class="portfolio-page-cta">
     <div class="site-container">
-        <p>Precisa de apoio num processo ambiental?</p>
-        <a href="#contactos" class="button button-primary modal-trigger">Falar com a equipa <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        <p>{% if page.lang == "en" %}Need support with an environmental assessment?{% else %}Precisa de apoio num processo ambiental?{% endif %}</p>
+        <a href="#contactos" class="button button-primary modal-trigger">{% if page.lang == "en" %}Talk to our team{% else %}Falar com a equipa{% endif %} <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
     </div>
 </section>

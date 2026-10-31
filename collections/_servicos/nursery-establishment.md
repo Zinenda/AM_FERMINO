@@ -1,6 +1,8 @@
 ---
 title: Recovery Of Degraded Area
 lang: en
+image: /assets/img/farm/kaunge-nursery-team.jpg
+image_alt: "Team at the Kaunge nursery"
 icon: recycle
 ---
 AM Fermino has been a strong partner of the large mining companies in Tete Province to recover degraded areas.

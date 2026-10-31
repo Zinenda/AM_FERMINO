@@ -1,6 +1,8 @@
 ---
 title: Fauna Animal Clean Up
 lang: en
+image: /assets/img/generated/service-fauna-tete.jpg
+image_alt: "Environmental service: Fauna Animal Clean Up"
 icon: paw
 ---
 We do wildlife capture work in residences and especially in areas of vegetation suppression to rid the environment and reduce the impact of vegetation suppression on wildlife.

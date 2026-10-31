@@ -1,6 +1,8 @@
 ---
 title: Recuperação De Áreas Degradadas
 lang: pt
+image: /assets/img/generated/service-restoration-tete.jpg
+image_alt: "Serviço ambiental: Recuperação De Áreas Degradadas"
 icon: recycle
 ---
 AM Fermino tem sido um parceiro forte das grandes empresas mineiras da Província de Tete na recuperação de áreas degradadas.

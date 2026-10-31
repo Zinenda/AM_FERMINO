@@ -29,29 +29,13 @@
         <div class="service-drawer-content">
             <button class="service-drawer-close" type="button" aria-label="{% if page.lang == 'pt' %}Fechar{% else %}Close{% endif %}"><i class="fas fa-times" aria-hidden="true"></i></button>
             {% for item in servicos %}
-                {% if page.lang == 'pt' %}
-                    {% case forloop.index %}
-                        {% when 1 %}{% assign service_image = '/assets/img/generated/service-fauna-tete.jpg' %}
-                        {% when 2 %}{% assign service_image = '/assets/img/generated/service-consulting-tete.jpg' %}
-                        {% when 3 %}{% assign service_image = '/assets/img/generated/service-forest-tete.jpg' %}
-                        {% when 4 %}{% assign service_image = '/assets/img/generated/service-restoration-tete.jpg' %}
-                        {% when 5 %}{% assign service_image = '/assets/img/farm/kaunge-nursery-team.jpg' %}
-                    {% endcase %}
-                {% else %}
-                    {% case forloop.index %}
-                        {% when 1 %}{% assign service_image = '/assets/img/generated/service-consulting-tete.jpg' %}
-                        {% when 2 %}{% assign service_image = '/assets/img/generated/service-fauna-tete.jpg' %}
-                        {% when 3 %}{% assign service_image = '/assets/img/generated/service-forest-tete.jpg' %}
-                        {% when 4 %}{% assign service_image = '/assets/img/generated/service-restoration-tete.jpg' %}
-                        {% when 5 %}{% assign service_image = '/assets/img/farm/kaunge-nursery-team.jpg' %}
-                    {% endcase %}
-                {% endif %}
+                {% assign service_image = item.image | default: "/assets/img/generated/service-consulting-tete.jpg" %}
                 <article class="service-drawer-panel{% if forloop.first %} is-active{% endif %}" id="service-panel-{{ forloop.index }}" data-service-index="{{ forloop.index0 }}"{% unless forloop.first %} hidden{% endunless %}>
                     <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Serviço{% else %}Service{% endif %} 0{{ forloop.index }}</p>
                     <h2>{{ item.title }}</h2>
                     <div class="service-drawer-copy">{{ item.content }}</div>
                     <figure class="service-drawer-image">
-                        <img src="{{ service_image | relative_url }}" alt="{% if forloop.index == 5 %}{% if page.lang == 'pt' %}Viveiro de Kaunge com fileiras de mudas e equipa em visita técnica{% else %}Kaunge nursery with rows of seedlings and a team on a technical visit{% endif %}{% else %}{% if page.lang == 'pt' %}Panorâmica da província de Tete relacionada com {{ item.title | downcase }}{% else %}Panoramic view of Tete Province related to {{ item.title | downcase }}{% endif %}{% endif %}" loading="lazy" decoding="async">
+                        <img src="{{ service_image | relative_url }}" alt="{{ item.image_alt | default: item.title | escape }}" loading="lazy" decoding="async">
                     </figure>
                     <div class="service-drawer-meta">
                         <span>{% if page.lang == "pt" %}Experiência local{% else %}Local experience{% endif %}</span>

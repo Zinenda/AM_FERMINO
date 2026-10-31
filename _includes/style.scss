@@ -193,6 +193,7 @@ body.service-drawer-open { overflow: hidden; }
 .portfolio-project-field { grid-column: 6 / span 4; grid-row: 2; }
 .portfolio-project-seeds { grid-column: 10 / span 4; grid-row: 2; }
 .portfolio-project-restoration { grid-column: 14 / span 3; grid-row: 2; }
+.portfolio-project-extra { grid-column: span 4; min-height: 260px; }
 .portfolio-project img { width: 100%; height: 100%; object-fit: cover; transition: transform .55s cubic-bezier(.2,.75,.25,1), filter .35s ease; }
 .portfolio-project-featured img { object-position: 48% center; }
 .portfolio-project-biomats img { object-position: center 58%; }

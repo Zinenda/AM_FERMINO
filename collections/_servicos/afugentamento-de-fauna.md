@@ -1,6 +1,8 @@
 ---
 title: Afugentamento de Fauna
 lang: pt
+image: /assets/img/generated/service-fauna-tete.jpg
+image_alt: "Serviço ambiental: Afugentamento de Fauna"
 icon: paw
 ---
 Fazemos o trabalho de afugentamento de fauna bravia nas residências incluindo animais peçonhentos e em áreas de supressão vegetal de forma a reduzir o impacto da supressão vegetal sobre a fauna bravia.

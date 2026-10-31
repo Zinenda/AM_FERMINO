@@ -19,6 +19,8 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - tests
+  - docs/cms.md
   - Gemfile
   - Gemfile.lock
   - node_modules
@@ -38,6 +40,13 @@ image: /assets/img/logotipo.svg
 color: "#49733d"
 
 collections_dir: collections
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      lang: pt
+      layout: post
 collections:
   sobre:
   servicos:

@@ -12,6 +12,9 @@
       var date = entry.getIn(["data", "date"]);
       var image = entry.getIn(["data", "image"]);
       var asset = image ? this.props.getAsset(image) : null;
+      var document = entry.getIn(["data", "document"]);
+      var documentAsset = document ? this.props.getAsset(document) : null;
+      var hasEnglish = entry.getIn(["data", "body_en"]);
 
       return h("article", { className: "preview-page" },
         h("header", { className: "preview-hero" },
@@ -31,7 +34,15 @@
             }))
           )
         ),
-        h("main", { className: "preview-body" }, this.props.widgetFor("body"))
+        h("main", { className: "preview-body" },
+          documentAsset && h("p", {}, h("a", { href: documentAsset.toString(), target: "_blank", rel: "noopener" }, "Abrir documento técnico (PDF)")),
+          h("h2", {}, "Português"),
+          this.props.widgetFor("body"),
+          hasEnglish && h("section", { lang: "en" },
+            h("h2", {}, entry.getIn(["data", "title_en"]) || "English translation"),
+            this.props.widgetFor("body_en")
+          )
+        )
       );
     }
   });

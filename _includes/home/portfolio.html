@@ -14,22 +14,12 @@
         </div>
 
         <div class="portfolio-grid" aria-label="{% if page.lang == 'pt' %}Projectos ambientais em destaque{% else %}Featured environmental projects{% endif %}">
-            <a href="/assets/img/generated/portfolio-fauna-relocation.jpg" data-lightbox="portfolio" data-title="{% if page.lang == 'pt' %}Translocação de fauna silvestre{% else %}Wildlife relocation{% endif %}" class="portfolio-card portfolio-card-featured">
-                <img src="/assets/img/generated/portfolio-fauna-relocation.jpg" alt="{% if page.lang == 'pt' %}Técnico ambiental a preparar um camaleão para translocação{% else %}Environmental technician preparing a chameleon for relocation{% endif %}">
-                <span class="portfolio-caption"><small>01</small><strong>{% if page.lang == "pt" %}Translocação de fauna silvestre{% else %}Wildlife relocation{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            {% for item in site.data.portfolio.home %}
+            <a class="portfolio-card {% case forloop.index %}{% when 1 %}portfolio-card-featured{% when 2 %}portfolio-card-restoration{% when 3 %}portfolio-card-inspection{% when 4 %}portfolio-card-biomats{% endcase %}" href="{{ item.image | relative_url }}" data-lightbox="portfolio" data-title="{% if page.lang == "pt" %}{{ item.lightbox_pt | escape }}{% else %}{{ item.lightbox_en | default: item.lightbox_pt | escape }}{% endif %}">
+                <img src="{{ item.image | relative_url }}" alt="{% if page.lang == "pt" %}{{ item.alt_pt | escape }}{% else %}{{ item.alt_en | default: item.alt_pt | escape }}{% endif %}"{% unless forloop.first %} loading="lazy"{% endunless %} decoding="async">
+                <span class="portfolio-caption"><small>{{ forloop.index | prepend: "0" }}</small><strong>{% if page.lang == "pt" %}{{ item.title_pt | escape }}{% else %}{{ item.title_en | default: item.title_pt | escape }}{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
             </a>
-            <a href="/assets/img/generated/portfolio-land-restoration.jpg" data-lightbox="portfolio" data-title="{% if page.lang == 'pt' %}Recuperação de áreas degradadas{% else %}Degraded land restoration{% endif %}" class="portfolio-card portfolio-card-restoration">
-                <img src="/assets/img/generated/portfolio-land-restoration.jpg" alt="{% if page.lang == 'pt' %}Área degradada em processo de reflorestação em Tete{% else %}Degraded area under reforestation in Tete{% endif %}" loading="lazy">
-                <span class="portfolio-caption"><small>02</small><strong>{% if page.lang == "pt" %}Recuperação de áreas degradadas{% else %}Degraded land restoration{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
-            <a href="/assets/img/generated/portfolio-slope-inspection.jpg" data-lightbox="portfolio" data-title="{% if page.lang == 'pt' %}Área degradada recuperada{% else %}Recovered degraded area{% endif %}" class="portfolio-card portfolio-card-inspection">
-                <img src="/assets/img/generated/portfolio-slope-inspection.jpg" alt="{% if page.lang == 'pt' %}Técnico a inspeccionar um talude revegetado{% else %}Technician inspecting a revegetated slope{% endif %}" loading="lazy">
-                <span class="portfolio-caption"><small>03</small><strong>{% if page.lang == "pt" %}Área degradada recuperada{% else %}Recovered degraded area{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
-            <a href="/assets/img/farm/kaunge-nursery-panorama.jpg" data-lightbox="portfolio" data-title="{% if page.lang == 'pt' %}Viveiro de Kaunge{% else %}Kaunge nursery{% endif %}" class="portfolio-card portfolio-card-biomats">
-                <img src="/assets/img/farm/kaunge-nursery-panorama.jpg" alt="{% if page.lang == 'pt' %}Panorâmica das fileiras de mudas no viveiro de Kaunge{% else %}Panoramic view of seedling rows at the Kaunge nursery{% endif %}" loading="lazy" decoding="async">
-                <span class="portfolio-caption"><small>04</small><strong>{% if page.lang == "pt" %}Produção de mudas no viveiro de Kaunge{% else %}Seedling production at the Kaunge nursery{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
+            {% endfor %}
         </div>
     </div>
 </section>

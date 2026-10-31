@@ -1,6 +1,8 @@
 ---
 title: Production of Forest, Ornamental and Fruit Tree Seedlings
 lang: en
+image: /assets/img/generated/service-restoration-tete.jpg
+image_alt: "Environmental service: Production of Forest, Ornamental and Fruit Tree Seedlings"
 icon: leaf
 ---
 AM Fermino has a team of technicians experienced in producing and managing forest nurseries for native, ornamental, exotic and fruit trees of various species.

@@ -1,6 +1,8 @@
 ---
 title: Forest and Wildlife Management
 lang: en
+image: /assets/img/generated/service-forest-tete.jpg
+image_alt: "Environmental service: Forest and Wildlife Management"
 icon: tree
 ---
 With a team of capable senior technicians, coordinated by a Forest Engineer authorised to carry out forest inventories, AM Fermino has carried out forest inventories and management plans for areas under simple licences and forestry concessions.

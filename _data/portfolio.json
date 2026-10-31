@@ -1,0 +1,114 @@
+{
+  "home": [
+    {
+      "image": "/assets/img/generated/portfolio-fauna-relocation.jpg",
+      "title_pt": "Translocação de fauna silvestre",
+      "title_en": "Wildlife relocation",
+      "alt_pt": "Técnico ambiental a preparar um camaleão para translocação",
+      "alt_en": "Environmental technician preparing a chameleon for relocation",
+      "lightbox_pt": "Translocação de fauna silvestre",
+      "lightbox_en": "Wildlife relocation"
+    },
+    {
+      "image": "/assets/img/generated/portfolio-land-restoration.jpg",
+      "title_pt": "Recuperação de áreas degradadas",
+      "title_en": "Degraded land restoration",
+      "alt_pt": "Área degradada em processo de reflorestação em Tete",
+      "alt_en": "Degraded area under reforestation in Tete",
+      "lightbox_pt": "Recuperação de áreas degradadas",
+      "lightbox_en": "Degraded land restoration"
+    },
+    {
+      "image": "/assets/img/generated/portfolio-slope-inspection.jpg",
+      "title_pt": "Área degradada recuperada",
+      "title_en": "Recovered degraded area",
+      "alt_pt": "Técnico a inspeccionar um talude revegetado",
+      "alt_en": "Technician inspecting a revegetated slope",
+      "lightbox_pt": "Área degradada recuperada",
+      "lightbox_en": "Recovered degraded area"
+    },
+    {
+      "image": "/assets/img/farm/kaunge-nursery-panorama.jpg",
+      "title_pt": "Produção de mudas no viveiro de Kaunge",
+      "title_en": "Seedling production at the Kaunge nursery",
+      "alt_pt": "Panorâmica das fileiras de mudas no viveiro de Kaunge",
+      "alt_en": "Panoramic view of seedling rows at the Kaunge nursery",
+      "lightbox_pt": "Viveiro de Kaunge",
+      "lightbox_en": "Kaunge nursery"
+    }
+  ],
+  "projects": [
+    {
+      "image": "/assets/img/generated/portfolio-fauna-relocation.jpg",
+      "title_pt": "Translocação de fauna silvestre",
+      "title_en": "Wildlife relocation",
+      "alt_pt": "Técnico ambiental a preparar um camaleão para translocação",
+      "alt_en": "Environmental technician preparing a chameleon for relocation",
+      "lightbox_pt": "Translocação de fauna silvestre",
+      "lightbox_en": "Wildlife relocation",
+      "category": "fauna",
+      "label_pt": "Fauna",
+      "label_en": "Wildlife"
+    },
+    {
+      "image": "/assets/img/generated/portfolio-biomats.jpg",
+      "title_pt": "Biomantas para recuperação de áreas degradadas",
+      "title_en": "Biomats for degraded land rehabilitation",
+      "alt_pt": "Biomantas instaladas num talude em recuperação",
+      "alt_en": "Biomats installed on a slope under rehabilitation",
+      "lightbox_pt": "Biomantas para recuperação de áreas degradadas",
+      "lightbox_en": "Biomats for degraded land rehabilitation",
+      "category": "restoration",
+      "label_pt": "Recuperação ambiental",
+      "label_en": "Environmental rehabilitation"
+    },
+    {
+      "image": "/assets/img/farm/kaunge-nursery-team.jpg",
+      "title_pt": "Produção de mudas em Kaunge",
+      "title_en": "Seedling production in Kaunge",
+      "alt_pt": "Viveiro de Kaunge com fileiras de mudas e dois membros da equipa",
+      "alt_en": "Kaunge nursery with rows of seedlings and two team members",
+      "lightbox_pt": "Produção de mudas no viveiro de Kaunge",
+      "lightbox_en": "Seedling production at the Kaunge nursery",
+      "category": "forest",
+      "label_pt": "Viveiro",
+      "label_en": "Nursery"
+    },
+    {
+      "image": "/assets/img/generated/hero-tete-fieldwork.jpg",
+      "title_pt": "Levantamentos de campo e estudos ambientais",
+      "title_en": "Field surveys and environmental studies",
+      "alt_pt": "Especialista ambiental a realizar levantamento de campo em Tete",
+      "alt_en": "Environmental specialist carrying out a field survey in Tete",
+      "lightbox_pt": "Levantamentos de campo e estudos ambientais",
+      "lightbox_en": "Field surveys and environmental studies",
+      "category": "consulting",
+      "label_pt": "Consultoria ambiental",
+      "label_en": "Environmental consultancy"
+    },
+    {
+      "image": "/assets/img/farm/kaunge-citrus-seedlings.jpg",
+      "title_pt": "Produção de plantas fruteiras",
+      "title_en": "Fruit seedling production",
+      "alt_pt": "Mudas de citrinos cultivadas em recipientes no viveiro",
+      "alt_en": "Citrus seedlings grown in nursery containers",
+      "lightbox_pt": "Produção de plantas fruteiras",
+      "lightbox_en": "Fruit seedling production",
+      "category": "forest",
+      "label_pt": "Viveiro",
+      "label_en": "Nursery"
+    },
+    {
+      "image": "/assets/img/generated/portfolio-land-restoration.jpg",
+      "title_pt": "Áreas degradadas recuperadas",
+      "title_en": "Rehabilitated degraded areas",
+      "alt_pt": "Área degradada em processo de reflorestação",
+      "alt_en": "Degraded area undergoing reforestation",
+      "lightbox_pt": "Áreas degradadas recuperadas",
+      "lightbox_en": "Rehabilitated degraded areas",
+      "category": "restoration",
+      "label_pt": "Recuperação ambiental",
+      "label_en": "Environmental rehabilitation"
+    }
+  ]
+}

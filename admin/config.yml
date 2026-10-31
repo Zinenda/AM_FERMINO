@@ -2,178 +2,338 @@ backend:
   name: git-gateway
   branch: main
   use_large_media_transforms_in_media_library: false
-
-# Em desenvolvimento, o Decap usa o repositório local através de `npm run admin`.
 local_backend: true
-
 site_url: https://amfermino.com
 display_url: https://amfermino.com
 locale: pt
 show_preview_links: true
-
 logo:
-  src: /assets/img/logotipo.svg
+  src: "/assets/img/logotipo.svg"
   show_in_header: true
-
 media_folder: assets/img/uploads
-public_folder: /assets/img/uploads
-
+public_folder: "/assets/img/uploads"
 slug:
   encoding: ascii
   clean_accents: true
   sanitize_replacement: "-"
-
 collections:
-  - label: "Sobre · PT"
-    label_singular: "Bloco institucional"
-    name: sobre
-    description: "Missão, visão, valores e apresentação institucional em português."
-    folder: collections/_sobre
-    create: false
-    delete: false
-    filter: { field: lang, value: pt }
-    summary: "{{title}} · Português"
-    sortable_fields: [title, commit_date]
+- label: Sobre · PT
+  label_singular: Bloco institucional
+  name: sobre
+  description: Missão, visão, valores e apresentação institucional em português.
+  folder: collections/_sobre
+  create: false
+  delete: false
+  filter:
+    field: lang
+    value: pt
+  summary: "{{title}} · Português"
+  sortable_fields:
+  - title
+  - commit_date
+  fields:
+  - label: Título
+    name: title
+    widget: string
+    hint: 'Use um título curto, por exemplo: Missão ou Valores.'
+  - label: Idioma
+    name: lang
+    widget: hidden
+    default: pt
+  - label: Texto
+    name: body
+    widget: markdown
+    hint: Divida textos longos em parágrafos curtos para facilitar a leitura.
+- label: Serviços · PT
+  label_singular: Serviço
+  name: servicos
+  description: Serviços apresentados na página inicial em português.
+  folder: collections/_servicos
+  create: true
+  filter:
+    field: lang
+    value: pt
+  summary: "{{title}} · Português"
+  sortable_fields:
+  - title
+  - commit_date
+  fields:
+  - label: Título
+    name: title
+    widget: string
+    hint: Nome directo e específico do serviço.
+  - label: Idioma
+    name: lang
+    widget: hidden
+    default: pt
+  - label: Imagem do serviço
+    name: image
+    widget: image
+    choose_url: false
+  - label: Descrição da imagem
+    name: image_alt
+    widget: string
+    hint: Descreva a imagem para leitores de ecrã.
+  - label: Ícone
+    name: icon
+    widget: select
+    options:
+    - label: Recuperação / reciclagem
+      value: recycle
+    - label: Floresta
+      value: tree
+    - label: Consultoria
+      value: deskpro
+    - label: Alerta / risco
+      value: exclamation-circle
+    - label: Ambiente / folha
+      value: leaf
+    - label: Fauna / wildlife
+      value: paw
+  - label: Descrição
+    name: body
+    widget: markdown
+    hint: Explique o problema resolvido, o método e o resultado esperado.
+- label: About · EN
+  label_singular: Institutional block
+  name: about
+  description: Mission, vision, values and company profile in English.
+  folder: collections/_sobre
+  create: false
+  delete: false
+  filter:
+    field: lang
+    value: en
+  summary: "{{title}} · English"
+  sortable_fields:
+  - title
+  - commit_date
+  fields:
+  - label: Title
+    name: title
+    widget: string
+  - label: Language
+    name: lang
+    widget: hidden
+    default: en
+  - label: Text
+    name: body
+    widget: markdown
+- label: Services · EN
+  label_singular: Service
+  name: services
+  description: Services displayed on the English homepage.
+  folder: collections/_servicos
+  create: true
+  filter:
+    field: lang
+    value: en
+  summary: "{{title}} · English"
+  sortable_fields:
+  - title
+  - commit_date
+  fields:
+  - label: Title
+    name: title
+    widget: string
+  - label: Language
+    name: lang
+    widget: hidden
+    default: en
+  - label: Imagem do serviço
+    name: image
+    widget: image
+    choose_url: false
+  - label: Descrição da imagem
+    name: image_alt
+    widget: string
+    hint: Descreva a imagem para leitores de ecrã.
+  - label: Icon
+    name: icon
+    widget: select
+    options:
+    - label: Rehabilitation / recycling
+      value: recycle
+    - label: Forestry
+      value: tree
+    - label: Consulting
+      value: deskpro
+    - label: Alert / risk
+      value: exclamation-circle
+    - label: Environment / leaf
+      value: leaf
+    - label: Fauna / wildlife
+      value: paw
+  - label: Description
+    name: body
+    widget: markdown
+- label: Portfólio do site
+  name: portfolio_site
+  description: Imagens e legendas apresentadas no site. Arraste os itens para reordenar.
+  files:
+  - label: Destaques e projectos
+    name: portfolio_content
+    file: _data/portfolio.json
     fields:
-      - label: "Título"
-        name: title
-        widget: string
-        hint: "Use um título curto, por exemplo: Missão ou Valores."
-      - { label: "Idioma", name: lang, widget: hidden, default: pt }
-      - label: "Texto"
-        name: body
-        widget: markdown
-        hint: "Divida textos longos em parágrafos curtos para facilitar a leitura."
-
-  - label: "Serviços · PT"
-    label_singular: "Serviço"
-    name: servicos
-    description: "Serviços apresentados na página inicial em português."
-    folder: collections/_servicos
-    create: true
-    filter: { field: lang, value: pt }
-    summary: "{{title}} · Português"
-    sortable_fields: [title, commit_date]
-    fields:
-      - label: "Título"
-        name: title
-        widget: string
-        hint: "Nome directo e específico do serviço."
-      - { label: "Idioma", name: lang, widget: hidden, default: pt }
-      - label: "Ícone"
-        name: icon
-        widget: select
-        options:
-          - { label: "Recuperação / reciclagem", value: recycle }
-          - { label: "Floresta", value: tree }
-          - { label: "Consultoria", value: deskpro }
-          - { label: "Alerta / risco", value: exclamation-circle }
-          - { label: "Ambiente / folha", value: leaf }
-      - label: "Descrição"
-        name: body
-        widget: markdown
-        hint: "Explique o problema resolvido, o método e o resultado esperado."
-
-  - label: "About · EN"
-    label_singular: "Institutional block"
-    name: about
-    description: "Mission, vision, values and company profile in English."
-    folder: collections/_sobre
-    create: false
-    delete: false
-    filter: { field: lang, value: en }
-    summary: "{{title}} · English"
-    sortable_fields: [title, commit_date]
-    fields:
-      - { label: "Title", name: title, widget: string }
-      - { label: "Language", name: lang, widget: hidden, default: en }
-      - { label: "Text", name: body, widget: markdown }
-
-  - label: "Services · EN"
-    label_singular: "Service"
-    name: services
-    description: "Services displayed on the English homepage."
-    folder: collections/_servicos
-    create: true
-    filter: { field: lang, value: en }
-    summary: "{{title}} · English"
-    sortable_fields: [title, commit_date]
-    fields:
-      - { label: "Title", name: title, widget: string }
-      - { label: "Language", name: lang, widget: hidden, default: en }
-      - label: "Icon"
-        name: icon
-        widget: select
-        options:
-          - { label: "Rehabilitation / recycling", value: recycle }
-          - { label: "Forestry", value: tree }
-          - { label: "Consulting", value: deskpro }
-          - { label: "Alert / risk", value: exclamation-circle }
-          - { label: "Environment / leaf", value: leaf }
-      - { label: "Description", name: body, widget: markdown }
-
-  - label: "Arquivo fotográfico"
-    label_singular: "Fotografia"
-    name: portfolio
-    description: "Arquivo histórico de imagens e legendas de projectos."
-    folder: collections/_portfolio
-    create: true
-    summary: "{{title}}"
-    sortable_fields: [title, commit_date]
-    fields:
-      - label: "Legenda"
-        name: title
-        widget: string
-        hint: "Descreva claramente a actividade visível na fotografia."
-      - label: "Imagem"
+    - label: Destaques da página inicial
+      name: home
+      widget: list
+      min: 1
+      max: 4
+      summary: "{{fields.title_pt}}"
+      fields:
+      - label: Imagem
         name: image
         widget: image
         choose_url: false
-        hint: "Prefira JPG ou WebP horizontal, nítido e com pelo menos 1600 px de largura."
-
-  - label: "Publicações"
-    label_singular: "Publicação"
-    name: posts
-    description: "Notícias, consultas públicas e documentos técnicos."
-    folder: collections/_posts
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    summary: "{{date | date('DD.MM.YYYY')}} · {{title}}"
-    sortable_fields: [date, title, commit_date]
-    view_groups:
-      - { label: "Ano", field: date, pattern: "\\d{4}" }
-    fields:
-      - label: "Título em português"
-        name: title
+      - label: Legenda em português
+        name: title_pt
         widget: string
-      - label: "Título em inglês"
+      - label: Legenda em inglês
         name: title_en
         widget: string
-        required: false
-        hint: "Opcional. Usado na versão inglesa do site."
-      - label: "Resumo em inglês"
-        name: excerpt_en
-        widget: text
-        required: false
-        hint: "Opcional. Recomendado entre 120 e 180 caracteres."
-      - label: "Data de publicação"
-        name: date
-        widget: datetime
-        date_format: "DD/MM/YYYY"
-        time_format: "HH:mm"
-        format: "YYYY-MM-DD HH:mm:ss ZZ"
-      - label: "Imagem de destaque"
+      - label: Descrição da imagem em português
+        name: alt_pt
+        widget: string
+      - label: Descrição da imagem em inglês
+        name: alt_en
+        widget: string
+      - label: Título ao ampliar em português
+        name: lightbox_pt
+        widget: string
+      - label: Título ao ampliar em inglês
+        name: lightbox_en
+        widget: string
+    - label: Projectos da página de portfólio
+      name: projects
+      widget: list
+      min: 1
+      summary: "{{fields.title_pt}}"
+      fields:
+      - label: Imagem
         name: image
         widget: image
         choose_url: false
-        hint: "Use uma imagem horizontal, nítida e com pelo menos 1600 px de largura."
-      - label: "Documento técnico"
-        name: document
-        widget: file
-        required: false
-        choose_url: false
-      - { label: "Layout", name: layout, default: post, widget: hidden }
-      - label: "Conteúdo"
-        name: body
-        widget: markdown
-        hint: "Use subtítulos e parágrafos curtos; a pré-visualização aparece ao lado."
+      - label: Legenda em português
+        name: title_pt
+        widget: string
+      - label: Legenda em inglês
+        name: title_en
+        widget: string
+      - label: Descrição da imagem em português
+        name: alt_pt
+        widget: string
+      - label: Descrição da imagem em inglês
+        name: alt_en
+        widget: string
+      - label: Título ao ampliar em português
+        name: lightbox_pt
+        widget: string
+      - label: Título ao ampliar em inglês
+        name: lightbox_en
+        widget: string
+      - label: Categoria do filtro
+        name: category
+        widget: select
+        options:
+        - label: Fauna
+          value: fauna
+        - label: Floresta / viveiros
+          value: forest
+        - label: Recuperação ambiental
+          value: restoration
+        - label: Consultoria
+          value: consulting
+      - label: Categoria em português
+        name: label_pt
+        widget: string
+      - label: Categoria em inglês
+        name: label_en
+        widget: string
+- label: Arquivo fotográfico
+  label_singular: Fotografia
+  name: portfolio
+  description: Arquivo histórico de imagens e legendas de projectos.
+  folder: collections/_portfolio
+  create: true
+  summary: "{{title}}"
+  sortable_fields:
+  - title
+  - commit_date
+  fields:
+  - label: Legenda
+    name: title
+    widget: string
+    hint: Descreva claramente a actividade visível na fotografia.
+  - label: Imagem
+    name: image
+    widget: image
+    choose_url: false
+    hint: Prefira JPG ou WebP horizontal, nítido e com pelo menos 1600 px de largura.
+- label: Publicações
+  label_singular: Publicação
+  name: posts
+  description: Artigos em português e inglês, com imagem e PDF partilhados. Publique as duas versões no mesmo registo.
+  folder: collections/_posts
+  create: true
+  slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+  summary: "{{date | date('DD.MM.YYYY')}} · {{title}}"
+  sortable_fields:
+  - date
+  - title
+  - commit_date
+  view_groups:
+  - label: Ano
+    field: date
+    pattern: "\\d{4}"
+  fields:
+  - label: Título em português
+    name: title
+    widget: string
+  - label: Idioma
+    name: lang
+    widget: hidden
+    default: pt
+  - label: Título em inglês
+    name: title_en
+    widget: string
+    required: false
+    hint: Título da versão inglesa. O endereço é criado automaticamente quando houver texto completo em inglês.
+  - label: Resumo em inglês
+    name: excerpt_en
+    widget: text
+    required: false
+    hint: Opcional. Recomendado entre 120 e 180 caracteres.
+  - label: Data de publicação
+    name: date
+    widget: datetime
+    date_format: DD/MM/YYYY
+    time_format: HH:mm
+    format: YYYY-MM-DD HH:mm:ss ZZ
+  - label: Imagem de destaque
+    name: image
+    widget: image
+    choose_url: false
+    hint: Use uma imagem horizontal, nítida e com pelo menos 1600 px de largura.
+  - label: Documento técnico
+    name: document
+    widget: file
+    required: false
+    choose_url: false
+  - label: Layout
+    name: layout
+    default: post
+    widget: hidden
+  - label: Conteúdo em português
+    name: body
+    widget: markdown
+    hint: Use subtítulos e parágrafos curtos; a pré-visualização aparece ao lado.
+  - label: Conteúdo completo em inglês
+    name: body_en
+    widget: markdown
+    required: false
+    hint: Preencha o título e este texto para disponibilizar a versão inglesa. Deixe vazio para publicar apenas em português.
+  - name: english_url
+    widget: hidden
+    required: false
+  preview_path: "{{year}}/{{month}}/{{day}}/{{slug}}.html"

@@ -1,6 +1,8 @@
 ---
 title: Produção de Mudas Florestais, Ornamentais e Fruteiras
 lang: pt
+image: /assets/img/farm/kaunge-nursery-team.jpg
+image_alt: "Equipa no viveiro de Kaunge"
 icon: leaf
 ---
 A AM Fermino possui uma equipa de técnicos experientes em produção e gestão de viveiros florestais de árvores nativas, ornamentais, exóticas e fruteiras de várias espécies.

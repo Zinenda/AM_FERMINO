@@ -10,6 +10,7 @@
             <button type="button" data-portfolio-filter="fauna" aria-pressed="false">{% if page.lang == "pt" %}Fauna{% else %}Wildlife{% endif %}</button>
             <button type="button" data-portfolio-filter="forest" aria-pressed="false">{% if page.lang == "pt" %}Floresta{% else %}Forestry{% endif %}</button>
             <button type="button" data-portfolio-filter="restoration" aria-pressed="false">{% if page.lang == "pt" %}Recuperação ambiental{% else %}Environmental rehabilitation{% endif %}</button>
+            <button type="button" data-portfolio-filter="consulting" aria-pressed="false">{% if page.lang == "pt" %}Consultoria{% else %}Consulting{% endif %}</button>
         </div>
     </div>
 </header>
@@ -17,30 +18,12 @@
 <main class="portfolio-page-main">
     <div class="site-container">
         <div class="portfolio-page-grid" aria-live="polite">
-            <a class="portfolio-project portfolio-project-featured" data-portfolio-category="fauna" href="/assets/img/generated/portfolio-fauna-relocation.jpg" data-lightbox="portfolio-page" data-title="{% if page.lang == 'pt' %}Translocação de fauna silvestre{% else %}Wildlife relocation{% endif %}">
-                <img src="/assets/img/generated/portfolio-fauna-relocation.jpg" alt="{% if page.lang == 'pt' %}Técnico ambiental a preparar um camaleão para translocação{% else %}Environmental technician preparing a chameleon for relocation{% endif %}">
-                <span class="portfolio-project-caption"><small>01</small><em>{% if page.lang == "pt" %}Fauna{% else %}Wildlife{% endif %}</em><strong>{% if page.lang == "pt" %}Translocação de fauna silvestre{% else %}Wildlife relocation{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
+            {% for item in site.data.portfolio.projects %}
+            <a class="portfolio-project {% case forloop.index %}{% when 1 %}portfolio-project-featured{% when 2 %}portfolio-project-biomats{% when 3 %}portfolio-project-nursery{% when 4 %}portfolio-project-field{% when 5 %}portfolio-project-seeds{% when 6 %}portfolio-project-restoration{% else %}portfolio-project-extra{% endcase %}" href="{{ item.image | relative_url }}" data-portfolio-category="{{ item.category | escape }}" data-lightbox="portfolio-page" data-title="{% if page.lang == "pt" %}{{ item.lightbox_pt | escape }}{% else %}{{ item.lightbox_en | default: item.lightbox_pt | escape }}{% endif %}">
+                <img src="{{ item.image | relative_url }}" alt="{% if page.lang == "pt" %}{{ item.alt_pt | escape }}{% else %}{{ item.alt_en | default: item.alt_pt | escape }}{% endif %}"{% unless forloop.first %} loading="lazy"{% endunless %} decoding="async">
+                <span class="portfolio-project-caption"><small>{{ forloop.index | prepend: "0" }}</small><em>{% if page.lang == "pt" %}{{ item.label_pt | escape }}{% else %}{{ item.label_en | default: item.label_pt | escape }}{% endif %}</em><strong>{% if page.lang == "pt" %}{{ item.title_pt | escape }}{% else %}{{ item.title_en | default: item.title_pt | escape }}{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
             </a>
-            <a class="portfolio-project portfolio-project-biomats" data-portfolio-category="restoration" href="/assets/img/generated/portfolio-biomats.jpg" data-lightbox="portfolio-page" data-title="{% if page.lang == 'pt' %}Biomantas para recuperação de áreas degradadas{% else %}Biomats for degraded land rehabilitation{% endif %}">
-                <img src="/assets/img/generated/portfolio-biomats.jpg" alt="{% if page.lang == 'pt' %}Biomantas instaladas num talude em recuperação{% else %}Biomats installed on a slope under rehabilitation{% endif %}" loading="lazy">
-                <span class="portfolio-project-caption"><small>02</small><em>{% if page.lang == "pt" %}Recuperação ambiental{% else %}Environmental rehabilitation{% endif %}</em><strong>{% if page.lang == "pt" %}Biomantas para recuperação de áreas degradadas{% else %}Biomats for degraded land rehabilitation{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
-            <a class="portfolio-project portfolio-project-nursery" data-portfolio-category="forest" href="/assets/img/farm/kaunge-nursery-team.jpg" data-lightbox="portfolio-page" data-title="{% if page.lang == 'pt' %}Produção de mudas no viveiro de Kaunge{% else %}Seedling production at the Kaunge nursery{% endif %}">
-                <img src="/assets/img/farm/kaunge-nursery-team.jpg" alt="{% if page.lang == 'pt' %}Viveiro de Kaunge com fileiras de mudas e dois membros da equipa{% else %}Kaunge nursery with rows of seedlings and two team members{% endif %}" loading="lazy" decoding="async">
-                <span class="portfolio-project-caption"><small>03</small><em>{% if page.lang == "pt" %}Viveiro{% else %}Nursery{% endif %}</em><strong>{% if page.lang == "pt" %}Produção de mudas em Kaunge{% else %}Seedling production in Kaunge{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
-            <a class="portfolio-project portfolio-project-field" data-portfolio-category="consulting" href="/assets/img/generated/hero-tete-fieldwork.jpg" data-lightbox="portfolio-page" data-title="{% if page.lang == 'pt' %}Levantamentos de campo e estudos ambientais{% else %}Field surveys and environmental studies{% endif %}">
-                <img src="/assets/img/generated/hero-tete-fieldwork.jpg" alt="{% if page.lang == 'pt' %}Especialista ambiental a realizar levantamento de campo em Tete{% else %}Environmental specialist carrying out a field survey in Tete{% endif %}" loading="lazy">
-                <span class="portfolio-project-caption"><small>04</small><em>{% if page.lang == "pt" %}Consultoria ambiental{% else %}Environmental consultancy{% endif %}</em><strong>{% if page.lang == "pt" %}Levantamentos de campo e estudos ambientais{% else %}Field surveys and environmental studies{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
-            <a class="portfolio-project portfolio-project-seeds" data-portfolio-category="forest" href="/assets/img/farm/kaunge-citrus-seedlings.jpg" data-lightbox="portfolio-page" data-title="{% if page.lang == 'pt' %}Produção de plantas fruteiras{% else %}Fruit seedling production{% endif %}">
-                <img src="/assets/img/farm/kaunge-citrus-seedlings.jpg" alt="{% if page.lang == 'pt' %}Mudas de citrinos cultivadas em recipientes no viveiro{% else %}Citrus seedlings grown in nursery containers{% endif %}" loading="lazy" decoding="async">
-                <span class="portfolio-project-caption"><small>05</small><em>{% if page.lang == "pt" %}Viveiro{% else %}Nursery{% endif %}</em><strong>{% if page.lang == "pt" %}Produção de plantas fruteiras{% else %}Fruit seedling production{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
-            <a class="portfolio-project portfolio-project-restoration" data-portfolio-category="restoration" href="/assets/img/generated/portfolio-land-restoration.jpg" data-lightbox="portfolio-page" data-title="{% if page.lang == 'pt' %}Áreas degradadas recuperadas{% else %}Rehabilitated degraded areas{% endif %}">
-                <img src="/assets/img/generated/portfolio-land-restoration.jpg" alt="{% if page.lang == 'pt' %}Área degradada em processo de reflorestação{% else %}Degraded area undergoing reforestation{% endif %}" loading="lazy">
-                <span class="portfolio-project-caption"><small>06</small><em>{% if page.lang == "pt" %}Recuperação ambiental{% else %}Environmental rehabilitation{% endif %}</em><strong>{% if page.lang == "pt" %}Áreas degradadas recuperadas{% else %}Rehabilitated degraded areas{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
+            {% endfor %}
         </div>
     </div>
 </main>

@@ -1,0 +1,14 @@
+{%- assign photo = include.record -%}
+{%- assign photo_alt = photo.image_alt | default: photo.title -%}
+{%- if page.lang == 'en' -%}
+    {%- assign photo_alt = photo.image_alt_en | default: photo.title_en | default: photo_alt -%}
+{%- endif -%}
+{%- assign responsive_default = photo.image_responsive | append: '-960.jpg' -%}
+{%- if photo.image_responsive and photo.image == responsive_default -%}
+<picture>
+    <source type="image/webp" srcset="{{ photo.image_responsive | append: '-320.webp' | relative_url }} 320w, {{ photo.image_responsive | append: '-640.webp' | relative_url }} 640w, {{ photo.image_responsive | append: '-960.webp' | relative_url }} 960w, {{ photo.image_responsive | append: '-1200.webp' | relative_url }} 1200w" sizes="{{ include.sizes }}">
+    <img src="{{ photo.image | relative_url }}" srcset="{{ photo.image_responsive | append: '-320.jpg' | relative_url }} 320w, {{ photo.image_responsive | append: '-640.jpg' | relative_url }} 640w, {{ photo.image_responsive | append: '-960.jpg' | relative_url }} 960w, {{ photo.image_responsive | append: '-1200.jpg' | relative_url }} 1200w" sizes="{{ include.sizes }}" width="{{ photo.image_width }}" height="{{ photo.image_height }}" alt="{{ photo_alt | escape }}" decoding="async"{% if include.lazy %} loading="lazy"{% else %} fetchpriority="high"{% endif %}>
+</picture>
+{%- else -%}
+<img src="{{ photo.image | relative_url }}" alt="{{ photo_alt | escape }}" decoding="async"{% if include.lazy %} loading="lazy"{% endif %}>
+{%- endif -%}

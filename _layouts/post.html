@@ -11,7 +11,7 @@ layout: default
                 <a href="{% if page.lang == 'en' %}/publications/{% else %}/noticias/{% endif %}" class="article-back"><i class="fas fa-arrow-left" aria-hidden="true"></i> {% if page.lang == "en" %}All publications{% else %}Todas as publicações{% endif %}</a>
                 {% if page.english_url %}<a href="{{ page.english_url | relative_url }}" class="article-back" lang="en" hreflang="en">Read in English</a>{% elsif page.portuguese_url %}<a href="{{ page.portuguese_url | relative_url }}" class="article-back" lang="pt" hreflang="pt">Ler em português</a>{% endif %}
             </div>
-            <figure class="article-hero-image"><img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}"></figure>
+            <figure class="article-hero-image">{% include publication-image.html record=page sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 900px) calc(100vw - 48px), (max-width: 1288px) 43vw, 540px" %}</figure>
         </div>
     </header>
 

@@ -14,7 +14,7 @@
         {% if featured_post %}
         <article class="publication-featured">
             <a class="publication-featured-image" href="{% if page.lang == 'en' and featured_post.english_url %}{{ featured_post.english_url | relative_url }}{% else %}{{ featured_post.url | relative_url }}{% endif %}">
-                <img src="{{ featured_post.image | relative_url }}" alt="{% if page.lang == 'en' and featured_post.title_en %}{{ featured_post.title_en | escape }}{% else %}{{ featured_post.title | escape }}{% endif %}">
+                {% include publication-image.html record=featured_post sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 900px) calc(100vw - 48px), (max-width: 1288px) 53vw, 694px" %}
             </a>
             <div class="publication-featured-content">
                 <p class="publication-date">{% if page.lang == "pt" %}Em destaque{% else %}Featured{% endif %} · {{ featured_post.date | date: "%d.%m.%Y" }}</p>
@@ -36,7 +36,7 @@
         <div class="publications-archive-grid">
             {% for post in site.posts %}
             <article class="publication-archive-card">
-                <a class="publication-archive-image" href="{% if page.lang == 'en' and post.english_url %}{{ post.english_url | relative_url }}{% else %}{{ post.url | relative_url }}{% endif %}"><img src="{{ post.image | relative_url }}" alt="{% if page.lang == 'en' and post.title_en %}{{ post.title_en | escape }}{% else %}{{ post.title | escape }}{% endif %}" loading="lazy"></a>
+                <a class="publication-archive-image" href="{% if page.lang == 'en' and post.english_url %}{{ post.english_url | relative_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{% include publication-image.html record=post lazy=true sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 900px) 36vw, (max-width: 1288px) 18vw, 224px" %}</a>
                 <div class="publication-archive-content">
                     <p class="publication-date">{% if page.lang == "pt" %}Actualidade ambiental{% else %}Environmental update{% endif %} · {{ post.date | date: "%d.%m.%Y" }}</p>
                     <h3><a href="{% if page.lang == 'en' and post.english_url %}{{ post.english_url | relative_url }}{% else %}{{ post.url | relative_url }}{% endif %}">{% if page.lang == "en" and post.title_en %}{{ post.title_en }}{% else %}{{ post.title }}{% endif %}</a></h3>

@@ -11,6 +11,8 @@ index:
 
 # Build settings
 markdown: kramdown
+# Keep publications visible when their editorial date is in the future.
+future: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

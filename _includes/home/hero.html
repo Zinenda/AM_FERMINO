@@ -1,5 +1,8 @@
 <section class="hero" id="hero">
-    <div class="hero-media" role="img" aria-label="{% if page.lang == 'pt' %}Trabalho ambiental em Moçambique{% else %}Environmental field work in Mozambique{% endif %}"></div>
+    <picture class="hero-media">
+        <source media="(max-width: 600px)" srcset="{{ '/assets/img/previews/hero-480.webp' | relative_url }} 480w, {{ '/assets/img/previews/hero-800.webp' | relative_url }} 800w" sizes="(max-width: 480px) 520px, 100vw">
+        <img src="{{ '/assets/img/generated/hero-tete-fieldwork.jpg' | relative_url }}" srcset="{{ '/assets/img/previews/hero-1024.webp' | relative_url }} 1024w, {{ '/assets/img/previews/hero-1600.webp' | relative_url }} 1600w" sizes="100vw" width="1920" height="1080" fetchpriority="high" alt="{% if page.lang == 'pt' %}Trabalho ambiental em Moçambique{% else %}Environmental field work in Mozambique{% endif %}">
+    </picture>
     <div class="hero-overlay"></div>
     <div class="site-container hero-content">
         <h1>{% if page.lang == "pt" %}Soluções ambientais para projectos que transformam Moçambique.{% else %}Environmental solutions for projects transforming Mozambique.{% endif %}</h1>

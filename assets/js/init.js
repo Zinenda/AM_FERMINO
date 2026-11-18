@@ -1,9 +1,11 @@
-$(document).ready(function(){
-    $('.sidenav').sidenav();
-    $('.scrollspy').scrollSpy();
-    $('.fixed-action-btn').floatingActionButton();
-    $('.modal').modal();
-    $('.materialboxed').materialbox();
+(function () {
+    if (window.M) {
+        M.Sidenav.init(document.querySelectorAll('.sidenav'));
+        M.ScrollSpy.init(document.querySelectorAll('.scrollspy'));
+        M.FloatingActionButton.init(document.querySelectorAll('.fixed-action-btn'));
+        M.Modal.init(document.querySelectorAll('.modal'));
+        M.Materialbox.init(document.querySelectorAll('.materialboxed'));
+    }
 
     var aboutTabs = Array.prototype.slice.call(document.querySelectorAll('.about-topics [role="tab"]'));
     var aboutPanels = Array.prototype.slice.call(document.querySelectorAll('.about-principle-panel'));
@@ -42,31 +44,6 @@ $(document).ready(function(){
             }
         });
     });
-
-    var portfolioGrid = document.querySelector('.portfolio-page-grid');
-    var portfolioFilters = Array.prototype.slice.call(document.querySelectorAll('[data-portfolio-filter]'));
-
-    if (portfolioGrid && portfolioFilters.length) {
-        var portfolioProjects = Array.prototype.slice.call(portfolioGrid.querySelectorAll('[data-portfolio-category]'));
-
-        portfolioFilters.forEach(function(filterButton) {
-            filterButton.addEventListener('click', function() {
-                var selectedCategory = filterButton.getAttribute('data-portfolio-filter');
-
-                portfolioFilters.forEach(function(button) {
-                    var isSelected = button === filterButton;
-                    button.classList.toggle('is-active', isSelected);
-                    button.setAttribute('aria-pressed', isSelected ? 'true' : 'false');
-                });
-
-                portfolioProjects.forEach(function(project) {
-                    project.hidden = selectedCategory !== 'all' && project.getAttribute('data-portfolio-category') !== selectedCategory;
-                });
-
-                portfolioGrid.classList.toggle('is-filtered', selectedCategory !== 'all');
-            });
-        });
-    }
 
     var serviceLayer = document.querySelector('.service-drawer-layer');
     if (serviceLayer) {
@@ -133,7 +110,7 @@ $(document).ready(function(){
                 closeServiceDrawer(false);
                 window.setTimeout(function() {
                     var contactModal = document.querySelector('#contactos');
-                    var contactInstance = contactModal && M.Modal.getInstance(contactModal);
+                    var contactInstance = contactModal && window.M && M.Modal.getInstance(contactModal);
                     if (contactInstance) contactInstance.open();
                 }, 440);
             });
@@ -184,4 +161,4 @@ $(document).ready(function(){
         window.setTimeout(alignHashSection, 30);
         window.setTimeout(alignHashSection, 650);
     }
-});
+})();

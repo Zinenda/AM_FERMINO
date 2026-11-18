@@ -244,6 +244,8 @@ collections:
           value: restoration
         - label: Consultoria
           value: consulting
+        - label: Geral
+          value: general
       - label: Categoria em português
         name: label_pt
         widget: string

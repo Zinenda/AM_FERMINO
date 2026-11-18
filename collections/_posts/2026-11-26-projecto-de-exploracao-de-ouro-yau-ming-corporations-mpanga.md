@@ -4,12 +4,10 @@ title_en: "Yau Ming Corporations gold project in Mpanga at environmental pre-fea
 excerpt: "O EPDA apresenta o projecto de ouro em Mpanga, Macanga, os potenciais impactos ambientais e sociais e os próximos passos da avaliação ambiental."
 excerpt_en: "The scoping study outlines the proposed gold project in Mpanga, Macanga, its potential environmental and social impacts and the next assessment steps."
 date: "2026-11-26T09:00:00+02:00"
-image: "/assets/img/publications/yau-ming-corporations-mpanga-restored-960.jpg"
-image_responsive: "/assets/img/publications/yau-ming-corporations-mpanga-restored"
-image_width: 960
-image_height: 960
-image_alt: "Equipa de campo a realizar medições de uma árvore, em versão restaurada por IA da fotografia da capa do EPDA da Yau Ming Corporations."
-image_alt_en: "Field team measuring a tree, in an AI-restored version of the cover photograph from the Yau Ming Corporations EPDA."
+image: /assets/img/fieldwork/registo-de-dados-florestais.webp
+image_alt: "Técnicas a registar medições durante o levantamento florestal de campo"
+image_alt_en: "Technicians recording measurements during a forest survey"
+image_uncropped: true
 document: "/assets/img/uploads/epda-yau-ming-corporations-mpanga-novembro-2026.pdf"
 layout: "post"
 lang: "pt"

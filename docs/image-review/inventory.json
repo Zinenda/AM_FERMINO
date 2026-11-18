@@ -1,0 +1,330 @@
+[
+  {
+    "id": "F01",
+    "file": "WhatsApp Image 2026-07-01 at 14.23.011.jpeg",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 337976,
+    "sha256": "0ba8aacd52e1b33d92907d2b28ade68157e1c4e90738d1be452ac10de2ced019"
+  },
+  {
+    "id": "F02",
+    "file": "WhatsApp Image 2026-07-01 at 14.23.02.jpeg",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 371578,
+    "sha256": "e24478e8bca83cea4d224c75f4b287eeb7f9c5cd5f3c46b4ccc70fe8018e6764"
+  },
+  {
+    "id": "F03",
+    "file": "WhatsApp Image 2026-07-01 at 14.23.01.jpeg",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 327180,
+    "sha256": "c6e05c1fcc5c104621ca3e4d4d39a21f8181e4e805ce37ac90f510277dcddac9"
+  },
+  {
+    "id": "F04",
+    "file": "WhatsApp Image 2026-07-01 at 14.23.09.jpeg",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 472701,
+    "sha256": "aaada72946c59f2f6e03a2b79c20971898516da692390735bb489b76b1e70de9"
+  },
+  {
+    "id": "F05",
+    "file": "WhatsApp Image 2026-07-01 at 14.23.10.jpeg",
+    "width": 1280,
+    "height": 1280,
+    "bytes": 240031,
+    "sha256": "e968e2bad977c06338b7ba861e641cd544e2da1a0dceca24ab7fe6cb08c9158c"
+  },
+  {
+    "id": "F06",
+    "file": "WhatsApp Image 2026-08-04 at 10.40.25.jpeg",
+    "width": 960,
+    "height": 1280,
+    "bytes": 241627,
+    "sha256": "2f71aff939267878870ec6d24d366722606f352db3acec9f9c96dfb2529fae6c"
+  },
+  {
+    "id": "F07",
+    "file": "WhatsApp Image 2026-08-04 at 10.40.251.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 345628,
+    "sha256": "68ec173a4d1e4787a5b68d5328f1614103b7f06c0635d33d74ef8a9bf245056c"
+  },
+  {
+    "id": "F08",
+    "file": "WhatsApp Image 2026-08-04 at 10.46.46.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 238631,
+    "sha256": "9d88a038dbf6769be3e5c7891d471ae1466a6067eafc3d3adb33edde0c9d417b"
+  },
+  {
+    "id": "F09",
+    "file": "WhatsApp Image 2026-08-04 at 10.46.47.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 234532,
+    "sha256": "0a41adb765be0375a2641f62aedd9b41392bbfc3c0a113a0048a29e8063e9e78"
+  },
+  {
+    "id": "F10",
+    "file": "WhatsApp Image 2026-08-04 at 10.46.472.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 219133,
+    "sha256": "9596ba127da24f61310324006338d91c3600b59890b1a18eb8e8b571492bec00"
+  },
+  {
+    "id": "F11",
+    "file": "WhatsApp Image 2026-08-04 at 10.46.49.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 430746,
+    "sha256": "e5d3438e5361fa1937d4f3c72775583233fdda0f106253bc9d7b2dd663db3259"
+  },
+  {
+    "id": "F12",
+    "file": "WhatsApp Image 2026-08-04 at 10.46.492.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 335174,
+    "sha256": "eb0f73ff954bb107a9f9bb67fd426de4e0eee6d8dffcff9f1821dfd483ebb155"
+  },
+  {
+    "id": "F13",
+    "file": "WhatsApp Image 2026-08-04 at 10.46.493.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 345628,
+    "sha256": "68ec173a4d1e4787a5b68d5328f1614103b7f06c0635d33d74ef8a9bf245056c"
+  },
+  {
+    "id": "F14",
+    "file": "WhatsApp Image 2026-08-04 at 10.51.09.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 202398,
+    "sha256": "77f775d9b2ce31bacf04da885d2a4ec16530e9ab24f72d91bcac8518a20b6469"
+  },
+  {
+    "id": "F15",
+    "file": "WhatsApp Image 2026-08-04 at 10.51.17.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 212060,
+    "sha256": "1a3d2b654a2842ca57b943c5f5ff92049cfa46787c79e53ada887129cc76bfdd"
+  },
+  {
+    "id": "F16",
+    "file": "WhatsApp Image 2026-08-04 at 10.51.172.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 238752,
+    "sha256": "f58277469b91d8d9e2a4b2451ce470963e85ef53467264798e45b210c149a0ca"
+  },
+  {
+    "id": "F17",
+    "file": "WhatsApp Image 2026-08-04 at 10.51.173.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 214876,
+    "sha256": "37aac7782558538dcf96eb01a06792e04c81c9f7436bcfc31c42811242dc1928"
+  },
+  {
+    "id": "F18",
+    "file": "WhatsApp Image 2026-08-26 at 15.41.44.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 341494,
+    "sha256": "a0f360aae36fb51fb5fcd7a8b7c6ca8c548617f02978542b3056105f26fba758"
+  },
+  {
+    "id": "F19",
+    "file": "WhatsApp Image 2026-08-26 at 15.42.01.jpeg",
+    "width": 1600,
+    "height": 738,
+    "bytes": 238387,
+    "sha256": "27bd2b59ce84929866b5bd4befab387227e9e0f17a8427dd28aefdd5366907fb"
+  },
+  {
+    "id": "F20",
+    "file": "WhatsApp Image 2026-08-26 at 15.42.46.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 225002,
+    "sha256": "9d734a2b8cb74af612e521b53448d50a0270fef65d400aafd529dee35fa564c7"
+  },
+  {
+    "id": "F21",
+    "file": "WhatsApp Image 2026-08-26 at 15.42.47.jpeg",
+    "width": 1600,
+    "height": 738,
+    "bytes": 271360,
+    "sha256": "6394f2b329b30af220e1b7807fdba81cb19709e5c65f11959d75926209ccf798"
+  },
+  {
+    "id": "F22",
+    "file": "WhatsApp Image 2026-08-26 at 15.46.06.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 353953,
+    "sha256": "178a2d8236d6d47db7b0a6c43127143ff40d691164062b4c56e009d94d10459c"
+  },
+  {
+    "id": "F23",
+    "file": "WhatsApp Image 2026-08-26 at 15.48.45.jpeg",
+    "width": 1600,
+    "height": 738,
+    "bytes": 232198,
+    "sha256": "ab42964fc483390fc179698769a670743d1aa44d76d2ef5f9f256a7716924837"
+  },
+  {
+    "id": "F24",
+    "file": "WhatsApp Image 2026-09-23 at 04.38.43.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 146805,
+    "sha256": "9174a3900bc0b02ca0d3c281f626f7317e73deb179d5f4e18659941a0c7414d0"
+  },
+  {
+    "id": "F25",
+    "file": "WhatsApp Image 2026-09-23 at 04.38.432.jpeg",
+    "width": 1280,
+    "height": 960,
+    "bytes": 191327,
+    "sha256": "b0d786d6cc44ee255610798f3c00aa7144a5efc29ae2312de89ca66457946000"
+  },
+  {
+    "id": "F26",
+    "file": "WhatsApp Image 2026-11-02 at 15.57.38.jpeg",
+    "width": 1200,
+    "height": 1600,
+    "bytes": 298811,
+    "sha256": "3a6f4b381eea6716b64cca853d1a3c3184671bf93419ab6af3685ffdba19bf1c"
+  },
+  {
+    "id": "F27",
+    "file": "WhatsApp Image 2026-11-02 at 15.57.42.jpeg",
+    "width": 1200,
+    "height": 1600,
+    "bytes": 293022,
+    "sha256": "aebedf70bb954c0c875b6fb01b065dfdae1c3aa040fa02fe43af0a38b45e44e0"
+  },
+  {
+    "id": "F28",
+    "file": "WhatsApp Image 2026-11-02 at 15.57.47.jpeg",
+    "width": 1200,
+    "height": 1600,
+    "bytes": 308890,
+    "sha256": "20c2f8f235dee5e74e44e29357cec84baa3d9d4936af6da0afae1320ffe00eca"
+  },
+  {
+    "id": "F29",
+    "file": "WhatsApp Image 2026-11-02 at 15.57.51.jpeg",
+    "width": 1200,
+    "height": 1600,
+    "bytes": 410207,
+    "sha256": "982cfe5fa1df837e0aec4e3b44ba7ec2abdfb4d7038ac3ad04666db57c66f211"
+  },
+  {
+    "id": "F30",
+    "file": "WhatsApp Image 2026-11-02 at 15.58.05.jpeg",
+    "width": 1200,
+    "height": 1600,
+    "bytes": 352365,
+    "sha256": "a07922207f73c923f496614c401cbd899581d65919643570a79879976c9b66be"
+  },
+  {
+    "id": "F31",
+    "file": "WhatsApp Image 2026-11-04 at 05.55.42.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 240476,
+    "sha256": "fd3bfc8aa732473ba38532d418c4842b6492398b3e578b2ffbf92ed43747ce99"
+  },
+  {
+    "id": "F32",
+    "file": "WhatsApp Image 2026-11-04 at 05.55.44.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 202596,
+    "sha256": "101177aae22aa4f798c8d92921613ed3574f40f2d21798cba9cf3c298d6e80c9"
+  },
+  {
+    "id": "F33",
+    "file": "WhatsApp Image 2026-11-04 at 05.55.442.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 211705,
+    "sha256": "b5ce5fac3404963336d01ddde5bc43c1077401a0618442acd69177e3d5eb19db"
+  },
+  {
+    "id": "F34",
+    "file": "WhatsApp Image 2026-11-04 at 05.55.47.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 223705,
+    "sha256": "ad0935cc4aa51e09a127a7918ac812fe9722941ad52b7c83d0a138e4bd28b7ca"
+  },
+  {
+    "id": "F35",
+    "file": "WhatsApp Image 2026-11-04 at 05.56.41.jpeg",
+    "width": 1600,
+    "height": 738,
+    "bytes": 187922,
+    "sha256": "7763f1fdf5ff13948d3156cd5a4bd0aac08b9993f7d27f51d97c93f712d99df0"
+  },
+  {
+    "id": "F36",
+    "file": "WhatsApp Image 2026-11-07 at 09.55.46.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 250330,
+    "sha256": "15b4fb51f5c60e27363ca6fb0d2a159bc49987ab1479705857145c669bb58216"
+  },
+  {
+    "id": "F37",
+    "file": "WhatsApp Image 2026-11-07 at 09.55.472.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 350764,
+    "sha256": "195c908c8b2996309bc3f74f50848da1c6099bd724e9438ae4693dd31ac62918"
+  },
+  {
+    "id": "F38",
+    "file": "WhatsApp Image 2026-11-07 at 09.55.483.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 325781,
+    "sha256": "e4d463f652c1932898e9e3e2c2eb8f19f65858390487e45617f8dc9169aa9186"
+  },
+  {
+    "id": "F39",
+    "file": "WhatsApp Image 2026-11-07 at 09.55.484.jpeg",
+    "width": 738,
+    "height": 1600,
+    "bytes": 300220,
+    "sha256": "a77a4e8797756ebc9fc12c265cbdb1f0c6162187c40dee5aeb69beef6086c55c"
+  },
+  {
+    "id": "F40",
+    "file": "WhatsApp Image 2026-11-07 at 09.56.34.jpeg",
+    "width": 1600,
+    "height": 740,
+    "bytes": 181039,
+    "sha256": "ed5a56c9826d7457f2b5f1207d17c3f27345ace18fce4269bd191192ca3589f1"
+  },
+  {
+    "id": "F41",
+    "file": "WhatsApp Image 2026-11-07 at 09.56.36.jpeg",
+    "width": 1600,
+    "height": 740,
+    "bytes": 182105,
+    "sha256": "8733ab534d7e068bdb3842f4d929273185c79f2c7c9d96b6a27612aeef8b3895"
+  }
+]

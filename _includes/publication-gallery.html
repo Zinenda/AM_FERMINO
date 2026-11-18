@@ -1,0 +1,14 @@
+{% assign gallery_images = site.static_files | where_exp: "file", "file.path contains page.gallery_folder" | sort: "path" %}
+{% if gallery_images.size > 0 %}
+<details class="article-gallery" id="galeria">
+    <summary>{% if page.lang == "en" %}See more photos from the public consultation{% else %}Ver mais fotografias da consulta pública{% endif %}</summary>
+    <div class="article-gallery-grid">
+        {% for photo in gallery_images %}
+        {% capture photo_alt %}{% if page.lang == "en" %}Public consultation photo {{ forloop.index }}{% else %}Fotografia {{ forloop.index }} da consulta pública{% endif %}{% endcapture %}
+        <a href="{{ photo.path | relative_url }}" data-lightbox="publication-gallery" data-title="{{ photo_alt | escape }}">
+            <img {% include image-attributes.html path=photo.path sizes="(max-width: 600px) 42vw, 160px" %} alt="{{ photo_alt | escape }}" loading="lazy" decoding="async">
+        </a>
+        {% endfor %}
+    </div>
+</details>
+{% endif %}

@@ -29,14 +29,15 @@
         <div class="service-drawer-content">
             <button class="service-drawer-close" type="button" aria-label="{% if page.lang == 'pt' %}Fechar{% else %}Close{% endif %}"><i class="fas fa-times" aria-hidden="true"></i></button>
             {% for item in servicos %}
-                {% assign service_image = item.image | default: "/assets/img/generated/service-consulting-tete.jpg" %}
                 <article class="service-drawer-panel{% if forloop.first %} is-active{% endif %}" id="service-panel-{{ forloop.index }}" data-service-index="{{ forloop.index0 }}"{% unless forloop.first %} hidden{% endunless %}>
                     <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Serviço{% else %}Service{% endif %} 0{{ forloop.index }}</p>
                     <h2>{{ item.title }}</h2>
                     <div class="service-drawer-copy">{{ item.content }}</div>
-                    <figure class="service-drawer-image">
-                        <img src="{{ service_image | relative_url }}" alt="{{ item.image_alt | default: item.title | escape }}" loading="lazy" decoding="async">
+                    {% if item.image %}
+                    <figure class="service-drawer-image{% if item.image_uncropped %} service-drawer-image-uncropped{% endif %}">
+                        <img {% include image-attributes.html path=item.image sizes="(max-width: 600px) calc(100vw - 40px), 520px" %} alt="{{ item.image_alt | default: item.title | escape }}" loading="lazy" decoding="async">
                     </figure>
+                    {% endif %}
                     <div class="service-drawer-meta">
                         <span>{% if page.lang == "pt" %}Experiência local{% else %}Local experience{% endif %}</span>
                         <span>{% if page.lang == "pt" %}Soluções personalizadas{% else %}Tailored solutions{% endif %}</span>

@@ -4,7 +4,10 @@ title: Projecto de Exploração de Ouro em Mugomo avança no processo de Avalia�
 title_en: Mugomo gold project advances through environmental assessment
 excerpt_en: The proposed gold project in Chifunde is progressing through environmental pre-feasibility, scoping and public participation.
 date: 2026-09-17T07:20:36.783Z
-image: /assets/img/generated/hero-tete-fieldwork.jpg
+image: /assets/img/publications/mugomo-fotografia-epda.webp
+image_alt: "Escavações junto a um curso de água, em fotografia da capa do EPDA de Mugomo"
+image_alt_en: "Excavations next to a watercourse, shown on the cover of the Mugomo scoping study"
+image_uncropped: true
 document: /assets/img/uploads/epda-sim-rio-mugomo-v1_compressed.pdf
 layout: post
 lang: pt

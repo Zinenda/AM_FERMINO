@@ -31,10 +31,10 @@
         <div class="about-visual">
             <span class="about-accent" aria-hidden="true"></span>
             <figure class="about-photo about-photo-primary">
-                <img src="{{ '/assets/img/generated/about-fieldwork-primary.png' | relative_url }}" alt="{% if page.lang == 'pt' %}Profissional ambiental a observar uma paisagem natural{% else %}Environmental professional observing a natural landscape{% endif %}" loading="lazy">
+                <img {% include image-attributes.html path='/assets/img/fieldwork/amostragem-de-agua.webp' sizes="(max-width: 600px) 82vw, 45vw" %} alt="{% if page.lang == 'pt' %}Técnica no terreno com frascos de amostragem de água{% else %}Field technician holding water sample bottles{% endif %}" loading="lazy">
             </figure>
             <figure class="about-photo about-photo-detail">
-                <img src="{{ '/assets/img/generated/about-fieldwork-detail.png' | relative_url }}" alt="{% if page.lang == 'pt' %}Inspecção de uma planta nativa no terreno{% else %}Inspecting a native plant in the field{% endif %}" loading="lazy">
+                <img {% include image-attributes.html path='/assets/img/fieldwork/medicao-de-arvore-pormenor.webp' sizes="(max-width: 600px) 82vw, 45vw" %} alt="{% if page.lang == 'pt' %}Técnica a medir o tronco de uma árvore{% else %}Technician measuring a tree trunk{% endif %}" loading="lazy">
             </figure>
             <div class="about-topics" role="tablist" aria-label="{% if page.lang == 'pt' %}Princípios da AM Fermino{% else %}AM Fermino principles{% endif %}">
                 <button class="is-active" id="about-tab-mission" type="button" role="tab" aria-label="{{ about_mission.title }}" aria-selected="true" aria-controls="about-panel-mission" data-about-panel="about-panel-mission">{{ about_mission.title }}</button>

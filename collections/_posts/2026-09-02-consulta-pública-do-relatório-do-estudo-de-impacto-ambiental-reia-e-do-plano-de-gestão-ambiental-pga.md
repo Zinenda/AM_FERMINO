@@ -4,7 +4,10 @@ title: Consulta Pública do Relatório do Estudo de Impacto Ambiental (REIA) e d
 title_en: Public consultation on the Environmental Impact Assessment Report and Environmental Management Plan
 excerpt_en: Public access to the environmental assessment and management plan for the Mualadzi gold project in Chifunde, Tete.
 date: 2026-09-01T15:48:13.720Z
-image: /assets/img/generated/service-consulting-landscape.png
+image: /assets/img/publications/mualadzi-vegetacao-reia.webp
+image_alt: "Vegetação na área do projecto de Mualadzi, em fotografias do REIA"
+image_alt_en: "Vegetation in the Mualadzi project area, as photographed in the environmental impact report"
+image_uncropped: true
 document: /assets/img/uploads/reia-sim-mining-volumes-ii-e-iii-relatorio-tecnico-e-plano-de-gestao-ambiental.pdf
 layout: post
 lang: pt

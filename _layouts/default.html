@@ -6,10 +6,10 @@ layout: compress
 <html lang="{{ page.lang | default: 'pt' }}">
     {% include head.html %}
     <body id="top">
-        <script src="{{ '/assets/js/admin-auth-redirect.js' | relative_url }}"></script>
+        <script defer src="{{ '/assets/js/admin-auth-redirect.js' | relative_url }}"></script>
         {% include nav/navbar.html %}
         
-        <main class="animate-bottom">
+        <main>
             {% unless page.layout == "post" or page.ref == "index" or page.hide_page_header %}
                 {% include header/page-header.html %}
             {% endunless %}

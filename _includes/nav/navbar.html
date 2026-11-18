@@ -20,7 +20,7 @@
         </div>
 
         <div class="nav-content">
-            <a href="tel:+{{ site.phone }}" class="btn-large btn-floating halfway-fab waves-effect waves-primary hide-on-large-only"><i class="fas fa-lg fa-phone"></i></a>
+            <a href="tel:+{{ site.phone }}" class="btn-large btn-floating halfway-fab waves-effect waves-primary hide-on-large-only" aria-label="{% if page.lang == 'pt' %}Ligar para a AM Fermino{% else %}Call AM Fermino{% endif %}"><i class="fas fa-lg fa-phone" aria-hidden="true"></i></a>
         </div>
     </nav>
 </div>

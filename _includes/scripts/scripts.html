@@ -1,18 +1,12 @@
-{% include fonts.html %}
-
-<script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
 <!-- Materialize -->
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-<!-- Lazy Loading-->
-<script defer src="/assets/js/lazyloading.js"></script>
+{% if page.ref == "index" or page.ref == "port" or page.gallery_folder %}
+    {% include scripts/lightbox.html %}
+{% endif %}
 
-{% include scripts/aos.html %}
-
-{% include scripts/lightbox.html %}
-
-{% if page.layout == "default" %}
+{% if page.ref == "index" and site.clientes.size > 0 %}
+    <script defer src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	{% include scripts/slick-carousel.html %}
 {% endif %}
 

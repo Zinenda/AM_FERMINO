@@ -4,12 +4,10 @@ title_en: "Yau Ming Kyli gold project in Campala at environmental pre-feasibilit
 excerpt: "O EPDA apresenta o projecto de ouro em Campala, Macanga, os potenciais impactos ambientais e sociais e os próximos passos da avaliação ambiental."
 excerpt_en: "The scoping study outlines the proposed gold project in Campala, Macanga, its potential environmental and social impacts and the next assessment steps."
 date: "2026-11-26T10:00:00+02:00"
-image: "/assets/img/publications/yau-ming-kyli-campala-restored-960.jpg"
-image_responsive: "/assets/img/publications/yau-ming-kyli-campala-restored"
-image_width: 960
-image_height: 907
-image_alt: "Grupo em frente ao edifício do Governo do Distrito de Macanga, em versão restaurada por IA da fotografia da capa do EPDA da Yau Ming Kyli."
-image_alt_en: "Group outside the Macanga District Government building, in an AI-restored version of the cover photograph from the Yau Ming Kyli EPDA."
+image: /assets/img/fieldwork/grupo-junto-a-edificio.webp
+image_alt: "Grupo reunido em frente ao edifício do Governo do Distrito de Macanga"
+image_alt_en: "Group outside the Macanga District Government building"
+image_uncropped: true
 document: "/assets/img/uploads/epda-yau-ming-kyli-campala-novembro-2026.pdf"
 layout: "post"
 lang: "pt"

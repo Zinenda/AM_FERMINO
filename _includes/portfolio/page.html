@@ -4,29 +4,49 @@
             <p class="eyebrow eyebrow-dark">{% if page.lang == "pt" %}Experiência no terreno{% else %}Field experience{% endif %}</p>
             <h1>{% if page.lang == "pt" %}Projectos que transformam paisagens.{% else %}Projects that transform landscapes.{% endif %}</h1>
         </div>
-        <p>{% if page.lang == "pt" %}Projectos que demonstram a nossa experiência em consultoria, floresta, fauna e recuperação ambiental em Tete, Moçambique.{% else %}Projects demonstrating our experience in consultancy, forestry, wildlife and environmental rehabilitation in Tete, Mozambique.{% endif %}</p>
+        <p>{% if page.lang == "pt" %}Fotografias de trabalhos em consultoria, floresta, fauna e recuperação ambiental, com registos de campo de vários projectos.{% else %}Photographs of consultancy, forestry, wildlife and environmental rehabilitation work, with field records from several projects.{% endif %}</p>
         <div class="portfolio-filters" role="toolbar" aria-label="{% if page.lang == 'pt' %}Filtrar projectos{% else %}Filter projects{% endif %}">
             <button type="button" class="is-active" data-portfolio-filter="all" aria-pressed="true">{% if page.lang == "pt" %}Todos{% else %}All{% endif %}</button>
             <button type="button" data-portfolio-filter="fauna" aria-pressed="false">{% if page.lang == "pt" %}Fauna{% else %}Wildlife{% endif %}</button>
             <button type="button" data-portfolio-filter="forest" aria-pressed="false">{% if page.lang == "pt" %}Floresta{% else %}Forestry{% endif %}</button>
             <button type="button" data-portfolio-filter="restoration" aria-pressed="false">{% if page.lang == "pt" %}Recuperação ambiental{% else %}Environmental rehabilitation{% endif %}</button>
             <button type="button" data-portfolio-filter="consulting" aria-pressed="false">{% if page.lang == "pt" %}Consultoria{% else %}Consulting{% endif %}</button>
+            <button type="button" data-portfolio-filter="general" aria-pressed="false">{% if page.lang == "pt" %}Geral{% else %}General{% endif %}</button>
         </div>
     </div>
 </header>
 
-<main class="portfolio-page-main">
+<section class="portfolio-page-main" aria-label="{% if page.lang == 'pt' %}Fotografias do portfólio{% else %}Portfolio photos{% endif %}">
     <div class="site-container">
-        <div class="portfolio-page-grid" aria-live="polite">
-            {% for item in site.data.portfolio.projects %}
-            <a class="portfolio-project {% case forloop.index %}{% when 1 %}portfolio-project-featured{% when 2 %}portfolio-project-biomats{% when 3 %}portfolio-project-nursery{% when 4 %}portfolio-project-field{% when 5 %}portfolio-project-seeds{% when 6 %}portfolio-project-restoration{% else %}portfolio-project-extra{% endcase %}" href="{{ item.image | relative_url }}" data-portfolio-category="{{ item.category | escape }}" data-lightbox="portfolio-page" data-title="{% if page.lang == "pt" %}{{ item.lightbox_pt | escape }}{% else %}{{ item.lightbox_en | default: item.lightbox_pt | escape }}{% endif %}">
-                <img src="{{ item.image | relative_url }}" alt="{% if page.lang == "pt" %}{{ item.alt_pt | escape }}{% else %}{{ item.alt_en | default: item.alt_pt | escape }}{% endif %}"{% unless forloop.first %} loading="lazy"{% endunless %} decoding="async">
-                <span class="portfolio-project-caption"><small>{{ forloop.index | prepend: "0" }}</small><em>{% if page.lang == "pt" %}{{ item.label_pt | escape }}{% else %}{{ item.label_en | default: item.label_pt | escape }}{% endif %}</em><strong>{% if page.lang == "pt" %}{{ item.title_pt | escape }}{% else %}{{ item.title_en | default: item.title_pt | escape }}{% endif %}</strong><i class="fas fa-arrow-right" aria-hidden="true"></i></span>
-            </a>
+        {% assign page_size = 12 %}
+        {% assign projects = site.data.portfolio.projects %}
+        <div class="portfolio-page-grid" id="portfolio-projects" data-portfolio-page-size="{{ page_size }}">
+            {% for item in projects limit: page_size %}
+                {% include portfolio/card.html item=item index=forloop.index %}
             {% endfor %}
         </div>
+        {% if projects.size > page_size %}
+            {% capture remaining_projects %}
+                {% for item in projects offset: page_size %}
+                    {% assign project_index = page_size | plus: forloop.index %}
+                    {% include portfolio/card.html item=item index=project_index %}
+                {% endfor %}
+            {% endcapture %}
+            <template id="portfolio-remaining">{{ remaining_projects }}</template>
+            <noscript>
+                <div class="portfolio-page-grid is-filtered portfolio-noscript">{{ remaining_projects }}</div>
+            </noscript>
+        {% endif %}
+        <div class="portfolio-pagination" hidden>
+            <button class="button button-dark" type="button" aria-controls="portfolio-projects">
+                {% if page.lang == "pt" %}Carregar mais fotografias{% else %}Load more photos{% endif %}
+            </button>
+        </div>
+        <p class="portfolio-pagination-status" role="status" data-message="{% if page.lang == 'pt' %}{shown} de {total} fotografias apresentadas{% else %}{shown} of {total} photos shown{% endif %}"></p>
     </div>
-</main>
+</section>
+
+<script defer src="{{ '/assets/js/portfolio.js' | relative_url }}"></script>
 
 <section class="portfolio-page-cta">
     <div class="site-container">

@@ -23,6 +23,8 @@ plugins:
 exclude:
   - tests
   - docs/cms.md
+  - docs/image-review
+  - output
   - Gemfile
   - Gemfile.lock
   - node_modules

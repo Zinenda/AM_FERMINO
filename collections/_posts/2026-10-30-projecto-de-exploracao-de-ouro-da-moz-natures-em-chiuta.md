@@ -3,7 +3,10 @@ title: Projecto de exploração de ouro da Moz Natures em Chiúta em fase de pr�
 title_en: Moz Natures gold project in Chiúta at environmental pre-feasibility stage
 excerpt_en: The scoping report outlines the proposed gold project in Chiúta, Tete, its potential impacts and the next steps for environmental assessment and public participation.
 date: 2026-10-30T08:00:00+02:00
-image: /assets/img/generated/service-consulting-landscape.png
+image: /assets/img/publications/chiuta-fotografia-epda.webp
+image_alt: "Pessoas e equipamento sob um abrigo na fotografia da capa do EPDA de Chiúta"
+image_alt_en: "People and equipment under a shelter, shown on the cover of the Chiúta scoping study"
+image_uncropped: true
 document: /assets/img/uploads/epda-moz-natures-chiuta-v1_compressed.pdf
 layout: post
 lang: pt

@@ -26,7 +26,7 @@ class CMSIntegration(unittest.TestCase):
 title: Verificação CMS
 title_en: CMS verification
 date: 2026-10-01T09:00:00+02:00
-image: /assets/img/generated/service-consulting-landscape.png
+image: /assets/img/uploads/20140109_172904.jpg
 document: /assets/img/uploads/epda-moz-natures-chiuta-v1_compressed.pdf
 body_en: |
   ## English body from CMS
@@ -103,7 +103,7 @@ Artigo de teste.
             parser = ServiceImages()
             parser.feed(pt_home)
             fauna = [image for text, image in parser.panels if "Afugentamento de Fauna" in text]
-            self.assertEqual(fauna, ["/assets/img/generated/service-fauna-tete.jpg"])
+            self.assertEqual(fauna, ["/assets/img/uploads/abelhas.jpg"])
             # CMS config must remain static: its template tokens belong to Decap.
             self.assertEqual((dest / "admin/config.yml").read_bytes(), (source / "admin/config.yml").read_bytes())
 

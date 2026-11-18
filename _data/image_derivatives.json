@@ -1,0 +1,1086 @@
+{
+  "/assets/img/farm/kaunge-citrus-seedlings.jpg": {
+    "width": 1600,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/assets/img/previews/farm-kaunge-citrus-seedlings-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/farm-kaunge-citrus-seedlings-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/farm/kaunge-nursery-panorama.jpg": {
+    "width": 2200,
+    "height": 1238,
+    "variants": [
+      {
+        "src": "/assets/img/previews/farm-kaunge-nursery-panorama-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/farm-kaunge-nursery-panorama-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/farm/kaunge-nursery-team.jpg": {
+    "width": 2200,
+    "height": 1412,
+    "variants": [
+      {
+        "src": "/assets/img/previews/farm-kaunge-nursery-team-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/farm-kaunge-nursery-team-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/acondicionamento-de-amostras.webp": {
+    "width": 825,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-acondicionamento-de-amostras-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-acondicionamento-de-amostras-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/amostragem-de-agua.webp": {
+    "width": 900,
+    "height": 1200,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-amostragem-de-agua-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-amostragem-de-agua-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/arvore-e-paisagem.webp": {
+    "width": 1100,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-arvore-e-paisagem-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-arvore-e-paisagem-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/arvore-em-terreno-seco.webp": {
+    "width": 508,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-arvore-em-terreno-seco-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-arvore-em-terreno-seco-508.webp",
+        "width": 508
+      }
+    ]
+  },
+  "/assets/img/fieldwork/dialogo-junto-a-habitacoes.webp": {
+    "width": 1440,
+    "height": 666,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-dialogo-junto-a-habitacoes-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-dialogo-junto-a-habitacoes-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/dialogo-outro-enquadramento.webp": {
+    "width": 1100,
+    "height": 509,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-dialogo-outro-enquadramento-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-dialogo-outro-enquadramento-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/encontro-no-terreno.webp": {
+    "width": 1100,
+    "height": 508,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-encontro-no-terreno-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-encontro-no-terreno-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/equipa-junto-a-arvore.webp": {
+    "width": 1100,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-equipa-junto-a-arvore-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-equipa-junto-a-arvore-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/equipa-no-ponto-de-agua.webp": {
+    "width": 508,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-equipa-no-ponto-de-agua-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-equipa-no-ponto-de-agua-508.webp",
+        "width": 508
+      }
+    ]
+  },
+  "/assets/img/fieldwork/frascos-e-caixa.webp": {
+    "width": 825,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-frascos-e-caixa-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-frascos-e-caixa-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/grupo-junto-a-edificio.webp": {
+    "width": 1440,
+    "height": 665,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-grupo-junto-a-edificio-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-grupo-junto-a-edificio-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/inventario-florestal.webp": {
+    "width": 900,
+    "height": 900,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-inventario-florestal-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-inventario-florestal-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/levantamento-junto-a-escavacoes.webp": {
+    "width": 1100,
+    "height": 508,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-levantamento-junto-a-escavacoes-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-levantamento-junto-a-escavacoes-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/manuseamento-de-frasco.webp": {
+    "width": 508,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-manuseamento-de-frasco-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-manuseamento-de-frasco-508.webp",
+        "width": 508
+      }
+    ]
+  },
+  "/assets/img/fieldwork/medicao-de-arvore-pormenor.webp": {
+    "width": 665,
+    "height": 1440,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-medicao-de-arvore-pormenor-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-medicao-de-arvore-pormenor-665.webp",
+        "width": 665
+      }
+    ]
+  },
+  "/assets/img/fieldwork/medicao-de-arvore-vista-de-tras.webp": {
+    "width": 508,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-medicao-de-arvore-vista-de-tras-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-medicao-de-arvore-vista-de-tras-508.webp",
+        "width": 508
+      }
+    ]
+  },
+  "/assets/img/fieldwork/medicao-de-tronco.webp": {
+    "width": 508,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-medicao-de-tronco-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-medicao-de-tronco-508.webp",
+        "width": 508
+      }
+    ]
+  },
+  "/assets/img/fieldwork/medicao-em-area-de-vegetacao.webp": {
+    "width": 508,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-medicao-em-area-de-vegetacao-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-medicao-em-area-de-vegetacao-508.webp",
+        "width": 508
+      }
+    ]
+  },
+  "/assets/img/fieldwork/observacao-de-terreno-e-vegetacao.webp": {
+    "width": 1100,
+    "height": 508,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-observacao-de-terreno-e-vegetacao-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-observacao-de-terreno-e-vegetacao-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/observacao-no-terreno.webp": {
+    "width": 1100,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-observacao-no-terreno-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-observacao-no-terreno-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/paisagem-com-palmeira.webp": {
+    "width": 825,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-paisagem-com-palmeira-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-paisagem-com-palmeira-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/percurso-em-terreno-arenoso.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-percurso-em-terreno-arenoso-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-percurso-em-terreno-arenoso-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/ponto-de-amostragem.webp": {
+    "width": 825,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-ponto-de-amostragem-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-ponto-de-amostragem-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/preparacao-de-frasco.webp": {
+    "width": 825,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-preparacao-de-frasco-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-preparacao-de-frasco-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/raizes-do-mangal.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-raizes-do-mangal-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-raizes-do-mangal-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/recolha-de-agua.webp": {
+    "width": 508,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-recolha-de-agua-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-recolha-de-agua-508.webp",
+        "width": 508
+      }
+    ]
+  },
+  "/assets/img/fieldwork/rede-junto-ao-rio.webp": {
+    "width": 508,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-rede-junto-ao-rio-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-rede-junto-ao-rio-508.webp",
+        "width": 508
+      }
+    ]
+  },
+  "/assets/img/fieldwork/registo-de-dados-florestais.webp": {
+    "width": 665,
+    "height": 1440,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-registo-de-dados-florestais-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-registo-de-dados-florestais-665.webp",
+        "width": 665
+      }
+    ]
+  },
+  "/assets/img/fieldwork/registo-durante-reuniao.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-registo-durante-reuniao-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-registo-durante-reuniao-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/registo-em-armazem.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-registo-em-armazem-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-registo-em-armazem-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/retrato-com-frascos.webp": {
+    "width": 508,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-retrato-com-frascos-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-retrato-com-frascos-508.webp",
+        "width": 508
+      }
+    ]
+  },
+  "/assets/img/fieldwork/retrato-de-grupo-no-exterior.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-retrato-de-grupo-no-exterior-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-retrato-de-grupo-no-exterior-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/reuniao-ao-ar-livre.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-ao-ar-livre-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-ao-ar-livre-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/reuniao-em-espaco-comunitario.webp": {
+    "width": 1100,
+    "height": 1100,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-em-espaco-comunitario-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-em-espaco-comunitario-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/reuniao-outro-enquadramento.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-outro-enquadramento-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-outro-enquadramento-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/reuniao-plano-lateral.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-plano-lateral-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-plano-lateral-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/reuniao-vista-de-tras.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-vista-de-tras-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-reuniao-vista-de-tras-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/vegetacao-de-mangal.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-vegetacao-de-mangal-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-vegetacao-de-mangal-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/visita-a-armazem.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-visita-a-armazem-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-visita-a-armazem-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/fieldwork/vista-do-mangal.webp": {
+    "width": 1100,
+    "height": 825,
+    "variants": [
+      {
+        "src": "/assets/img/previews/fieldwork-vista-do-mangal-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/fieldwork-vista-do-mangal-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/publications/chiuta-fotografia-epda.webp": {
+    "width": 451,
+    "height": 208,
+    "variants": [
+      {
+        "src": "/assets/img/previews/publications-chiuta-fotografia-epda-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/publications-chiuta-fotografia-epda-451.webp",
+        "width": 451
+      }
+    ]
+  },
+  "/assets/img/publications/mualadzi-vegetacao-reia.webp": {
+    "width": 533,
+    "height": 386,
+    "variants": [
+      {
+        "src": "/assets/img/previews/publications-mualadzi-vegetacao-reia-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/publications-mualadzi-vegetacao-reia-533.webp",
+        "width": 533
+      }
+    ]
+  },
+  "/assets/img/publications/mugomo-fotografia-epda.webp": {
+    "width": 940,
+    "height": 433,
+    "variants": [
+      {
+        "src": "/assets/img/previews/publications-mugomo-fotografia-epda-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/publications-mugomo-fotografia-epda-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/publications/warya-consulta-publica-mesa.webp": {
+    "width": 1200,
+    "height": 554,
+    "variants": [
+      {
+        "src": "/assets/img/previews/publications-warya-consulta-publica-mesa-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/publications-warya-consulta-publica-mesa-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/publications/warya-consulta-publica.webp": {
+    "width": 1200,
+    "height": 554,
+    "variants": [
+      {
+        "src": "/assets/img/previews/publications-warya-consulta-publica-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/publications-warya-consulta-publica-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-01.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-01-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-02.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-02-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-03.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-03-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-04.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-04-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-05.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-05-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-06.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-06-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-07.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-07-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-08.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-08-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-09.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-09-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-10.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-10-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-11.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-11-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-12.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-12-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-13.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-13-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-14.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-14-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-15.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-15-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-16.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-16-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-17.webp": {
+    "width": 531,
+    "height": 1150,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-17-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-18.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-18-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-19.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-19-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-20.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-20-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-21.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-21-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-22.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-22-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-23.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-23-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-24.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-24-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-25.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-25-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-26.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-26-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-27.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-27-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-28.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-28-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-29.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-29-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-30.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-30-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-31.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-31-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-32.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-32-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-33.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-33-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-34.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-34-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-35.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-35-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-36.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-36-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/publications/warya/consulta-37.webp": {
+    "width": 1150,
+    "height": 531,
+    "variants": [
+      {
+        "src": "/assets/img/previews/warya-consulta-37-320.webp",
+        "width": 320
+      }
+    ]
+  },
+  "/assets/img/uploads/20140109_172445.jpg": {
+    "width": 800,
+    "height": 450,
+    "variants": [
+      {
+        "src": "/assets/img/previews/uploads-20140109_172445-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/uploads-20140109_172445-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/uploads/20140109_172904.jpg": {
+    "width": 800,
+    "height": 450,
+    "variants": [
+      {
+        "src": "/assets/img/previews/uploads-20140109_172904-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/uploads-20140109_172904-800.webp",
+        "width": 800
+      }
+    ]
+  },
+  "/assets/img/uploads/abelhas.jpg": {
+    "width": 425,
+    "height": 308,
+    "variants": [
+      {
+        "src": "/assets/img/previews/uploads-abelhas-400.webp",
+        "width": 400
+      },
+      {
+        "src": "/assets/img/previews/uploads-abelhas-425.webp",
+        "width": 425
+      }
+    ]
+  }
+}

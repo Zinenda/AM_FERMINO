@@ -3,7 +3,11 @@ title: Relatório de Impacto Ambiental do projecto de areias pesadas da Warya em
 title_en: Environmental impact report for Warya's Sangage heavy mineral sands project available for consultation
 excerpt_en: The technical report examines Warya's proposed heavy mineral sands project in Angoche, Nampula, its environmental and social impacts and proposed mitigation measures.
 date: 2026-10-30T09:00:00+02:00
-image: /assets/img/generated/service-consulting-landscape.png
+image: /assets/img/publications/warya-consulta-publica.webp
+image_alt: "Uma pessoa fala perante o público reunido ao ar livre na consulta do projecto da Warya"
+image_alt_en: "A speaker addresses the audience gathered outdoors for the Warya project consultation"
+image_uncropped: true
+gallery_folder: /assets/img/publications/warya/
 document: /assets/img/uploads/reia-warya-volume-ii-relatorio-tecnico-v2_compressed.pdf
 layout: post
 lang: pt
@@ -38,6 +42,11 @@ body_en: |
   The study identifies opportunities for employment and local economic activity, alongside risks associated with loss of agricultural land, restricted access to natural resources, possible household displacement and effects on subsistence activities.
 
   To address these risks, it recommends a socioeconomic survey of affected areas, identification of people who may require compensation or resettlement, and preparation of fair and participatory arrangements. The report also proposes ongoing community engagement and monitoring of fisheries resources throughout the project's life.
+
+  <figure class="article-inline-image">
+      <img {% include image-attributes.html path='/assets/img/publications/warya-consulta-publica-mesa.webp' sizes="(max-width: 600px) calc(100vw - 32px), 690px" %} alt="Participants at the table review documents and take notes" loading="lazy" decoding="async">
+      <figcaption>Participants during the Warya project public consultation.</figcaption>
+  </figure>
 
   ### Environmental rehabilitation and closure
 
@@ -82,6 +91,11 @@ Outros impactos avaliados incluem a emissão de poeiras, ruído e vibrações, a
 O estudo identifica oportunidades de emprego e dinamização da economia local, mas também riscos relacionados com a perda de áreas agrícolas, restrições de acesso a recursos naturais, possível deslocação de famílias e afectação de actividades de subsistência.
 
 Para responder a estes riscos, recomenda um levantamento socioeconómico das áreas afectadas, a identificação das pessoas que possam necessitar de compensação ou reassentamento e a preparação de instrumentos justos e participativos. O relatório propõe ainda o envolvimento contínuo das comunidades e a monitorização dos recursos pesqueiros ao longo da vida do projecto.
+
+<figure class="article-inline-image">
+    <img {% include image-attributes.html path='/assets/img/publications/warya-consulta-publica-mesa.webp' sizes="(max-width: 600px) calc(100vw - 32px), 690px" %} alt="Participantes sentados à mesa consultam documentos e tomam notas" loading="lazy" decoding="async">
+    <figcaption>Participantes durante a consulta pública do projecto da Warya.</figcaption>
+</figure>
 
 ### Recuperação ambiental e encerramento
 

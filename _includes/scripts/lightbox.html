@@ -1,2 +1,12 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous">
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous"></script>
+<dialog class="photo-viewer" id="photo-viewer" aria-label="{% if page.lang == 'pt' %}Visualizador de fotografias{% else %}Photo viewer{% endif %}">
+    <div class="photo-viewer-toolbar">
+        <button type="button" data-step="-1" aria-label="{% if page.lang == 'pt' %}Fotografia anterior{% else %}Previous photo{% endif %}">‹</button>
+        <button type="button" data-step="1" aria-label="{% if page.lang == 'pt' %}Fotografia seguinte{% else %}Next photo{% endif %}">›</button>
+        <button type="button" data-close aria-label="{% if page.lang == 'pt' %}Fechar visualizador{% else %}Close photo viewer{% endif %}" autofocus>×</button>
+    </div>
+    <figure>
+        <img alt="">
+        <figcaption aria-live="polite"></figcaption>
+    </figure>
+</dialog>
+<script defer src="{{ '/assets/js/photo-viewer.js' | relative_url }}"></script>
